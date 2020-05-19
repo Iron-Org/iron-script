@@ -1,0 +1,23 @@
+{
+  "name": "irinc-script",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "generate-docs": "node_modules/.bin/jsdoc -c jsdoc.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArthurLins/irinc-script.git"
+  },
+  "author": "",
+  "license": "GPL",
+  "bugs": {
+    "url": "https://github.com/ArthurLins/irinc-script/issues"
+  },
+  "homepage": "https://github.com/ArthurLins/irinc-script#readme",
+  
+  "devDependencies": {
+    "jsdoc": "^3.6.4"
+  }
+}
