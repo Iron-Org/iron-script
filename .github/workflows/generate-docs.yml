@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: GenerateDocs
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
@@ -23,13 +23,13 @@ jobs:
         uses: andstor/jsdoc-action@v1.2.0
         with:
           # Source directory to build documentation from
-          source_dir: ./doc-src
+          source_dir: doc-src
           # Output folder for the generated documentation
-          output_dir: ./docs
+          output_dir: docs
           # Recurse into subdirectories when scanning for source files
           #recurse: # optional
           # The path to a JSDoc configuration file
-          config_file: ./jsdoc.json
+          config_file: jsdoc.json
           # The JSDoc template to install
           #template: # optional
           # This input variable is deprecated in favour of "template"
