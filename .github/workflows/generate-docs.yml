@@ -20,3 +20,7 @@ jobs:
           config_file: jsdoc.json
           template: minami
           front_page: README.md
+      - name: Deploy
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
