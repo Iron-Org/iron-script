@@ -1,16 +1,16 @@
 /// <reference path="types/ScriptEntity.js"/>
 /// <reference path="types/ScriptFurni.js"/>
+
 /**
- * @static
+ * @namespace Room
  */
 const Room = {
     /**
-     * @function
-     * @returns {string}
+     * @returns {String}
      */
     getName: () => {},
     /**
-     * @returns {number}
+     * @returns {Number}
      */
     getId: () => {},
     /**
@@ -21,95 +21,95 @@ const Room = {
      */
     open: () => {},
     /**
-     * @param {number} id
+     * @param {Number} id
      * @returns {ScriptFurni}
      */
     getFurniById: (id) => {},
     /**
-     * @param {number} x
-     * @param {number} y
-     * @returns {Object[]}
+     * @param {Number} x
+     * @param {Number} y
+     * @returns {ScriptFurni[]}
      */
     getFurniByTile: (x, y) => {},
     /**
      * @param {ScriptFurni[]} furnis
-     * @returns {ScriptFurni[]}
+     * @returns {ScriptEntity[]}
      */
     getEntitiesByFurnis: (furnis) => {},
     /**
-     * @param {number} sprite
+     * @param {Number} sprite
      * @returns {ScriptFurni[]}
      */
     getAllFurnisBySpriteId: (sprite) => {},
     /**
      * @param {ScriptFurni} furni
-     * @returns {ScriptFurni[]}
+     * @returns {ScriptEntity[]}
      */
     getEntitiesByFurni: (furni) => {},
     /**
-     * @returns {number}
+     * @returns {Number}
      */
     ownerId: () => {},
     /**
-     * @param {boolean} allow
+     * @param {Boolean} allow
      */
     setWalkThrough: (allow) => {},
     /**
-     * @returns {number}
+     * @returns {Number}
      */
     userCount: () => {},
     /**
-     * @param {boolean} disabled
+     * @param {Boolean} disabled
      */
     setDiagonal: (disabled) => {},
     /**
-     * @returns {string}
+     * @returns {String}
      */
     getOwnerUsername: () => {},
     /**
-     * @param {string} name
+     * @param {String} name
      * @returns {ScriptEntity}
      */
     getPlayerByName: (name) => {},
     /**
-     * @param {string} message
+     * @param {String} message
      */
     alert: (message) => {},
     /**
      */
     setDoorbell: () => {},
     /**
-     * @param {string} icon
-     * @param {string} message
+     * @param {String} icon
+     * @param {String} message
      */
     notification: (icon, message) => {},
     /**
-     * @param {boolean} mute
+     * @param {Boolean} mute
      */
     setRoomMute: (mute) => {},
     /**
-     * @param {string} text
+     * @param {String} text
      */
     tts: (text) => {},
     /**
-     * @param {number} id
+     * @param {Number} id
      * @returns {ScriptEntity}
      */
     getPlayerById: (id) => {},
     /**
-     * @returns {boolean}
+     * @returns {Boolean}
      */
     getWalkThrough: () => {},
     /**
-     * @returns {boolean}
+     * @returns {Boolean}
      */
     getDiagonal: () => {},
     /**
-     * @param {string} password
+     * @param {String} password
      */
     setPassword: (password) => {},
     /**
-     * @returns {boolean}
+     * @returns {Boolean}
      */
     getRoomMute: () => {},
     /**
@@ -117,11 +117,11 @@ const Room = {
      */
     getAllPlayers: () => {},
     /**
-     * @param {string} link
+     * @param {String} link
      */
     youtube: (link) => {},
     /**
-     * @param {string} name
+     * @param {String} name
      * @returns {ScriptEntity}
      */
     getBotByName: (name) => {},

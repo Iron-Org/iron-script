@@ -28,17 +28,17 @@
         <article>
             <pre class="prettyprint source linenums"><code>/// &lt;reference path="types/ScriptEntity.js"/>
 /// &lt;reference path="types/ScriptFurni.js"/>
+
 /**
- * @static
+ * @namespace Room
  */
 const Room = {
     /**
-     * @function
-     * @returns {string}
+     * @returns {String}
      */
     getName: () => {},
     /**
-     * @returns {number}
+     * @returns {Number}
      */
     getId: () => {},
     /**
@@ -49,95 +49,95 @@ const Room = {
      */
     open: () => {},
     /**
-     * @param {number} id
+     * @param {Number} id
      * @returns {ScriptFurni}
      */
     getFurniById: (id) => {},
     /**
-     * @param {number} x
-     * @param {number} y
-     * @returns {Object[]}
+     * @param {Number} x
+     * @param {Number} y
+     * @returns {ScriptFurni[]}
      */
     getFurniByTile: (x, y) => {},
     /**
      * @param {ScriptFurni[]} furnis
-     * @returns {ScriptFurni[]}
+     * @returns {ScriptEntity[]}
      */
     getEntitiesByFurnis: (furnis) => {},
     /**
-     * @param {number} sprite
+     * @param {Number} sprite
      * @returns {ScriptFurni[]}
      */
     getAllFurnisBySpriteId: (sprite) => {},
     /**
      * @param {ScriptFurni} furni
-     * @returns {ScriptFurni[]}
+     * @returns {ScriptEntity[]}
      */
     getEntitiesByFurni: (furni) => {},
     /**
-     * @returns {number}
+     * @returns {Number}
      */
     ownerId: () => {},
     /**
-     * @param {boolean} allow
+     * @param {Boolean} allow
      */
     setWalkThrough: (allow) => {},
     /**
-     * @returns {number}
+     * @returns {Number}
      */
     userCount: () => {},
     /**
-     * @param {boolean} disabled
+     * @param {Boolean} disabled
      */
     setDiagonal: (disabled) => {},
     /**
-     * @returns {string}
+     * @returns {String}
      */
     getOwnerUsername: () => {},
     /**
-     * @param {string} name
+     * @param {String} name
      * @returns {ScriptEntity}
      */
     getPlayerByName: (name) => {},
     /**
-     * @param {string} message
+     * @param {String} message
      */
     alert: (message) => {},
     /**
      */
     setDoorbell: () => {},
     /**
-     * @param {string} icon
-     * @param {string} message
+     * @param {String} icon
+     * @param {String} message
      */
     notification: (icon, message) => {},
     /**
-     * @param {boolean} mute
+     * @param {Boolean} mute
      */
     setRoomMute: (mute) => {},
     /**
-     * @param {string} text
+     * @param {String} text
      */
     tts: (text) => {},
     /**
-     * @param {number} id
+     * @param {Number} id
      * @returns {ScriptEntity}
      */
     getPlayerById: (id) => {},
     /**
-     * @returns {boolean}
+     * @returns {Boolean}
      */
     getWalkThrough: () => {},
     /**
-     * @returns {boolean}
+     * @returns {Boolean}
      */
     getDiagonal: () => {},
     /**
-     * @param {string} password
+     * @param {String} password
      */
     setPassword: (password) => {},
     /**
-     * @returns {boolean}
+     * @returns {Boolean}
      */
     getRoomMute: () => {},
     /**
@@ -145,11 +145,11 @@ const Room = {
      */
     getAllPlayers: () => {},
     /**
-     * @param {string} link
+     * @param {String} link
      */
     youtube: (link) => {},
     /**
-     * @param {string} name
+     * @param {String} name
      * @returns {ScriptEntity}
      */
     getBotByName: (name) => {},
@@ -164,13 +164,13 @@ const Room = {
 </div>
 
 <nav>
-    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="DelayTask.html">DelayTask</a></li><li><a href="FakeEntity.html">FakeEntity</a></li><li><a href="FakeFloorItem.html">FakeFloorItem</a></li><li><a href="ScriptEntity.html">ScriptEntity</a></li><li><a href="ScriptFurni.html">ScriptFurni</a></li></ul><h3>Interfaces</h3><ul><li><a href="IReachableObject.html">IReachableObject</a></li><li><a href="onUserLeave.html">onUserLeave</a></li></ul><h3>Events</h3><ul><li><a href="global.html#event:onDispose">onDispose</a></li><li><a href="global.html#event:onLoad">onLoad</a></li><li><a href="global.html#event:onUserJoin">onUserJoin</a></li></ul><h3>Global</h3><ul><li><a href="global.html#Engine">Engine</a></li><li><a href="global.html#Room">Room</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="Commands.html">Commands</a></li><li><a href="Delay.html">Delay</a></li><li><a href="Engine.html">Engine</a></li><li><a href="GlobalStorage.html">GlobalStorage</a></li><li><a href="Room.html">Room</a></li><li><a href="RoomStorage.html">RoomStorage</a></li></ul><h3>Classes</h3><ul><li><a href="DelayTask.html">DelayTask</a></li><li><a href="FakeEntity.html">FakeEntity</a></li><li><a href="FakeFloorItem.html">FakeFloorItem</a></li><li><a href="ScriptEntity.html">ScriptEntity</a></li><li><a href="ScriptFurni.html">ScriptFurni</a></li></ul><h3>Interfaces</h3><ul><li><a href="IReachableObject.html">IReachableObject</a></li></ul><h3>Events</h3><ul><li><a href="global.html#event:onDispose">onDispose</a></li><li><a href="global.html#event:onInteract">onInteract</a></li><li><a href="global.html#event:onLoad">onLoad</a></li><li><a href="global.html#event:onSay">onSay</a></li><li><a href="global.html#event:onStepOff">onStepOff</a></li><li><a href="global.html#event:onStepOn">onStepOn</a></li><li><a href="global.html#event:onTick">onTick</a></li><li><a href="global.html#event:onUserJoin">onUserJoin</a></li><li><a href="global.html#event:onUserLeave">onUserLeave</a></li></ul>
 </nav>
 
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.4</a> on Tue May 19 2020 20:56:24 GMT-0300 (GMT-03:00)
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.4</a> on Tue May 19 2020 23:04:02 GMT-0300 (GMT-03:00)
 </footer>
 
 <script> prettyPrint(); </script>

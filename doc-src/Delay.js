@@ -1,14 +1,18 @@
+
+/**
+ * @namespace Delay
+ */
 const Delay = {
     /** 
     * @param {Runnable} runnable
-    * @param {number} ticks
+    * @param {Number} ticks
     * @returns {DelayTask} 
     */
     wait: (runnable, ticks) => {}, 
     /** 
     * @param {Runnable} runnable
-    * @param {number} ticks
-    * @returns {DelayTask} 
+    * @param {Number} ticks
+    * @returns {DelayTask}
     */
     interval: (runnable, ticks) => {}, 
     /** 
@@ -16,9 +20,9 @@ const Delay = {
     */
     cancel: (task) => {}, 
     /** 
-    * @param {number} sec
-    * @returns {number} 
+    * @param {Number} sec
+    * @returns {Number} 
     */
-    seconds: (sec) => {}, 
+    seconds: (sec) => {},
 
 }

@@ -1,16 +1,19 @@
+/**
+ * @namespace GlobalStorage
+ */
 const GlobalStorage = {
-    /** 
-    * @param {string} key
-    * @returns {string} 
+    /**
+    * @param {String} key
+    * @returns {String}
     */
-    get: (key) => {}, 
+    get: (key) => {},
     /** 
-    * @param {string} key
+    * @param {String} key
     */
-    delete: (key) => {}, 
+    delete: (key) => {},
     /** 
-    * @param {string} key
+    * @param {String} key
     * @param {*} value
     */
-    set: (key, value) => {}, 
+    set: (key, value) => {},
 }

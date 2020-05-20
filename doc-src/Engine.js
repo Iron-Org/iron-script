@@ -1,5 +1,5 @@
 /**
- * @constant
+ * @namespace Engine
  */
 const Engine = {
     /**

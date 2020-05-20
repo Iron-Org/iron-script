@@ -16,8 +16,10 @@
     "url": "https://github.com/ArthurLins/irinc-script/issues"
   },
   "homepage": "https://github.com/ArthurLins/irinc-script#readme",
-  
   "devDependencies": {
     "jsdoc": "^3.6.4"
+  },
+  "dependencies": {
+    "docdash": "^1.2.0"
   }
 }

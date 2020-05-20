@@ -1,15 +1,18 @@
+/**
+ * @namespace RoomStorage
+ */
 const RoomStorage = {
     /** 
-    * @param {string} key
-    * @returns {string} 
+    * @param {String} key
+    * @returns {String} 
     */
     get: (key) => {}, 
     /** 
-    * @param {string} key
+    * @param {String} key
     */
     delete: (key) => {}, 
     /** 
-    * @param {string} key
+    * @param {String} key
     * @param {*} value
     */
     set: (key, value) => {}, 
