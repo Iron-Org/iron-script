@@ -1,19 +1,26 @@
 /**
+ * Gerenciador de armazenamento global. 
+ * Armazena valores que podem ser consultados com uma chave de indentificação, em qualquer quarto do usuário
  * @namespace GlobalStorage
+ * @author Arthur L
+ * @author Gabriel T
  */
 const GlobalStorage = {
     /**
-    * @param {String} key
+     * Consulta um valor correspondente a chave buscada.
+    * @param {String} key - Chave da propriedade a ser buscada.
     * @returns {String}
     */
     get: (key) => {},
     /** 
-    * @param {String} key
-    */
-    delete: (key) => {},
-    /** 
-    * @param {String} key
-    * @param {*} value
+     * Defini/Atualiza valor correspondente a chave buscada.
+    * @param {String} key - Chave da propriedade a definir.
+    * @param {*} value - Novo valor a ser definido.
     */
     set: (key, value) => {},
+    /**
+     * Deleta valor correspondente a chave buscada.
+    * @param {String} key - Chave da propriedade a ser deletada.
+    */
+    delete: (key) => {}
 }

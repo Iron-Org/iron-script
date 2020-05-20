@@ -9,7 +9,6 @@
 class ScriptEntity {
 
     /**
-     * @type 
      * @param {ScriptEntity} entity
      * @returns {boolean}
      */

@@ -2,10 +2,13 @@
 /// <reference path="types/ScriptFurni.js"/>
 
 /**
+ *
  * @namespace Room
  */
 const Room = {
+
     /**
+     * 
      * @returns {String}
      */
     getName: () => {},

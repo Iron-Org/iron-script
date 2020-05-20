@@ -37,6 +37,11 @@
     <div class="container-overview">
     
         
+            <div class="description"><p>Aguarda tempos determinados para executar funções.</p>
+<blockquote>
+<p>Cada tick corresponde 500ms.</p>
+</blockquote></div>
+        
 
         
 
@@ -59,6 +64,15 @@
 
     
 
+    
+    <dt class="tag-author">Author:</dt>
+    <dd class="tag-author">
+        <ul>
+            <li>Arthur L</li>
+        
+            <li>Gabriel T</li>
+        </ul>
+    </dd>
     
 
     
@@ -165,7 +179,7 @@
 
             
 
-            <td class="description last"></td>
+            <td class="description last"><p>Wait/Delay a ser interrompido.</p></td>
         </tr>
 
     
@@ -206,7 +220,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Delay.js.html">Delay.js</a>, <a href="Delay.js.html#line21">line 21</a>
+        <a href="Delay.js.html">Delay.js</a>, <a href="Delay.js.html#line44">line 44</a>
     </li></ul></dd>
     
 
@@ -235,6 +249,11 @@
 
 
 
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>const delay = Delay.wait(() => {     Engine.debug('Teste')}, 10)Delay.cancel(delay)//Função não executará, pois o delay foi interrompido antes do tempo a ser aguardado.</code></pre>
+
+
 
         
             
@@ -242,12 +261,16 @@
     
 
     
-    <h4 class="name" id=".interval"><span class="type-signature">(static) </span>interval<span class="signature">(runnable, ticks)</span><span class="type-signature"> &rarr; {<a href="DelayTask.html">DelayTask</a>}</span></h4>
+    <h4 class="name" id=".interval"><span class="type-signature">(static) </span>interval<span class="signature">(callback, ticks)</span><span class="type-signature"> &rarr; {<a href="DelayTask.html">DelayTask</a>}</span></h4>
     
 
     
 
 
+
+<div class="description">
+    <p>Executa uma função no intervalo de tempo.</p>
+</div>
 
 
 
@@ -282,13 +305,13 @@
 
         <tr>
             
-                <td class="name"><code>runnable</code></td>
+                <td class="name"><code>callback</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">Runnable</span>
+<span class="param-type">function</span>
 
 
             
@@ -298,7 +321,7 @@
 
             
 
-            <td class="description last"></td>
+            <td class="description last"><p>Função executada sempre que o tempo determinado ter passado.</p></td>
         </tr>
 
     
@@ -321,7 +344,7 @@
 
             
 
-            <td class="description last"></td>
+            <td class="description last"><p>Quantidade de ticks a aguardar até a execução da função.</p></td>
         </tr>
 
     
@@ -362,7 +385,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Delay.js.html">Delay.js</a>, <a href="Delay.js.html#line17">line 17</a>
+        <a href="Delay.js.html">Delay.js</a>, <a href="Delay.js.html#line32">line 32</a>
     </li></ul></dd>
     
 
@@ -407,6 +430,11 @@
     
 
 
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>Delay.interval(() => { //Executado a cada 1 segundo.}, 2)</code></pre>
 
 
 
@@ -472,7 +500,7 @@
 
             
 
-            <td class="description last"></td>
+            <td class="description last"><p>Quantidade de segundos a serem convertidos em ticks.</p></td>
         </tr>
 
     
@@ -513,7 +541,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Delay.js.html">Delay.js</a>, <a href="Delay.js.html#line26">line 26</a>
+        <a href="Delay.js.html">Delay.js</a>, <a href="Delay.js.html#line55">line 55</a>
     </li></ul></dd>
     
 
@@ -560,6 +588,11 @@
 
 
 
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>Delay.wait(() => {     //Executado após 10 segundos.}, Delay.seconds(10))</code></pre>
+
+
 
         
             
@@ -567,7 +600,7 @@
     
 
     
-    <h4 class="name" id=".wait"><span class="type-signature">(static) </span>wait<span class="signature">(runnable, ticks)</span><span class="type-signature"> &rarr; {<a href="DelayTask.html">DelayTask</a>}</span></h4>
+    <h4 class="name" id=".wait"><span class="type-signature">(static) </span>wait<span class="signature">(callback, ticks)</span><span class="type-signature"> &rarr; {<a href="DelayTask.html">DelayTask</a>}</span></h4>
     
 
     
@@ -607,13 +640,13 @@
 
         <tr>
             
-                <td class="name"><code>runnable</code></td>
+                <td class="name"><code>callback</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">Runnable</span>
+<span class="param-type">function</span>
 
 
             
@@ -623,7 +656,7 @@
 
             
 
-            <td class="description last"></td>
+            <td class="description last"><p>Função executada após o tempo determinado ter passado.</p></td>
         </tr>
 
     
@@ -646,7 +679,7 @@
 
             
 
-            <td class="description last"></td>
+            <td class="description last"><p>Quantidade de ticks a aguardar até a execução da função.</p></td>
         </tr>
 
     
@@ -687,7 +720,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Delay.js.html">Delay.js</a>, <a href="Delay.js.html#line11">line 11</a>
+        <a href="Delay.js.html">Delay.js</a>, <a href="Delay.js.html#line20">line 20</a>
     </li></ul></dd>
     
 
@@ -734,6 +767,11 @@
 
 
 
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>Delay.wait(() => { //Executado após 1 segundo de espera.}, 2)</code></pre>
+
+
 
         
     
@@ -751,13 +789,13 @@
 </div>
 
 <nav>
-    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="Commands.html">Commands</a></li><li><a href="Delay.html">Delay</a></li><li><a href="Engine.html">Engine</a></li><li><a href="GlobalStorage.html">GlobalStorage</a></li><li><a href="Room.html">Room</a></li><li><a href="RoomStorage.html">RoomStorage</a></li></ul><h3>Classes</h3><ul><li><a href="DelayTask.html">DelayTask</a></li><li><a href="FakeEntity.html">FakeEntity</a></li><li><a href="FakeFloorItem.html">FakeFloorItem</a></li><li><a href="ScriptEntity.html">ScriptEntity</a></li><li><a href="ScriptFurni.html">ScriptFurni</a></li></ul><h3>Interfaces</h3><ul><li><a href="IReachableObject.html">IReachableObject</a></li></ul><h3>Events</h3><ul><li><a href="global.html#event:onDispose">onDispose</a></li><li><a href="global.html#event:onInteract">onInteract</a></li><li><a href="global.html#event:onLoad">onLoad</a></li><li><a href="global.html#event:onSay">onSay</a></li><li><a href="global.html#event:onStepOff">onStepOff</a></li><li><a href="global.html#event:onStepOn">onStepOn</a></li><li><a href="global.html#event:onTick">onTick</a></li><li><a href="global.html#event:onUserJoin">onUserJoin</a></li><li><a href="global.html#event:onUserLeave">onUserLeave</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="Commands.html">Commands</a></li><li><a href="Delay.html">Delay</a></li><li><a href="Engine.html">Engine</a></li><li><a href="GlobalStorage.html">GlobalStorage</a></li><li><a href="Room.html">Room</a></li><li><a href="RoomStorage.html">RoomStorage</a></li></ul><h3>Classes</h3><ul><li><a href="DelayTask.html">DelayTask</a></li><li><a href="FakeEntity.html">FakeEntity</a></li><li><a href="FakeFloorItem.html">FakeFloorItem</a></li><li><a href="ScriptEntity.html">ScriptEntity</a></li><li><a href="ScriptFurni.html">ScriptFurni</a></li></ul><h3>Interfaces</h3><ul><li><a href="IReachableObject.html">IReachableObject</a></li></ul><h3>Events</h3><ul><li><a href="global.html#event:onDispose">onDispose</a></li><li><a href="global.html#event:onInteract">onInteract</a></li><li><a href="global.html#event:onLoad">onLoad</a></li><li><a href="global.html#event:onSay">onSay</a></li><li><a href="global.html#event:onStepOff">onStepOff</a></li><li><a href="global.html#event:onStepOn">onStepOn</a></li><li><a href="global.html#event:onTick">onTick</a></li><li><a href="global.html#event:onUserJoin">onUserJoin</a></li><li><a href="global.html#event:onUserLeave">onUserLeave</a></li></ul><h3><a href="global.html">Global</a></h3>
 </nav>
 
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.4</a> on Tue May 19 2020 23:04:02 GMT-0300 (GMT-03:00)
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.4</a> on Wed May 20 2020 01:31:21 GMT-0300 (GMT-03:00)
 </footer>
 
 <script> prettyPrint(); </script>
