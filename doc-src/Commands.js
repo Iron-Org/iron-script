@@ -2,14 +2,17 @@
 
 /**
  * Callback de execução de comandos.
- * @callback CommandCallback
- * @param {ScriptEntity} player - Jogador que o executou.
- * @param {String} message - Mensagem enviada pelo jogador.
+ * 
+ * @callback Commands~CommandCallback
+ * @param {ScriptEntity} user - Usuário que o executou.
+ * @param {String} message - Mensagem enviada pelo usuário.
  */
 
 /**
  * Constante responsável por gerenciar os comandos.
  * @namespace Commands
+ * @author Arthur L
+ * @author Gabriel T
  */
 const Commands = {
 
@@ -24,8 +27,8 @@ const Commands = {
      * })
      *
      * @param {String} text - Comando a ser utilizado.
-     * @param {(CommandCallback|Boolean)=} needStartText - Define se a mensagem deverá ser iniciada com o comando.
-     * @param {CommandCallback=} callback - Callback executado ao comando ser utilizado.
+     * @param {(Commands~CommandCallback|Boolean)=} needStartText - Define se a mensagem deverá ser iniciada com o comando.
+     * @param {Commands~CommandCallback=} callback - Callback executado ao comando ser utilizado.
     */
     register: (text, needStartText, callback) => {},
 }
