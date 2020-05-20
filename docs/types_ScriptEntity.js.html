@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: types/ScriptEntity.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: types/ScriptEntity.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/// &lt;reference path="IReachableObject.js"/>
+
+/**
+ * This class represents room entities
+ * @class
+ * @hideconstructor
+ * @implements {IReachableObject}
+ */
+class ScriptEntity {
+
+    /**
+     * @type 
+     * @param {ScriptEntity} entity
+     * @returns {boolean}
+     */
+    equals(entity) {}
+    /**
+     * @param {IReachableObject} object
+     * @returns {boolean}
+     */
+    in(object) {}
+    /**
+     * @returns {number}
+     */
+    getId() {}
+    /**
+     * @param {string} message
+     * @param {number} bubble
+     */
+    message(message, bubble) {}
+    /**
+     * @param {string} message
+     */
+    message(message) {}
+    /**
+     * @param {number} x
+     * @param {number} y
+     * @param {number} z
+     * @param {number} r
+     */
+    teleport(x, y, z, r) {}
+    /**
+     * @param {IReachableObject} o
+     */
+    teleport(o) {}
+    /**
+     * @param {number} x
+     * @param {number} y
+     * @param {number} z
+     */
+    teleport(x, y, z) {}
+    /**
+     * @param {number} x
+     * @param {number} y
+     * @param {number} z
+     * @returns {boolean}
+     */
+    touching(x, y, z) {}
+    /**
+     * @param {IReachableObject} e
+     * @returns {boolean}
+     */
+    touching(e) {}
+    /**
+     * @returns {boolean}
+     */
+    isPet() {}
+    /**
+     * @returns {number}
+     */
+    getDance() {}
+    /**
+     * @returns {string}
+     */
+    getUsername() {}
+    /**
+     * @param {string} username
+     */
+    setUsername(username) {}
+    /**
+     */
+    kick() {}
+    /**
+     * @param {IReachableObject} o
+     */
+    walk(o) {}
+    /**
+     * @param {number} x
+     * @param {number} y
+     */
+    walk(x, y) {}
+    /**
+     * @param {ScriptEntity} to
+     * @param {*} message
+     * @param {number} bubbleId
+     */
+    whisper(to, message, bubbleId) {}
+    /**
+     * @param {string} gender
+     * @param {string} figure
+     */
+    setFigure(gender, figure) {}
+    /**
+     * @returns {boolean}
+     */
+    canWalk() {}
+    /**
+     * @returns {boolean}
+     */
+    isWalking() {}
+    /**
+     * @returns {string}
+     */
+    getMotto() {}
+    /**
+     * @param {string} badge
+     */
+    giveBadge(badge) {}
+    /**
+     * @returns {number}
+     */
+    getHandItem() {}
+    /**
+     * @param {number} h
+     */
+    setHandItem(h) {}
+    /**
+     * @param {IReachableObject} e
+     * @returns {number}
+     */
+    distanceTo(e) {}
+    /**
+     * @param {number} x
+     * @param {number} y
+     * @param {number} z
+     * @returns {number}
+     */
+    distanceTo(x, y, z) {}
+    /**
+     * @returns {string}
+     */
+    getFigure() {}
+    /**
+     * @returns {number}
+     */
+    getX() {}
+    /**
+     * @returns {number}
+     */
+    getY() {}
+    /**
+     * @returns {boolean}
+     */
+    isBot() {}
+    /**
+     * @returns {number}
+     */
+    getEffect() {}
+    /**
+     * @param {number} danceId
+     */
+    setDance(danceId) {}
+    /**
+     * @param {IReachableObject[]} furnis
+     * @returns {boolean}
+     */
+    inAny(furnis) {}
+    /**
+     * @param {*} motto
+     */
+    setMotto(motto) {}
+    /**
+     * @param {IReachableObject} object
+     * @param {boolean} moveHead
+     */
+    lookTo(object, moveHead) {}
+    /**
+     * @param {ScriptEntity} entity
+     */
+    lookTo(entity) {}
+    /**
+     * @param {number} x
+     * @param {number} y
+     */
+    lookTo(x, y) {}
+    /**
+     * @param {number} x
+     * @param {number} y
+     * @param {boolean} moveHead
+     */
+    lookTo(x, y, moveHead) {}
+    /**
+     */
+    removeEffect() {}
+    /**
+     * @returns {number}
+     */
+    getZ() {}
+    /**
+     * @param {boolean} can
+     * @param {boolean} effect
+     */
+    setCanWalk(can, effect) {}
+    /**
+     * @param {boolean} can
+     */
+    setCanWalk(can) {}
+    /**
+     * @param {*} message
+     * @param {boolean} shout
+     */
+    say(message, shout) {}
+    /**
+     * @param {*} message
+     * @param {boolean} shout
+     * @param {number} bubbleId
+     */
+    say(message, shout, bubbleId) {}
+    /**
+     * @param {*} message
+     */
+    say(message) {}
+    /**
+     * @param {number} id
+     * @returns {boolean}
+     */
+    hasRank(id) {}
+    /**
+     */
+    lay() {}
+    /**
+     */
+    sit() {}
+    /**
+     * @returns {number}
+     */
+    getR() {}
+    /**
+     * @param {string} badge
+     */
+    removeBadge(badge) {}
+    /**
+     */
+    removeHandItem() {}
+    /**
+     * @param {number} roomId
+     */
+    gotoRoom(roomId) {}
+    /**
+     * @returns {boolean}
+     */
+    isPlayer() {}
+    /**
+     * @param {number} e
+     */
+    setEffect(e) {}
+    /**
+     * @param {string} icon
+     * @param {string} message
+     */
+    notification(icon, message) {}
+    /**
+     */
+    std() {}
+
+}
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="DelayTask.html">DelayTask</a></li><li><a href="FakeEntity.html">FakeEntity</a></li><li><a href="FakeFloorItem.html">FakeFloorItem</a></li><li><a href="ScriptEntity.html">ScriptEntity</a></li><li><a href="ScriptFurni.html">ScriptFurni</a></li></ul><h3>Interfaces</h3><ul><li><a href="IReachableObject.html">IReachableObject</a></li><li><a href="onUserLeave.html">onUserLeave</a></li></ul><h3>Events</h3><ul><li><a href="global.html#event:onDispose">onDispose</a></li><li><a href="global.html#event:onLoad">onLoad</a></li><li><a href="global.html#event:onUserJoin">onUserJoin</a></li></ul><h3>Global</h3><ul><li><a href="global.html#Engine">Engine</a></li><li><a href="global.html#Room">Room</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.4</a> on Tue May 19 2020 20:56:24 GMT-0300 (GMT-03:00)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

@@ -1,22 +1,22 @@
 /**
- * @interface
+ * @event
  */
 const onLoad = () => {}
 
 /**
- * @interface
+ * @event
  */
 const onDispose = () => {}
 
 
 /**
- * @interface
+ * @event
  * @param {ScriptEntity} entity 
  */
-function onUserJoin(entity){}
+const onUserJoin = (entity) => {}
 
 /**
- * @interface
+ * @event
  * @param {ScriptEntity} entity 
  */
-function onUserLeave(entity){}
+const onUserLeave = (entity) => {}
