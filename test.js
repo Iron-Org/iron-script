@@ -1,0 +1,1 @@
+Commands.register("s", true, function(){})

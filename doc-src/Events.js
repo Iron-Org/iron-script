@@ -1,4 +1,10 @@
 /**
+ * Todos os eventos chamados no Script
+ * @author Arthur L
+ * @author Gabriel T
+ */
+
+/**
  * Evento chamado ao carregar o quarto.
  * @event
  */

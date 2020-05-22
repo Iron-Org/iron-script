@@ -1,6 +1,8 @@
 /**
  * Interface para qualquer objeto que seja posicionavel
  * @interface
+ * @author Arthur L
+ * @author Gabriel T
  */
 class IScriptReachable {
     /**

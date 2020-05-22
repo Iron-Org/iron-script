@@ -19,7 +19,7 @@ class ScriptFurni {
      * Move o furni até a posição fornecida.
      * @param {number} x - Posição X para onde o furni será movido.
      * @param {number} y - Posição y para onde o furni será movido.
-     * @param {number} z - Altura para onde o furni será movido.
+     * @param {number} z - Posição Z para onde o furni será movido.
      * @param {number} rot - Rotação definida ao furni ao ser movido.
      */
     move(x, y, z, rot) {}
@@ -62,7 +62,7 @@ class ScriptFurni {
      */
     getX() {}
     /**
-     * Altera o estado do furnii.
+     * Altera o estado do Furni.
      * @param {*} value - Valor do estado em que o furni será definido.
      */
     setState(value) {}
