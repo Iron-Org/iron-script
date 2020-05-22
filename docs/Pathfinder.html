@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Namespace: Engine</title>
+    <title>JSDoc: Namespace: Pathfinder</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Namespace: Engine</h1>
+    <h1 class="page-title">Namespace: Pathfinder</h1>
 
     
 
@@ -28,7 +28,7 @@
 
 <header>
     
-        <h2>Engine</h2>
+        <h2>Pathfinder</h2>
         
     
 </header>
@@ -37,7 +37,7 @@
     <div class="container-overview">
     
         
-            <div class="description"><p>Constante responsável por gerenciar os logs/debugs.</p></div>
+            <div class="description"><p>Pathfinder</p></div>
         
 
         
@@ -115,7 +115,7 @@
     
 
     
-    <h4 class="name" id=".d"><span class="type-signature">(static) </span>d<span class="signature">(object)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id=".makeEntityPath"><span class="type-signature">(static) </span>makeEntityPath<span class="signature">(entity, position)</span><span class="type-signature"> &rarr; {Array.&lt;<a href="IScriptReachable.html">IScriptReachable</a>>}</span></h4>
     
 
     
@@ -123,7 +123,7 @@
 
 
 <div class="description">
-    <p>Envia mensagem de debug para todos os usuários do quarto.</p>
+    <p>Gera um caminho para entidade</p>
 </div>
 
 
@@ -159,13 +159,13 @@
 
         <tr>
             
-                <td class="name"><code>object</code></td>
+                <td class="name"><code>entity</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">*</span>
+<span class="param-type"><a href="ScriptEntity.html">ScriptEntity</a></span>
 
 
             
@@ -175,7 +175,30 @@
 
             
 
-            <td class="description last"><p>Conteúdo</p></td>
+            <td class="description last"><p>Entidade</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>position</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="IScriptReachable.html">IScriptReachable</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Destino</p></td>
         </tr>
 
     
@@ -236,150 +259,24 @@
 
 
 
-
-
-
-
-    <h5>Example</h5>
-    
-    <pre class="prettyprint"><code>Engine.d("Text")</code></pre>
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id=".debug"><span class="type-signature">(static) </span>debug<span class="signature">(object)</span><span class="type-signature"></span></h4>
-    
-
-    
-
-
-
-<div class="description">
-    <p>Envia mensagem de debug para todos os usuários do quarto.</p>
-</div>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
+<h5>Returns:</h5>
 
         
 
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
         
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>object</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">*</span>
+<span class="param-type">Array.&lt;<a href="IScriptReachable.html">IScriptReachable</a>></span>
 
 
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>Conteúdo</p></td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-todo">To Do:</dt>
-    <dd class="tag-todo">
-        <ul>
-            <li>Esta função ainda não foi implementada.</li>
-        </ul>
     </dd>
-    
 </dl>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
 
 
 
@@ -391,7 +288,7 @@
     
 
     
-    <h4 class="name" id=".e"><span class="type-signature">(static) </span>e<span class="signature">(object)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id=".makeFurniPath"><span class="type-signature">(static) </span>makeFurniPath<span class="signature">(furni, position)</span><span class="type-signature"> &rarr; {Array.&lt;<a href="IScriptReachable.html">IScriptReachable</a>>}</span></h4>
     
 
     
@@ -399,7 +296,7 @@
 
 
 <div class="description">
-    <p>Registra uma mensagem no log do quarto. (<em>:script log</em>)</p>
+    <p>Gera um caminho para o furni</p>
 </div>
 
 
@@ -435,13 +332,13 @@
 
         <tr>
             
-                <td class="name"><code>object</code></td>
+                <td class="name"><code>furni</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">*</span>
+<span class="param-type"><a href="ScriptFurni.html">ScriptFurni</a></span>
 
 
             
@@ -451,7 +348,30 @@
 
             
 
-            <td class="description last"><p>Conteúdo</p></td>
+            <td class="description last"><p>Mobilia</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>position</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="IScriptReachable.html">IScriptReachable</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Destino</p></td>
         </tr>
 
     
@@ -512,150 +432,24 @@
 
 
 
-
-
-
-
-    <h5>Example</h5>
-    
-    <pre class="prettyprint"><code>Engine.e("Text")</code></pre>
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id=".log"><span class="type-signature">(static) </span>log<span class="signature">(object)</span><span class="type-signature"></span></h4>
-    
-
-    
-
-
-
-<div class="description">
-    <p>Registra uma mensagem no log do quarto. (<em>:script log</em>)</p>
-</div>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
+<h5>Returns:</h5>
 
         
 
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
         
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>object</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">*</span>
+<span class="param-type">Array.&lt;<a href="IScriptReachable.html">IScriptReachable</a>></span>
 
 
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>Conteúdo</p></td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-todo">To Do:</dt>
-    <dd class="tag-todo">
-        <ul>
-            <li>Esta função ainda não foi implementada.</li>
-        </ul>
     </dd>
-    
 </dl>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
 
 
 

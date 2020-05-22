@@ -4,7 +4,7 @@
 
 /**
  * Pathfinder
- * @namespace GlobalStorage
+ * @namespace Pathfinder
  * @author Arthur L
  * @author Gabriel T
  */
