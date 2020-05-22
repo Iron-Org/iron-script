@@ -1,14 +1,14 @@
-/// <reference path="IReachableObject.js"/>
+/// <reference path="IScriptReachable.js"/>
 
 /**
  * This class represents fake entities
  * @class
  * @hideconstructor
- * @implements {IReachableObject}
+ * @implements {IScriptReachable}
  */
 class FakeEntity {
     /**
-     * @param {IReachableObject} obj
+     * @param {IScriptReachable} obj
      * @returns {boolean}
      */
     in(obj) {}
@@ -29,7 +29,7 @@ class FakeEntity {
      */
     teleport(x, y, z, r) {}
     /**
-     * @param {IReachableObject} object
+     * @param {IScriptReachable} object
      */
     teleport(object) {}
     /**
@@ -44,9 +44,15 @@ class FakeEntity {
      */
     removeHandItem() {}
     /**
+     * @deprecated
      * @param {ScriptFurni} furni
      */
     walkToFurni(furni) {}
+    /**
+     * @todo Esta função ainda não foi implementada.
+     * @param {IScriptReachable} object
+     */
+    walk(object) {}
     /**
      * @param {number} e
      */
@@ -56,20 +62,11 @@ class FakeEntity {
      */
     setHandItem(h) {}
     /**
-     * @param {string} message
-     * @param {boolean} shout
-     * @param {number} bubbleId
+     * @param {String} message
+     * @param {Boolean=} shout
+     * @param {Number=} bubbleId
      */
     say(message, shout, bubbleId) {}
-    /**
-     * @param {string} message
-     * @param {boolean} shout
-     */
-    say(message, shout) {}
-    /**
-     * @param {string} message
-     */
-    say(message) {}
     /**
      * @returns {boolean}
      */
@@ -101,7 +98,7 @@ class FakeEntity {
      */
     getY() {}
     /**
-     * @param {IReachableObject} e
+     * @param {IScriptReachable} e
      * @returns {boolean}
      */
     touching(e) {}
@@ -117,11 +114,11 @@ class FakeEntity {
      */
     lookTo(x, y) {}
     /**
-     * @param {IReachableObject} r
+     * @param {IScriptReachable} r
      */
     lookTo(r) {}
     /**
-     * @param {IReachableObject} e
+     * @param {IScriptReachable} e
      * @returns {number}
      */
     distanceTo(e) {}
@@ -171,3 +168,6 @@ class FakeEntity {
      */
     getMotto() {}
 }
+
+
+new FakeEntity().lookTo(10,10)

@@ -1,22 +1,22 @@
 /**
- * Interface for any positionable object in room
+ * Interface para qualquer objeto que seja posicionavel
  * @interface
  */
-class IReachableObject {
+class IScriptReachable {
     /**
-     * Get object X
+     * Retorna X
      * @readonly
      * @returns {number} x
      */
     getX(){}
     /**
-     * Get object Y
+     * Retorna Y
      * @readonly
      * @returns {number} y
      */
     getY(){}
     /**
-     * Get object Z
+     * Retorna Z
      * @readonly
      * @returns {number} z     
     */

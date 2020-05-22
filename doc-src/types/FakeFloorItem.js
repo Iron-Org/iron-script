@@ -1,10 +1,10 @@
-/// <reference path="IReachableObject.js"/>
+/// <reference path="IScriptReachable.js"/>
 
 /**
- * This class represents fake items
+ * Classe que representa mobilias Fakes.
  * @class
  * @hideconstructor
- * @implements {IReachableObject}
+ * @implements {IScriptReachable}
  */
 class FakeFloorItem {
     /**

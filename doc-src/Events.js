@@ -54,8 +54,9 @@ const onSay = (user, message) => {}
  * @event
  * @param {ScriptEntity} user - Usuário que interagiu com a mobilia.
  * @param {ScriptFurni} furni - Mobilia que foi interagida.
+ * @param {boolean} isClose - 
  */
-const onInteract = (user, furni) => {}
+const onInteract = (user, furni, isClose) => {}
 
 /**
  * Evento chamado a cada tick. (500ms)

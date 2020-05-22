@@ -32,6 +32,7 @@ const Delay = {
     interval: (callback, ticks) => {},
 
     /**
+     * Cancela o delayScript que for passado.
      * @example 
      * const delay = Delay.wait(() => {
      *      Engine.debug('Teste')
@@ -44,6 +45,7 @@ const Delay = {
     cancel: (task) => {},
 
     /**
+     * Converte segundos em uma quantia de ticks correspondente.
      * @example
      * Delay.wait(() => {
      *      //Executado após 10 segundos.

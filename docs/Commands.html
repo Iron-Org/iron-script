@@ -62,7 +62,14 @@
     
 
     
-
+    <dt class="tag-author">Author:</dt>
+    <dd class="tag-author">
+        <ul>
+            <li>Arthur L</li>
+        
+            <li>Gabriel T</li>
+        </ul>
+    </dd>
     
 
     
@@ -70,10 +77,7 @@
     
 
     
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Commands.js.html">Commands.js</a>, <a href="Commands.js.html#line10">line 10</a>
-    </li></ul></dd>
+
     
 
     
@@ -111,7 +115,7 @@
     
 
     
-    <h4 class="name" id=".register"><span class="type-signature">(static) </span>register<span class="signature">(text, needStartText<span class="signature-attributes">opt</span>, callback<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id=".register"><span class="type-signature">(static) </span>register<span class="signature">(text, needStartText, callback)</span><span class="type-signature"></span></h4>
     
 
     
@@ -143,8 +147,6 @@
         <th>Type</th>
 
         
-        <th>Attributes</th>
-        
 
         
 
@@ -170,14 +172,6 @@
             </td>
 
             
-                <td class="attributes">
-                
-
-                
-
-                
-                </td>
-            
 
             
 
@@ -194,25 +188,12 @@
             <td class="type">
             
                 
-<span class="param-type"><a href="global.html#CommandCallback">CommandCallback</a></span>
-|
-
 <span class="param-type">Boolean</span>
 
 
             
             </td>
 
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
             
 
             
@@ -230,22 +211,12 @@
             <td class="type">
             
                 
-<span class="param-type"><a href="global.html#CommandCallback">CommandCallback</a></span>
+<span class="param-type"><a href="Commands.html#~CommandCallback">Commands~CommandCallback</a></span>
 
 
             
             </td>
 
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
             
 
             
@@ -289,10 +260,165 @@
     
 
     
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Commands.js.html">Commands.js</a>, <a href="Commands.js.html#line30">line 30</a>
-    </li></ul></dd>
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>Commands.register(':comando', true, (entity, text) => {     //Comando é executado!})</code></pre>
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".register2"><span class="type-signature">(static) </span>register<span class="signature">(text, callback)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Registra o comandos</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>text</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Comando a ser utilizado.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Commands.html#~CommandCallback">Commands~CommandCallback</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Callback executado ao comando ser utilizado.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
     
 
     
@@ -322,13 +448,172 @@
 
     <h5>Example</h5>
     
-    <pre class="prettyprint"><code>Commands.register(':comando', true, (entity, text) => {     //Comando é executado!})Commands.register(':comando', (entity, text) => {     //Comando é executado!})</code></pre>
+    <pre class="prettyprint"><code>Commands.register(':comando', (entity, text) => {     //Comando é executado!})</code></pre>
 
 
 
         
     
 
+    
+        <h3 class="subsection-title">Type Definitions</h3>
+
+        
+                
+
+    
+
+    
+    <h4 class="name" id="~CommandCallback"><span class="type-signature"></span>CommandCallback<span class="signature">(user, message)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Callback de execução de comandos.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>user</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="ScriptEntity.html">ScriptEntity</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Usuário que o executou.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>message</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Mensagem enviada pelo usuário.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
     
 
     
@@ -342,13 +627,13 @@
 </div>
 
 <nav>
-    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="Commands.html">Commands</a></li><li><a href="Delay.html">Delay</a></li><li><a href="Engine.html">Engine</a></li><li><a href="GlobalStorage.html">GlobalStorage</a></li><li><a href="Room.html">Room</a></li><li><a href="RoomStorage.html">RoomStorage</a></li></ul><h3>Classes</h3><ul><li><a href="DelayTask.html">DelayTask</a></li><li><a href="FakeEntity.html">FakeEntity</a></li><li><a href="FakeFloorItem.html">FakeFloorItem</a></li><li><a href="ScriptEntity.html">ScriptEntity</a></li><li><a href="ScriptFurni.html">ScriptFurni</a></li></ul><h3>Interfaces</h3><ul><li><a href="IReachableObject.html">IReachableObject</a></li></ul><h3>Events</h3><ul><li><a href="global.html#event:onDispose">onDispose</a></li><li><a href="global.html#event:onInteract">onInteract</a></li><li><a href="global.html#event:onLoad">onLoad</a></li><li><a href="global.html#event:onSay">onSay</a></li><li><a href="global.html#event:onStepOff">onStepOff</a></li><li><a href="global.html#event:onStepOn">onStepOn</a></li><li><a href="global.html#event:onTick">onTick</a></li><li><a href="global.html#event:onUserJoin">onUserJoin</a></li><li><a href="global.html#event:onUserLeave">onUserLeave</a></li></ul><h3><a href="global.html">Global</a></h3>
+    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="Commands.html">Commands</a></li><li><a href="Delay.html">Delay</a></li><li><a href="Engine.html">Engine</a></li><li><a href="GlobalStorage.html">GlobalStorage</a></li><li><a href="Room.html">Room</a></li><li><a href="RoomStorage.html">RoomStorage</a></li></ul><h3>Classes</h3><ul><li><a href="DelayTask.html">DelayTask</a></li><li><a href="FakeEntity.html">FakeEntity</a></li><li><a href="FakeFloorItem.html">FakeFloorItem</a></li><li><a href="ScriptEntity.html">ScriptEntity</a></li><li><a href="ScriptFurni.html">ScriptFurni</a></li></ul><h3>Interfaces</h3><ul><li><a href="IReachableObject.html">IReachableObject</a></li></ul><h3>Events</h3><ul><li><a href="global.html#event:onDispose">onDispose</a></li><li><a href="global.html#event:onInteract">onInteract</a></li><li><a href="global.html#event:onLoad">onLoad</a></li><li><a href="global.html#event:onSay">onSay</a></li><li><a href="global.html#event:onStepOff">onStepOff</a></li><li><a href="global.html#event:onStepOn">onStepOn</a></li><li><a href="global.html#event:onTick">onTick</a></li><li><a href="global.html#event:onUserJoin">onUserJoin</a></li><li><a href="global.html#event:onUserLeave">onUserLeave</a></li></ul>
 </nav>
 
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.4</a> on Wed May 20 2020 01:31:21 GMT-0300 (GMT-03:00)
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.4</a> on Wed May 20 2020 13:22:40 GMT-0300 (GMT-03:00)
 </footer>
 
 <script> prettyPrint(); </script>

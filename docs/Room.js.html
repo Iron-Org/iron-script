@@ -30,129 +30,157 @@
 /// &lt;reference path="types/ScriptFurni.js"/>
 
 /**
- *
+ * Propriedades e Métodos do quarto que o script será executado
  * @namespace Room
+ * @author Arthur L
+ * @author Gabriel T
  */
 const Room = {
-
     /**
-     * 
+     * Retorna o nome atual do quarto.
      * @returns {String}
      */
     getName: () => {},
     /**
+     * Retorna o ID do quarto
      * @returns {Number}
      */
     getId: () => {},
     /**
-     * @param {*} name
+     * Define o nome do quarto
+     * @param {*} name - Novo nome que será definido ao quarto.
      */
     setName: (name) => {},
     /**
+     * Abre o quarto
      */
     open: () => {},
     /**
-     * @param {Number} id
+     * Retorna a mobilia correspondente ao ID.
+     * @param {Number} id - ID da mobilia a ser buscada.
      * @returns {ScriptFurni}
      */
     getFurniById: (id) => {},
     /**
-     * @param {Number} x
-     * @param {Number} y
+     * Retorna uma lista de mobilias que estão no piso
+     * @param {Number} x - Posição X do piso.
+     * @param {Number} y - Posição y do piso.
      * @returns {ScriptFurni[]}
      */
     getFurniByTile: (x, y) => {},
     /**
-     * @param {ScriptFurni[]} furnis
+     * Retorna uma lista de todas as entidades presentes nas mobilias.
+     * @param {ScriptFurni[]} furnis - Mobilias a serem consultadas.
      * @returns {ScriptEntity[]}
      */
     getEntitiesByFurnis: (furnis) => {},
     /**
-     * @param {Number} sprite
+     * Retorna uma lista com todos as mobilias do tipo definido.
+     * @param {Number} sprite - Código base da mobilia buscada.
      * @returns {ScriptFurni[]}
      */
     getAllFurnisBySpriteId: (sprite) => {},
     /**
-     * @param {ScriptFurni} furni
+     * Retorna uma lista com todas as entidades presentes na mobilia.
+     * @param {ScriptFurni} furni - Mobilia a ser consultada.
      * @returns {ScriptEntity[]}
      */
     getEntitiesByFurni: (furni) => {},
     /**
+     * Retorna o ID do dono do quarto
      * @returns {Number}
      */
     ownerId: () => {},
     /**
-     * @param {Boolean} allow
+     * Define o atravessar
+     * @param {Boolean} allow - Valor que irá definir se será habilitado ou desabilitado
      */
     setWalkThrough: (allow) => {},
     /**
+     * Retorna a quantidade de usuários do quarto
      * @returns {Number}
      */
     userCount: () => {},
     /**
-     * @param {Boolean} disabled
+     * Define a diagonal
+     * @param {Boolean} allow - Valor que irá definir se será habilitado ou desabilitado
      */
-    setDiagonal: (disabled) => {},
+    setDiagonal: (allow) => {},
     /**
+     * Retorna o nome do dono do quarto
      * @returns {String}
      */
     getOwnerUsername: () => {},
     /**
-     * @param {String} name
+     * 
+     * @param {String} name - Nome do usuário buscado.
      * @returns {ScriptEntity}
      */
     getPlayerByName: (name) => {},
     /**
-     * @param {String} message
+     * Envia um alerta para todos do quarto
+     * @param {String} message - Mensagem que irá aparecer no alerta.
      */
     alert: (message) => {},
     /**
+     * Define campanhia 
      */
     setDoorbell: () => {},
     /**
-     * @param {String} icon
-     * @param {String} message
+     * Envia notificação para todos do quarto
+     * @param {String} icon - Código do icone que irá aparecer na notificação
+     * @param {String} message - Mensagem que irá aparecer na notificação.
      */
     notification: (icon, message) => {},
     /**
-     * @param {Boolean} mute
+     * Define mute do quarto
+     * @param {Boolean} mute - Valor que irá definir se será mutado ou desmutado.
      */
     setRoomMute: (mute) => {},
     /**
-     * @param {String} text
+     * Envia TTS para todos os usuários
+     * @param {String} text - Texto a ser lido pela voz sintetizada
      */
     tts: (text) => {},
     /**
-     * @param {Number} id
+     * Retorna o usuário correspondente ao ID.
+     * @param {Number} id - ID do usuário buscado.
      * @returns {ScriptEntity}
      */
     getPlayerById: (id) => {},
-    /**
+    /** 
+     * Retorna estado atual do atravessar.
      * @returns {Boolean}
      */
     getWalkThrough: () => {},
     /**
+     * Retorna estado atual da diagonal.
      * @returns {Boolean}
      */
     getDiagonal: () => {},
     /**
-     * @param {String} password
+     * Define uma senha para trancar o quarto.
+     * @param {String} password - Senha a ser definida.
      */
     setPassword: (password) => {},
     /**
+     * Retorna o atual estado do mute no quarto.
      * @returns {Boolean}
      */
     getRoomMute: () => {},
     /**
+     * Retorna uma lista com todos os usuários do quarto.
      * @returns {ScriptEntity[]}
      */
     getAllPlayers: () => {},
     /**
-     * @param {String} link
+     * Reproduz video do Youtube para todos os usuários do quarto.
+     * @param {String} link - Link do video do Youtube.
      */
     youtube: (link) => {},
     /**
-     * @param {String} name
+     * Retorna o bot correspondente ao nome.
+     * @param {String} name - Nome do Bot a ser buscado.
      * @returns {ScriptEntity}
      */
     getBotByName: (name) => {},
@@ -167,13 +195,13 @@ const Room = {
 </div>
 
 <nav>
-    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="Commands.html">Commands</a></li><li><a href="Delay.html">Delay</a></li><li><a href="Engine.html">Engine</a></li><li><a href="GlobalStorage.html">GlobalStorage</a></li><li><a href="Room.html">Room</a></li><li><a href="RoomStorage.html">RoomStorage</a></li></ul><h3>Classes</h3><ul><li><a href="DelayTask.html">DelayTask</a></li><li><a href="FakeEntity.html">FakeEntity</a></li><li><a href="FakeFloorItem.html">FakeFloorItem</a></li><li><a href="ScriptEntity.html">ScriptEntity</a></li><li><a href="ScriptFurni.html">ScriptFurni</a></li></ul><h3>Interfaces</h3><ul><li><a href="IReachableObject.html">IReachableObject</a></li></ul><h3>Events</h3><ul><li><a href="global.html#event:onDispose">onDispose</a></li><li><a href="global.html#event:onInteract">onInteract</a></li><li><a href="global.html#event:onLoad">onLoad</a></li><li><a href="global.html#event:onSay">onSay</a></li><li><a href="global.html#event:onStepOff">onStepOff</a></li><li><a href="global.html#event:onStepOn">onStepOn</a></li><li><a href="global.html#event:onTick">onTick</a></li><li><a href="global.html#event:onUserJoin">onUserJoin</a></li><li><a href="global.html#event:onUserLeave">onUserLeave</a></li></ul><h3><a href="global.html">Global</a></h3>
+    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="Commands.html">Commands</a></li><li><a href="Delay.html">Delay</a></li><li><a href="Engine.html">Engine</a></li><li><a href="GlobalStorage.html">GlobalStorage</a></li><li><a href="Room.html">Room</a></li><li><a href="RoomStorage.html">RoomStorage</a></li></ul><h3>Classes</h3><ul><li><a href="DelayTask.html">DelayTask</a></li><li><a href="FakeEntity.html">FakeEntity</a></li><li><a href="FakeFloorItem.html">FakeFloorItem</a></li><li><a href="ScriptEntity.html">ScriptEntity</a></li><li><a href="ScriptFurni.html">ScriptFurni</a></li></ul><h3>Interfaces</h3><ul><li><a href="IReachableObject.html">IReachableObject</a></li></ul><h3>Events</h3><ul><li><a href="global.html#event:onDispose">onDispose</a></li><li><a href="global.html#event:onInteract">onInteract</a></li><li><a href="global.html#event:onLoad">onLoad</a></li><li><a href="global.html#event:onSay">onSay</a></li><li><a href="global.html#event:onStepOff">onStepOff</a></li><li><a href="global.html#event:onStepOn">onStepOn</a></li><li><a href="global.html#event:onTick">onTick</a></li><li><a href="global.html#event:onUserJoin">onUserJoin</a></li><li><a href="global.html#event:onUserLeave">onUserLeave</a></li></ul>
 </nav>
 
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.4</a> on Wed May 20 2020 01:31:21 GMT-0300 (GMT-03:00)
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.4</a> on Wed May 20 2020 13:13:19 GMT-0300 (GMT-03:00)
 </footer>
 
 <script> prettyPrint(); </script>

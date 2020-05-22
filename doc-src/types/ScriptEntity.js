@@ -1,10 +1,10 @@
-/// <reference path="IReachableObject.js"/>
+/// <reference path="IScriptReachable.js"/>
 
 /**
  * This class represents room entities
  * @class
  * @hideconstructor
- * @implements {IReachableObject}
+ * @implements {IScriptReachable}
  */
 class ScriptEntity {
 
@@ -14,7 +14,7 @@ class ScriptEntity {
      */
     equals(entity) {}
     /**
-     * @param {IReachableObject} object
+     * @param {IScriptReachable} object
      * @returns {boolean}
      */
     in(object) {}
@@ -39,7 +39,7 @@ class ScriptEntity {
      */
     teleport(x, y, z, r) {}
     /**
-     * @param {IReachableObject} o
+     * @param {IScriptReachable} o
      */
     teleport(o) {}
     /**
@@ -56,7 +56,7 @@ class ScriptEntity {
      */
     touching(x, y, z) {}
     /**
-     * @param {IReachableObject} e
+     * @param {IScriptReachable} e
      * @returns {boolean}
      */
     touching(e) {}
@@ -80,7 +80,7 @@ class ScriptEntity {
      */
     kick() {}
     /**
-     * @param {IReachableObject} o
+     * @param {IScriptReachable} o
      */
     walk(o) {}
     /**
@@ -124,7 +124,7 @@ class ScriptEntity {
      */
     setHandItem(h) {}
     /**
-     * @param {IReachableObject} e
+     * @param {IScriptReachable} e
      * @returns {number}
      */
     distanceTo(e) {}
@@ -160,7 +160,7 @@ class ScriptEntity {
      */
     setDance(danceId) {}
     /**
-     * @param {IReachableObject[]} furnis
+     * @param {IScriptReachable[]} furnis
      * @returns {boolean}
      */
     inAny(furnis) {}
@@ -169,7 +169,7 @@ class ScriptEntity {
      */
     setMotto(motto) {}
     /**
-     * @param {IReachableObject} object
+     * @param {IScriptReachable} object
      * @param {boolean} moveHead
      */
     lookTo(object, moveHead) {}
