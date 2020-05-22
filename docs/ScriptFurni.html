@@ -30,7 +30,7 @@
     
         <h2><span class="attribs"><span class="type-signature"></span></span>ScriptFurni</h2>
         
-            <div class="class-description"><p>This class represents room furnis</p></div>
+            <div class="class-description"><p>Classe que representa mobilia de quarto.</p></div>
         
     
 </header>
@@ -70,7 +70,7 @@
     <dt class="implements">Implements:</dt>
     <dd class="implements"><ul>
         
-            <li><a href="IReachableObject.html">IReachableObject</a></li>
+            <li><a href="IScriptReachable.html">IScriptReachable</a></li>
         
     </ul></dd>
     
@@ -79,6 +79,15 @@
 
     
 
+    
+    <dt class="tag-author">Author:</dt>
+    <dd class="tag-author">
+        <ul>
+            <li>Arthur L</li>
+        
+            <li>Gabriel T</li>
+        </ul>
+    </dd>
     
 
     
@@ -141,12 +150,16 @@
     
 
     
-    <h4 class="name" id="getEntities"><span class="type-signature"></span>getEntities<span class="signature">()</span><span class="type-signature"> &rarr; {Array.&lt;Object>}</span></h4>
+    <h4 class="name" id="canSit"><span class="type-signature"></span>canSit<span class="signature">()</span><span class="type-signature"> &rarr; {Boolean}</span></h4>
     
 
     
 
 
+
+<div class="description">
+    <p>Retorna se o furni é sentável por uma entidade.</p>
+</div>
 
 
 
@@ -220,7 +233,194 @@
     </dt>
     <dd>
         
-<span class="param-type">Array.&lt;Object></span>
+<span class="param-type">Boolean</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="canWalk"><span class="type-signature"></span>canWalk<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Retorna se entidades podem andar sobre o furni.</p>
+<ul>
+<li>@returns {Boolean}</li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="getEntities"><span class="type-signature"></span>getEntities<span class="signature">()</span><span class="type-signature"> &rarr; {Array.&lt;<a href="ScriptEntity.html">ScriptEntity</a>>}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Retorna todas as entidades que estão sobre o furni.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Array.&lt;<a href="ScriptEntity.html">ScriptEntity</a>></span>
 
 
     </dd>
@@ -245,6 +445,10 @@
 
 
 
+<div class="description">
+    <p>Retorna o ID do Furni.</p>
+</div>
+
 
 
 
@@ -335,12 +539,16 @@
     
 
     
-    <h4 class="name" id="getTypeId"><span class="type-signature"></span>getTypeId<span class="signature">()</span><span class="type-signature"> &rarr; {number}</span></h4>
+    <h4 class="name" id="getInteractionModesCount"><span class="type-signature"></span>getInteractionModesCount<span class="signature">()</span><span class="type-signature"> &rarr; {number}</span></h4>
     
 
     
 
 
+
+<div class="description">
+    <p>Retorna quantidade de interações que o furni possui.</p>
+</div>
 
 
 
@@ -415,6 +623,511 @@
     <dd>
         
 <span class="param-type">number</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="getInteractionType"><span class="type-signature"></span>getInteractionType<span class="signature">()</span><span class="type-signature"> &rarr; {String}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Retorna o tipo da interação do furni.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">String</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="getName"><span class="type-signature"></span>getName<span class="signature">()</span><span class="type-signature"> &rarr; {String}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Retorna o nome do furni.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">String</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="getSprite"><span class="type-signature"></span>getSprite<span class="signature">()</span><span class="type-signature"> &rarr; {String}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Retorna o ID do sprite do furni.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">String</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="getStackHeight"><span class="type-signature"></span>getStackHeight<span class="signature">()</span><span class="type-signature"> &rarr; {number}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Retorna altura empilhável do furni.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">number</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="getState"><span class="type-signature"></span>getState<span class="signature">()</span><span class="type-signature"> &rarr; {String}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Retorna atual estado do furni.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">String</span>
 
 
     </dd>
@@ -438,6 +1151,10 @@
     
 
 
+
+<div class="description">
+    <p>Retorna a posição X atual do Furni.</p>
+</div>
 
 
 
@@ -467,7 +1184,7 @@
     <dt class="implements">Implements:</dt>
     <dd class="implements"><ul>
         
-            <li><a href="IReachableObject.html#getX">IReachableObject#getX</a></li>
+            <li><a href="IScriptReachable.html#getX">IScriptReachable#getX</a></li>
         
     </ul></dd>
     
@@ -543,6 +1260,10 @@
 
 
 
+<div class="description">
+    <p>Retorna a posição Y atual do Furni.</p>
+</div>
+
 
 
 
@@ -571,7 +1292,7 @@
     <dt class="implements">Implements:</dt>
     <dd class="implements"><ul>
         
-            <li><a href="IReachableObject.html#getY">IReachableObject#getY</a></li>
+            <li><a href="IScriptReachable.html#getY">IScriptReachable#getY</a></li>
         
     </ul></dd>
     
@@ -647,6 +1368,10 @@
 
 
 
+<div class="description">
+    <p>Retorna a posição Z (altura) atual do Furni.</p>
+</div>
+
 
 
 
@@ -675,7 +1400,7 @@
     <dt class="implements">Implements:</dt>
     <dd class="implements"><ul>
         
-            <li><a href="IReachableObject.html#getZ">IReachableObject#getZ</a></li>
+            <li><a href="IScriptReachable.html#getZ">IScriptReachable#getZ</a></li>
         
     </ul></dd>
     
@@ -750,6 +1475,10 @@
     
 
 
+
+<div class="description">
+    <p>Retorna se a entidades a cima do furni.</p>
+</div>
 
 
 
@@ -848,6 +1577,10 @@
 
 
 
+<div class="description">
+    <p>Esconde o furni.</p>
+</div>
+
 
 
 
@@ -927,6 +1660,10 @@
 
 
 
+<div class="description">
+    <p>Move o furni até a posição fornecida.</p>
+</div>
+
 
 
 
@@ -976,7 +1713,7 @@
 
             
 
-            <td class="description last"></td>
+            <td class="description last"><p>Posição X para onde o furni será movido.</p></td>
         </tr>
 
     
@@ -999,7 +1736,7 @@
 
             
 
-            <td class="description last"></td>
+            <td class="description last"><p>Posição y para onde o furni será movido.</p></td>
         </tr>
 
     
@@ -1022,7 +1759,7 @@
 
             
 
-            <td class="description last"></td>
+            <td class="description last"><p>Posição Z para onde o furni será movido.</p></td>
         </tr>
 
     
@@ -1045,7 +1782,162 @@
 
             
 
-            <td class="description last"></td>
+            <td class="description last"><p>Rotação definida ao furni ao ser movido.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="move"><span class="type-signature"></span>move<span class="signature">(object, rot)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Move o furni até a posição fornecida.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>object</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="IScriptReachable.html">IScriptReachable</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Onde o furni será movido.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>rot</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Rotação</p></td>
         </tr>
 
     
@@ -1124,6 +2016,10 @@
 
 
 
+<div class="description">
+    <p>Altera o estado do Furni.</p>
+</div>
+
 
 
 
@@ -1173,7 +2069,7 @@
 
             
 
-            <td class="description last"></td>
+            <td class="description last"><p>Valor do estado em que o furni será definido.</p></td>
         </tr>
 
     
@@ -1251,6 +2147,10 @@
     
 
 
+
+<div class="description">
+    <p>Mostra o furni</p>
+</div>
 
 
 
@@ -1330,6 +2230,10 @@
     
 
 
+
+<div class="description">
+    <p>Ativa a interação do furni.</p>
+</div>
 
 
 
@@ -1413,13 +2317,13 @@
 </div>
 
 <nav>
-    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="Commands.html">Commands</a></li><li><a href="Delay.html">Delay</a></li><li><a href="Engine.html">Engine</a></li><li><a href="GlobalStorage.html">GlobalStorage</a></li><li><a href="Room.html">Room</a></li><li><a href="RoomStorage.html">RoomStorage</a></li></ul><h3>Classes</h3><ul><li><a href="DelayTask.html">DelayTask</a></li><li><a href="FakeEntity.html">FakeEntity</a></li><li><a href="FakeFloorItem.html">FakeFloorItem</a></li><li><a href="ScriptEntity.html">ScriptEntity</a></li><li><a href="ScriptFurni.html">ScriptFurni</a></li></ul><h3>Interfaces</h3><ul><li><a href="IReachableObject.html">IReachableObject</a></li></ul><h3>Events</h3><ul><li><a href="global.html#event:onDispose">onDispose</a></li><li><a href="global.html#event:onInteract">onInteract</a></li><li><a href="global.html#event:onLoad">onLoad</a></li><li><a href="global.html#event:onSay">onSay</a></li><li><a href="global.html#event:onStepOff">onStepOff</a></li><li><a href="global.html#event:onStepOn">onStepOn</a></li><li><a href="global.html#event:onTick">onTick</a></li><li><a href="global.html#event:onUserJoin">onUserJoin</a></li><li><a href="global.html#event:onUserLeave">onUserLeave</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="Commands.html">Commands</a></li><li><a href="Delay.html">Delay</a></li><li><a href="Engine.html">Engine</a></li><li><a href="Faker.html">Faker</a></li><li><a href="GlobalStorage.html">GlobalStorage</a></li><li><a href="Room.html">Room</a></li><li><a href="RoomStorage.html">RoomStorage</a></li></ul><h3>Classes</h3><ul><li><a href="DelayTask.html">DelayTask</a></li><li><a href="FakeEntity.html">FakeEntity</a></li><li><a href="FakeFloorItem.html">FakeFloorItem</a></li><li><a href="ScriptEntity.html">ScriptEntity</a></li><li><a href="ScriptFurni.html">ScriptFurni</a></li></ul><h3>Interfaces</h3><ul><li><a href="IScriptReachable.html">IScriptReachable</a></li></ul><h3>Events</h3><ul><li><a href="global.html#event:onDispose">onDispose</a></li><li><a href="global.html#event:onInteract">onInteract</a></li><li><a href="global.html#event:onLoad">onLoad</a></li><li><a href="global.html#event:onSay">onSay</a></li><li><a href="global.html#event:onStepOff">onStepOff</a></li><li><a href="global.html#event:onStepOn">onStepOn</a></li><li><a href="global.html#event:onTick">onTick</a></li><li><a href="global.html#event:onUserJoin">onUserJoin</a></li><li><a href="global.html#event:onUserLeave">onUserLeave</a></li></ul>
 </nav>
 
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.4</a> on Wed May 20 2020 13:22:40 GMT-0300 (GMT-03:00)
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.4</a> on Fri May 22 2020 05:38:57 GMT-0300 (GMT-03:00)
 </footer>
 
 <script> prettyPrint(); </script>

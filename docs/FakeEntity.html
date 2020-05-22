@@ -30,7 +30,7 @@
     
         <h2><span class="attribs"><span class="type-signature"></span></span>FakeEntity</h2>
         
-            <div class="class-description"><p>This class represents fake entities</p></div>
+            <div class="class-description"><p>Classe que representa as entidades Fakes.</p></div>
         
     
 </header>
@@ -70,7 +70,7 @@
     <dt class="implements">Implements:</dt>
     <dd class="implements"><ul>
         
-            <li><a href="IReachableObject.html">IReachableObject</a></li>
+            <li><a href="IScriptReachable.html">IScriptReachable</a></li>
         
     </ul></dd>
     
@@ -79,6 +79,15 @@
 
     
 
+    
+    <dt class="tag-author">Author:</dt>
+    <dd class="tag-author">
+        <ul>
+            <li>Arthur L</li>
+        
+            <li>Gabriel T</li>
+        </ul>
+    </dd>
     
 
     
@@ -148,6 +157,10 @@
 
 
 
+<div class="description">
+    <p>Retorna a distancia atual entre esta entidade e a posição fornecida.</p>
+</div>
+
 
 
 
@@ -187,7 +200,7 @@
             <td class="type">
             
                 
-<span class="param-type"><a href="IReachableObject.html">IReachableObject</a></span>
+<span class="param-type"><a href="IScriptReachable.html">IScriptReachable</a></span>
 
 
             
@@ -294,6 +307,10 @@
 
 
 
+<div class="description">
+    <p>Retorna a atual dança da entidade.</p>
+</div>
+
 
 
 
@@ -390,6 +407,10 @@
     
 
 
+
+<div class="description">
+    <p>Retorna o código do efeito atual da entidade.</p>
+</div>
 
 
 
@@ -488,6 +509,10 @@
 
 
 
+<div class="description">
+    <p>Retorna o código do atual visual da entidade.</p>
+</div>
+
 
 
 
@@ -584,6 +609,10 @@
     
 
 
+
+<div class="description">
+    <p>Retorna o código do atual item de mão que a entidade está segurando.</p>
+</div>
 
 
 
@@ -682,6 +711,10 @@
 
 
 
+<div class="description">
+    <p>Retorna ID da FakeEntity</p>
+</div>
+
 
 
 
@@ -778,6 +811,10 @@
     
 
 
+
+<div class="description">
+    <p>Retorna missão atual da entidade</p>
+</div>
 
 
 
@@ -876,6 +913,10 @@
 
 
 
+<div class="description">
+    <p>Retorna a rotação atual do FakeEntity.</p>
+</div>
+
 
 
 
@@ -972,6 +1013,10 @@
     
 
 
+
+<div class="description">
+    <p>Retorna username atual da entidade</p>
+</div>
 
 
 
@@ -1070,6 +1115,10 @@
 
 
 
+<div class="description">
+    <p>Retorna a posição x atual da FakeEntity.</p>
+</div>
+
 
 
 
@@ -1098,7 +1147,7 @@
     <dt class="implements">Implements:</dt>
     <dd class="implements"><ul>
         
-            <li><a href="IReachableObject.html#getX">IReachableObject#getX</a></li>
+            <li><a href="IScriptReachable.html#getX">IScriptReachable#getX</a></li>
         
     </ul></dd>
     
@@ -1174,6 +1223,10 @@
 
 
 
+<div class="description">
+    <p>Retorna a posição Y atual da FakeEntity.</p>
+</div>
+
 
 
 
@@ -1202,7 +1255,7 @@
     <dt class="implements">Implements:</dt>
     <dd class="implements"><ul>
         
-            <li><a href="IReachableObject.html#getY">IReachableObject#getY</a></li>
+            <li><a href="IScriptReachable.html#getY">IScriptReachable#getY</a></li>
         
     </ul></dd>
     
@@ -1278,6 +1331,10 @@
 
 
 
+<div class="description">
+    <p>Retorna a posição Z atual da FakeEntity.</p>
+</div>
+
 
 
 
@@ -1306,7 +1363,7 @@
     <dt class="implements">Implements:</dt>
     <dd class="implements"><ul>
         
-            <li><a href="IReachableObject.html#getZ">IReachableObject#getZ</a></li>
+            <li><a href="IScriptReachable.html#getZ">IScriptReachable#getZ</a></li>
         
     </ul></dd>
     
@@ -1382,6 +1439,10 @@
 
 
 
+<div class="description">
+    <p>Retorna se esta entidade está sobre a mobilia fornecida.</p>
+</div>
+
 
 
 
@@ -1421,7 +1482,7 @@
             <td class="type">
             
                 
-<span class="param-type"><a href="IReachableObject.html">IReachableObject</a></span>
+<span class="param-type"><a href="IScriptReachable.html">IScriptReachable</a></span>
 
 
             
@@ -1528,6 +1589,10 @@
 
 
 
+<div class="description">
+    <p>Retorna se entidade é um FakeBot.</p>
+</div>
+
 
 
 
@@ -1624,6 +1689,10 @@
     
 
 
+
+<div class="description">
+    <p>Retorna se a entidade está se movendo.</p>
+</div>
 
 
 
@@ -1722,6 +1791,10 @@
 
 
 
+<div class="description">
+    <p>Faz a entidade deitar</p>
+</div>
+
 
 
 
@@ -1794,12 +1867,16 @@
     
 
     
-    <h4 class="name" id="lookTo"><span class="type-signature"></span>lookTo<span class="signature">(x, y, moveHead)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="lookTo"><span class="type-signature"></span>lookTo<span class="signature">(x, y, moveHead<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h4>
     
 
     
 
 
+
+<div class="description">
+    <p>Entidade olha para o ponto definido.</p>
+</div>
 
 
 
@@ -1821,6 +1898,8 @@
 
         <th>Type</th>
 
+        
+        <th>Attributes</th>
         
 
         
@@ -1847,10 +1926,18 @@
             </td>
 
             
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
 
             
 
-            <td class="description last"></td>
+            <td class="description last"><p>Posição X que entidade irá olhar.</p></td>
         </tr>
 
     
@@ -1870,10 +1957,18 @@
             </td>
 
             
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
 
             
 
-            <td class="description last"></td>
+            <td class="description last"><p>Posição Y que entidade irá olhar.</p></td>
         </tr>
 
     
@@ -1893,161 +1988,20 @@
             </td>
 
             
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="lookTo"><span class="type-signature"></span>lookTo<span class="signature">(x, y)</span><span class="type-signature"></span></h4>
-    
-
-    
-
-
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>x</code></td>
-            
-
-            <td class="type">
-            
+                <td class="attributes">
                 
-<span class="param-type">number</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>y</code></td>
-            
-
-            <td class="type">
-            
+                    &lt;optional><br>
                 
-<span class="param-type">number</span>
 
+                
 
-            
-            </td>
-
-            
-
+                
+                </td>
             
 
-            <td class="description last"></td>
+            
+
+            <td class="description last"><p>Se a entidade pode mover somente sua cabeça.</p></td>
         </tr>
 
     
@@ -2126,6 +2080,10 @@
 
 
 
+<div class="description">
+    <p>Entidade olha para o ponto definido.</p>
+</div>
+
 
 
 
@@ -2165,7 +2123,7 @@
             <td class="type">
             
                 
-<span class="param-type"><a href="IReachableObject.html">IReachableObject</a></span>
+<span class="param-type"><a href="IScriptReachable.html">IScriptReachable</a></span>
 
 
             
@@ -2254,6 +2212,10 @@
 
 
 
+<div class="description">
+    <p>Remove efeito (:enable 0)</p>
+</div>
+
 
 
 
@@ -2332,6 +2294,10 @@
     
 
 
+
+<div class="description">
+    <p>Remove o item de mão da entidade.</p>
+</div>
 
 
 
@@ -2412,6 +2378,10 @@
 
 
 
+<div class="description">
+    <p>Faz a entidade dizer uma mensagem.</p>
+</div>
+
 
 
 
@@ -2453,7 +2423,7 @@
             <td class="type">
             
                 
-<span class="param-type">String</span>
+<span class="param-type">*</span>
 
 
             
@@ -2471,7 +2441,7 @@
 
             
 
-            <td class="description last"></td>
+            <td class="description last"><p>Mensagem que será dita pela entidade.</p></td>
         </tr>
 
     
@@ -2484,7 +2454,7 @@
             <td class="type">
             
                 
-<span class="param-type">Boolean</span>
+<span class="param-type">boolean</span>
 
 
             
@@ -2504,7 +2474,7 @@
 
             
 
-            <td class="description last"></td>
+            <td class="description last"><p>Se o personagem deve gritar a mensagem. (Mensagem em Bold)</p></td>
         </tr>
 
     
@@ -2517,7 +2487,7 @@
             <td class="type">
             
                 
-<span class="param-type">Number</span>
+<span class="param-type">number</span>
 
 
             
@@ -2537,7 +2507,7 @@
 
             
 
-            <td class="description last"></td>
+            <td class="description last"><p>Balão da mensagem</p></td>
         </tr>
 
     
@@ -2616,6 +2586,15 @@
 
 
 
+<div class="description">
+    <p>Define uma dança para a entidade.
+0: Parado.
+1: Hap-Hop
+2: Pogo-Mogo
+3: Duck Funk
+4: Rollie</p>
+</div>
+
 
 
 
@@ -2665,7 +2644,7 @@
 
             
 
-            <td class="description last"></td>
+            <td class="description last"><p>Código da dança</p></td>
         </tr>
 
     
@@ -2744,6 +2723,10 @@
 
 
 
+<div class="description">
+    <p>Define um efeito a entidade.</p>
+</div>
+
 
 
 
@@ -2793,7 +2776,7 @@
 
             
 
-            <td class="description last"></td>
+            <td class="description last"><p>Código do efeito.</p></td>
         </tr>
 
     
@@ -2872,6 +2855,10 @@
 
 
 
+<div class="description">
+    <p>Define o visual da entidade</p>
+</div>
+
 
 
 
@@ -2921,7 +2908,7 @@
 
             
 
-            <td class="description last"></td>
+            <td class="description last"><p>Gênero do visual.</p></td>
         </tr>
 
     
@@ -2944,7 +2931,7 @@
 
             
 
-            <td class="description last"></td>
+            <td class="description last"><p>Código do visual.</p></td>
         </tr>
 
     
@@ -3023,6 +3010,11 @@
 
 
 
+<div class="description">
+    <p>Define um item de mão para entidade segurar.
+<a href="https://habbo.fandom.com/wiki/Hand_Items">https://habbo.fandom.com/wiki/Hand_Items</a></p>
+</div>
+
 
 
 
@@ -3072,7 +3064,7 @@
 
             
 
-            <td class="description last"></td>
+            <td class="description last"><p>Código do item de mão.</p></td>
         </tr>
 
     
@@ -3151,6 +3143,10 @@
 
 
 
+<div class="description">
+    <p>Define nova missão na entidade</p>
+</div>
+
 
 
 
@@ -3200,7 +3196,7 @@
 
             
 
-            <td class="description last"></td>
+            <td class="description last"><p>Missão que será definida.</p></td>
         </tr>
 
     
@@ -3279,6 +3275,10 @@
 
 
 
+<div class="description">
+    <p>Define nome para a entidade</p>
+</div>
+
 
 
 
@@ -3328,7 +3328,7 @@
 
             
 
-            <td class="description last"></td>
+            <td class="description last"><p>Nome que será definido.</p></td>
         </tr>
 
     
@@ -3406,6 +3406,10 @@
     
 
 
+
+<div class="description">
+    <p>Faz a entidade sentar</p>
+</div>
 
 
 
@@ -3486,6 +3490,10 @@
 
 
 
+<div class="description">
+    <p>Faz a entidade levantar</p>
+</div>
+
 
 
 
@@ -3558,12 +3566,16 @@
     
 
     
-    <h4 class="name" id="teleport"><span class="type-signature"></span>teleport<span class="signature">(x, y, z, r)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="teleport"><span class="type-signature"></span>teleport<span class="signature">(x, y, z, r<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h4>
     
 
     
 
 
+
+<div class="description">
+    <p>Teletransporta a entidade para posição fornecida.</p>
+</div>
 
 
 
@@ -3585,6 +3597,8 @@
 
         <th>Type</th>
 
+        
+        <th>Attributes</th>
         
 
         
@@ -3611,10 +3625,18 @@
             </td>
 
             
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
 
             
 
-            <td class="description last"></td>
+            <td class="description last"><p>Posição X em que entidade seŕa levada.</p></td>
         </tr>
 
     
@@ -3634,10 +3656,18 @@
             </td>
 
             
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
 
             
 
-            <td class="description last"></td>
+            <td class="description last"><p>Posição Y em que entidade seŕa levada.</p></td>
         </tr>
 
     
@@ -3657,10 +3687,18 @@
             </td>
 
             
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
 
             
 
-            <td class="description last"></td>
+            <td class="description last"><p>Posição Z em que entidade seŕa levada.</p></td>
         </tr>
 
     
@@ -3680,10 +3718,20 @@
             </td>
 
             
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
 
             
 
-            <td class="description last"></td>
+            <td class="description last"><p>Rotação definida para a entidade.</p></td>
         </tr>
 
     
@@ -3762,6 +3810,10 @@
 
 
 
+<div class="description">
+    <p>Teletransporta a entidade para posição fornecida no objeto.</p>
+</div>
+
 
 
 
@@ -3801,7 +3853,7 @@
             <td class="type">
             
                 
-<span class="param-type"><a href="IReachableObject.html">IReachableObject</a></span>
+<span class="param-type"><a href="IScriptReachable.html">IScriptReachable</a></span>
 
 
             
@@ -3890,6 +3942,10 @@
 
 
 
+<div class="description">
+    <p>Retorna se entidade está próxima (tocando) a posição fornecida.</p>
+</div>
+
 
 
 
@@ -3929,7 +3985,7 @@
             <td class="type">
             
                 
-<span class="param-type"><a href="IReachableObject.html">IReachableObject</a></span>
+<span class="param-type"><a href="IScriptReachable.html">IScriptReachable</a></span>
 
 
             
@@ -4035,6 +4091,11 @@
     
 
 
+
+<div class="description">
+    <p>Move a entidade até a posição fornecida.
+Entidade só irá se mover caso o caminho esteja livre até o ponto fornecido*</p>
+</div>
 
 
 
@@ -4226,7 +4287,7 @@
             <td class="type">
             
                 
-<span class="param-type"><a href="IReachableObject.html">IReachableObject</a></span>
+<span class="param-type"><a href="IScriptReachable.html">IScriptReachable</a></span>
 
 
             
@@ -4452,6 +4513,10 @@
 
 
 
+<div class="description">
+    <p>Sussura uma mensagem para outra entendide.</p>
+</div>
+
 
 
 
@@ -4501,7 +4566,7 @@
 
             
 
-            <td class="description last"></td>
+            <td class="description last"><p>Entidade que receberá a mensagem.</p></td>
         </tr>
 
     
@@ -4514,7 +4579,7 @@
             <td class="type">
             
                 
-<span class="param-type">string</span>
+<span class="param-type">*</span>
 
 
             
@@ -4524,7 +4589,7 @@
 
             
 
-            <td class="description last"></td>
+            <td class="description last"><p>Mensagem que será enviada.</p></td>
         </tr>
 
     
@@ -4547,7 +4612,7 @@
 
             
 
-            <td class="description last"></td>
+            <td class="description last"><p>Balão da mensagem.</p></td>
         </tr>
 
     
@@ -4629,13 +4694,13 @@
 </div>
 
 <nav>
-    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="Commands.html">Commands</a></li><li><a href="Delay.html">Delay</a></li><li><a href="Engine.html">Engine</a></li><li><a href="GlobalStorage.html">GlobalStorage</a></li><li><a href="Room.html">Room</a></li><li><a href="RoomStorage.html">RoomStorage</a></li></ul><h3>Classes</h3><ul><li><a href="DelayTask.html">DelayTask</a></li><li><a href="FakeEntity.html">FakeEntity</a></li><li><a href="FakeFloorItem.html">FakeFloorItem</a></li><li><a href="ScriptEntity.html">ScriptEntity</a></li><li><a href="ScriptFurni.html">ScriptFurni</a></li></ul><h3>Interfaces</h3><ul><li><a href="IReachableObject.html">IReachableObject</a></li></ul><h3>Events</h3><ul><li><a href="global.html#event:onDispose">onDispose</a></li><li><a href="global.html#event:onInteract">onInteract</a></li><li><a href="global.html#event:onLoad">onLoad</a></li><li><a href="global.html#event:onSay">onSay</a></li><li><a href="global.html#event:onStepOff">onStepOff</a></li><li><a href="global.html#event:onStepOn">onStepOn</a></li><li><a href="global.html#event:onTick">onTick</a></li><li><a href="global.html#event:onUserJoin">onUserJoin</a></li><li><a href="global.html#event:onUserLeave">onUserLeave</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="Commands.html">Commands</a></li><li><a href="Delay.html">Delay</a></li><li><a href="Engine.html">Engine</a></li><li><a href="Faker.html">Faker</a></li><li><a href="GlobalStorage.html">GlobalStorage</a></li><li><a href="Room.html">Room</a></li><li><a href="RoomStorage.html">RoomStorage</a></li></ul><h3>Classes</h3><ul><li><a href="DelayTask.html">DelayTask</a></li><li><a href="FakeEntity.html">FakeEntity</a></li><li><a href="FakeFloorItem.html">FakeFloorItem</a></li><li><a href="ScriptEntity.html">ScriptEntity</a></li><li><a href="ScriptFurni.html">ScriptFurni</a></li></ul><h3>Interfaces</h3><ul><li><a href="IScriptReachable.html">IScriptReachable</a></li></ul><h3>Events</h3><ul><li><a href="global.html#event:onDispose">onDispose</a></li><li><a href="global.html#event:onInteract">onInteract</a></li><li><a href="global.html#event:onLoad">onLoad</a></li><li><a href="global.html#event:onSay">onSay</a></li><li><a href="global.html#event:onStepOff">onStepOff</a></li><li><a href="global.html#event:onStepOn">onStepOn</a></li><li><a href="global.html#event:onTick">onTick</a></li><li><a href="global.html#event:onUserJoin">onUserJoin</a></li><li><a href="global.html#event:onUserLeave">onUserLeave</a></li></ul>
 </nav>
 
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.4</a> on Wed May 20 2020 13:22:40 GMT-0300 (GMT-03:00)
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.4</a> on Fri May 22 2020 05:38:57 GMT-0300 (GMT-03:00)
 </footer>
 
 <script> prettyPrint(); </script>
