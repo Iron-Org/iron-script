@@ -52,7 +52,7 @@ class FakeEntity {
      * 2: Pogo-Mogo
      * 3: Duck Funk
      * 4: Rollie
-     * @param {number} danceId
+     * @param {number} danceId - Código da dança
      */
     setDance(danceId) {}
     /**
