@@ -12,176 +12,176 @@ class ScriptEntity {
     /**
      * Retorna se esta entidade é igual a entidade fornecida.
      * @param {ScriptEntity} entity - Entidade que será comparada.
-     * @returns {boolean}
+     * @returns {Boolean}
      */
-    equals(entity) {}
+    equals (entity) {}
     /**
      * Retorna se esta entidade está sobre a mobilia fornecida.
      * @param {IScriptReachable} object
-     * @returns {boolean}
+     * @returns {Boolean}
      */
-    in(object) {}
+    in (object) {}
     /**
      * Retorna o ID da entidade.
-     * @returns {number}
+     * @returns {Number}
      */
     getId() {}
     /**
      * Envia uma mensagem que aparecerá somente para está entidade.
-     * @param {string} message - Mensagem a ser enviada.
-     * @param {number=} bubble - Balão da mensagem.
+     * @param {String} message - Mensagem a ser enviada.
+     * @param {Number=} bubble - Balão da mensagem.
      */
-    message(message, bubble) {}
+    message (message, bubble) {}
     /**
      * Teletransporta a entidade para posição fornecida.
-     * @param {number} x - Posição X em que entidade seŕa levada.
-     * @param {number} y - Posição Y em que entidade seŕa levada.
-     * @param {number} z - Posição Z em que entidade seŕa levada.
-     * @param {number=} r - Rotação definida para a entidade.
+     * @param {Number} x - Posição X em que entidade seŕa levada.
+     * @param {Number} y - Posição Y em que entidade seŕa levada.
+     * @param {Number} z - Posição Z em que entidade seŕa levada.
+     * @param {Number=} r - Rotação definida para a entidade.
      */
-    teleport(x, y, z, r) {}
+    teleport (x, y, z, r) {}
     /**
      * Teletransporta a entidade para posição fornecida no objeto.
      * @param {IScriptReachable} o
      */
-    teleport(o) {}
+    teleport (o) {}
     /**
      * Retorna se entidade está próxima (tocando) a posição fornecida.
-     * @param {number} x - Posição X a ser comparada.
-     * @param {number} y - Posição Y a ser comparada.
-     * @param {number} z - Posição Z a ser comparada.
-     * @returns {boolean}
+     * @param {Number} x - Posição X a ser comparada.
+     * @param {Number} y - Posição Y a ser comparada.
+     * @param {Number} z - Posição Z a ser comparada.
+     * @returns {Boolean}
      */
-    touching(x, y, z) {}
+    touching (x, y, z) {}
     /**
      * Retorna se entidade está próxima (tocando) a posição fornecida pelo objeto.
      * @param {IScriptReachable} e
-     * @returns {boolean}
+     * @returns {Boolean}
      */
-    touching(e) {}
+    touching (e) {}
     /**
      * Retorna se a entidade é um Pet.
-     * @returns {boolean}
+     * @returns {Boolean}
      */
-    isPet() {}
+    isPet () {}
     /**
      * Retorna a atual dança da entidade.
-     * @returns {number}
+     * @returns {Number}
      */
-    getDance() {}
+    getDance () {}
     /**
      * Retorna o nome da Entidade atual.
-     * @returns {string}
+     * @returns {String}
      */
-    getUsername() {}
+    getUsername () {}
     /**
      * Define um novo nome ao Bot.
      * *Restrito a BOTs*
-     * @param {string} username - Nome que será definido ao Bot.
+     * @param {String} username - Nome que será definido ao Bot.
      */
-    setUsername(username) {}
+    setUsername (username) {}
     /**
      * Expulsa a entidade do quarto.
      */
-    kick() {}
+    kick () {}
     /**
      * Move a entidade até a posição fornecida no objeto.
      * @param {IScriptReachable} o
      */
-    walk(o) {}
+    walk (o) {}
     /**
      * Move a entidade até a posição fornecida.
      * *Entidade só irá se mover caso o caminho esteja livre até o ponto fornecido*
-     * @param {number} x
-     * @param {number} y
+     * @param {Number} x
+     * @param {Number} y
      */
-    walk(x, y) {}
+    walk (x, y) {}
     /**
      * Sussura uma mensagem para outra entendide.
      * @param {ScriptEntity} to - Entidade que receberá a mensagem.
      * @param {*} message - Mensagem que será enviada.
-     * @param {number} bubbleId - Balão da mensagem.
+     * @param {Number} bubbleId - Balão da mensagem.
      */
-    whisper(to, message, bubbleId) {}
+    whisper (to, message, bubbleId) {}
     /**
      * Define o visual para entidade.
      * *Não aplicável a Pets*
-     * @param {string} gender - Gênero do visual.
-     * @param {string} figure - Código do visual.
+     * @param {String} gender - Gênero do visual.
+     * @param {String} figure - Código do visual.
      */
-    setFigure(gender, figure) {}
+    setFigure (gender, figure) {}
     /**
      * Retorna se a entidade pode se mover.
-     * @returns {boolean}
+     * @returns {Boolean}
      */
-    canWalk() {}
+    canWalk () {}
     /**
      * Retorna se a entidade está se movendo.
-     * @returns {boolean}
+     * @returns {Boolean}
      */
-    isWalking() {}
+    isWalking () {}
     /**
      * Retorna a missão da entidade.
-     * @returns {string}
+     * @returns {String}
      */
-    getMotto() {}
+    getMotto () {}
     /**
      * Envia um emblema a entidade.
      * *Restrito a usuários.*
-     * @param {string} badge
+     * @param {String} badge - Código do emblema a ser entregue.
      */
-    giveBadge(badge) {}
+    giveBadge (badge) {}
     /**
      * Retorna o código do atual item de mão que a entidade está segurando.
-     * @returns {number}
+     * @returns {Number}
      */
-    getHandItem() {}
+    getHandItem () {}
     /**
      * Define um item de mão para entidade segurar.
      * {@link https://habbo.fandom.com/wiki/Hand_Items}
-     * @param {number} h - Código do item de mão.
+     * @param {Number} h - Código do item de mão.
      */
-    setHandItem(h) {}
+    setHandItem (h) {}
     /**
      * Retorna a distancia entre a entidade e outra posição fornecida no objeto.
      * @param {IScriptReachable} e - 
-     * @returns {number}
+     * @returns {Number}
      */
-    distanceTo(e) {}
+    distanceTo (e) {}
     /**
      * Retorna a distancia atual entre esta entidade e a posição fornecida.
-     * @param {number} x - Posição X a ser comparada.
-     * @param {number} y - Posição Y a ser comparada.
-     * @param {number} z - Posição Z a ser comparada.
-     * @returns {number}
+     * @param {Number} x - Posição X a ser comparada.
+     * @param {Number} y - Posição Y a ser comparada.
+     * @param {Number} z - Posição Z a ser comparada.
+     * @returns {Number}
      */
-    distanceTo(x, y, z) {}
+    distanceTo (x, y, z) {}
     /**
      * Retorna o código do atual visual da entidade.
      * *Não aplicável a Pets*
-     * @returns {string}
+     * @returns {String}
      */
-    getFigure() {}
+    getFigure () {}
     /**
      * Retorna a posição X atual da entidade.
-     * @returns {number}
+     * @returns {Number}
      */
-    getX() {}
+    getX () {}
     /**
      * Retorna a posição Y atual da entidade.
-     * @returns {number}
+     * @returns {Number}
      */
-    getY() {}
+    getY () {}
     /**
      * Retorna se entidade é um Bot.
-     * @returns {boolean}
+     * @returns {Boolean}
      */
-    isBot() {}
+    isBot () {}
     /**
      * Retorna o código do efeito atual da entidade.
-     * @returns {number}
+     * @returns {Number}
      */
-    getEffect() {}
+    getEffect () {}
     /**
      * Define uma dança para a entidade.
      * 0: Parado.
@@ -189,104 +189,104 @@ class ScriptEntity {
      * 2: Pogo-Mogo
      * 3: Duck Funk
      * 4: Rollie
-     * @param {number} danceId - Código da dança
+     * @param {Number} danceId - Código da dança
      */
-    setDance(danceId) {}
+    setDance (danceId) {}
     /**
      * Retorna se a entidade está em alguma das mobilias fornecidas.
      * @param {IScriptReachable[]} furnis - Lista de mobilias a serem comparadas.
-     * @returns {boolean}
+     * @returns {Boolean}
      */
-    inAny(furnis) {}
+    inAny (furnis) {}
     /**
      * Define uma missão a entidade.
      * @param {*} motto - Missão que será definida na entidade.
      */
-    setMotto(motto) {}
+    setMotto (motto) {}
     /**
      * Entidade olha para o ponto definido.
      * @param {IScriptReachable} object
-     * @param {boolean} moveHead = Se a entidade pode mover somente sua cabeça.
+     * @param {Boolean} moveHead = Se a entidade pode mover somente sua cabeça.
      */
-    lookTo(object, moveHead) {}
+    lookTo (object, moveHead) {}
     /**
      * Esta entidade olha para outra entidade.
      * @param {ScriptEntity} entity - Entidade que será o alvo.
      */
-    lookTo(entity) {}
+    lookTo (entity) {}
     /**
      * Entidade olha para o ponto definido.
-     * @param {number} x - Posição X que entidade irá olhar.
-     * @param {number} y - Posição Y que entidade irá olhar.
-     * @param {boolean=} moveHead - Se a entidade pode mover somente sua cabeça.
+     * @param {Number} x - Posição X que entidade irá olhar.
+     * @param {Number} y - Posição Y que entidade irá olhar.
+     * @param {Boolean=} moveHead - Se a entidade pode mover somente sua cabeça.
      */
-    lookTo(x, y, moveHead) {}
+    lookTo (x, y, moveHead) {}
     /**
      * Remove o efeito da entidade.
      */
-    removeEffect() {}
+    removeEffect () {}
     /**
      * Retorna a atual posição Z da entidade.
-     * @returns {number}
+     * @returns {Number}
      */
-    getZ() {}
+    getZ () {}
     /**
      * Define a entidade pode ser mover.
-     * @param {boolean} can - Se a entidade pode ser mover.
-     * @param {boolean} effect - Se a entidade deve receber um efeito de congelado.
+     * @param {Boolean} can - Se a entidade pode ser mover.
+     * @param {Boolean} effect - Se a entidade deve receber um efeito de congelado.
      */
-    setCanWalk(can, effect) {}
+    setCanWalk (can, effect) {}
     /**
      * Faz a entidade dizer uma mensagem.
      * @param {*} message - Mensagem que será dita pela entidade.
-     * @param {boolean=} shout - Se o personagem deve gritar a mensagem. (Mensagem em Bold)
-     * @param {number=} bubbleId - Balão da mensagem
+     * @param {Boolean=} shout - Se o personagem deve gritar a mensagem. (Mensagem em Bold)
+     * @param {Number=} bubbleId - Balão da mensagem
      */
-    say(message, shout, bubbleId) {}
+    say (message, shout, bubbleId) {}
     /**
      * Retorna se entidade possui o rank fornecido ou um maior.
-     * @param {number} rank - Valor do rank a ser comparado.
-     * @returns {boolean}
+     * @param {Number} rank - Valor do rank a ser comparado.
+     * @returns {Boolean}
      */
-    hasRank(rank) {}
+    hasRank (rank) {}
     /**
      * Faz a entidade deitar.
      */
-    lay() {}
+    lay () {}
     /**
      * Faz a entidade sentar.
      */
-    sit() {}
+    sit () {}
     /**
      * Retorna a atual rotação da entidade.
-     * @returns {number}
+     * @returns {Number}
      */
-    getR() {}
+    getR () {}
     /**
      * Remove um emblema de um usuário.
-     * @param {string} badge - Código do emblema.
+     * @param {String} badge - Código do emblema.
      */
-    removeBadge(badge) {}
+    removeBadge (badge) {}
     /**
      * Remove o item de mão da entidade.
      */
-    removeHandItem() {}
+    removeHandItem () {}
     /**
      * Leva a entidade para outro quarto.
      * *Entidade será levada mesmo que haja campanhia/senha*
-     * @param {number} roomId - ID do quarto alvo.
+     * @param {Number} roomId - ID do quarto alvo.
      */
-    gotoRoom(roomId) {}
+    gotoRoom (roomId) {}
     /**
      * Retorna se a entidade é um usuário.
-     * @returns {boolean}
+     * @returns {Boolean}
      */
-    isPlayer() {}
+    isPlayer () {}
     /**
      * Define um efeito a entidade.
-     * @param {number} effect - Código do efeito.
+     * @param {Number} effect - Código do efeito.
      */
-    setEffect(effect) {}
+    setEffect (effect) {}
     /**
      * Envia uma notificação para o usuário.
      * generic: Icone genérico.
@@ -294,12 +294,24 @@ class ScriptEntity {
      * ATT - Icone de atenção.
      > NEW - Icone de nova mobilia.
      * RAD - Icone da Rádio.
-     * @param {string} icon - Código do icone para a notificação.
-     * @param {string} message - Mensagem pra notificação.
+     * @param {String} icon - Código do icone para a notificação.
+     * @param {String} message - Mensagem pra notificação.
      */
-    notification(icon, message) {}
+    notification (icon, message) {}
     /**
      * Faz a entidade se levantar.
      */
-    std() {}
+		std () {}
+		/**
+		 * Retorna se a entidade possui o emblema no inventário do usuário.
+		 * *Emblema não precisa estar equipado como favorito.*
+		 * @param {String} badge - Código do emblema a ser verificado.
+		 * @returns {Boolean}
+		*/
+		hasBadge (badge) {}
+		/**
+		 * @param {String} url - Url do video no Youtube.
+		 * @param {Boolean=} force - Se o comando deve forçar a exibição do video, mesmo que o usuário tenha desabilitado.
+		 */
+		youtube (url, force) {}
 }

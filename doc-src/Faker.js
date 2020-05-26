@@ -3,65 +3,65 @@
 
 /**
  * Faker
- * Cria objetos
- * Limitaçoes: 1000 mobis e 50 bots
+ * Gera Objetos representando Mobilias ou Entidades falsas
+ * Limites: 1000 Mobilias Fakes e 50 Entidades Fakes
  * @namespace Faker
  * @author Arthur L
  * @author Gabriel T
  */
 const Faker = {
     /**
-     *  Cria item falso
-     *  OBS1: O item criado só pode ser vizualizado, não possui nenhum tipo de interação/colisão. 
-     *  OB2: O item não ativa nenhum evento.
-     *  @param {number} spriteId
-     *  @param {number} x
-     *  @param {number} y
-     *  @param {number} z
-     *  @param {number} r
+     *  Cria um FakeItem, uma mobilia similar a original
+     *  *O item criado só pode ser vizualizado, não possui nenhum tipo de interação/colisão.*
+     *  *O item não ativa nenhum evento.*
+     *  @param {Number} spriteId - ID da sprite da mobilia original
+     *  @param {Number} x - Posição X que será gerado
+     *  @param {Number} y - Posição Y que será gerado
+     *  @param {Number} z - Posição Z que será gerado
+     *  @param {Number} r - Rotação que será gerado
      */
-    createFakeItem: (spriteId, x,y,z,r) =>{},
+    createFakeItem (spriteId, x,y,z,r) {},
     /**
      * Remove item determinado
      * @param {FakeFloorItem} fakeItem - 
      */
-    removeFakeFloorItem: (fakeItem) =>{},
+    removeFakeFloorItem (fakeItem) {},
     /**
      * Remove todos os items falsos
      */
-    removeAllFloorItems: ()=>{},
+    removeAllFloorItems () {},
     /**
      * Retorna a lista com todos os items criados.
      * @returns {FakeFloorItem[]}
      */
-    getLoadedFurnis: () =>{},
+    getLoadedFurnis () {},
     /**
      * Cria entidade similar a um player real
-     * @param {string} name
-     * @param {number} x
-     * @param {number} y
-     * @param {number} z
-     * @param {number} r
+     * @param {String} name - Nome para o FakePlayer
+     * @param {Number} x - Posição X que ele irá ser criado
+     * @param {Number} y - Posição Y que ele irá ser criado
+     * @param {Number} z - Posição Z que ele irá ser criado
+     * @param {Number} r - Rotação que ele irá ser criado
      * @returns {FakeEntity}
      */
-    createFakePlayer: (name, x,y,z,r)=>{},
+    createFakePlayer (name, x,y,z,r) {},
     /**
-     * Cria uma entidade simiular a um bot real
-     * @param {string} name
-     * @param {number} x
-     * @param {number} y
-     * @param {number} z
-     * @param {number} r
+     * Cria uma entidade similar a um bot real
+     * @param {String} name - Nome para o FakeBot
+     * @param {Number} x - Posição X que ele irá ser criado
+     * @param {Number} y - Posição Y que ele irá ser criado
+     * @param {Number} z - Posição Z que ele irá ser criado
+     * @param {Number} r - Rotação que ele irá ser criado
      * @returns {FakeEntity}
      */
-    createFakeBot: (name, x,y,z,r)=> {},
+    createFakeBot (name, x,y,z,r) {},
     /**
-     * Remove entidade fake
-     * @param {FakeEntity} fakeEntity
+     * Remove uma entidade Fake
+     * @param {FakeEntity} fakeEntity - Entidade Fake a ser removida do quarto
      */
-    removeEntity: (fakeEntity) =>{},
+    removeEntity (fakeEntity) {},
     /**
      *  Remove todas as entidades criadas
      */
-    removeAllEntities: () =>{}
+    removeAllEntities () {}
 }

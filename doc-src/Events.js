@@ -26,8 +26,8 @@ const onUserJoin = (user) => {}
 /**
  * Evento chamado sempre que um usuário sai do quarto.
  * @event
- * @param {number} id - ID do usuário.
- * @param {string} username - Nome do usuário.
+ * @param {Number} id - ID do usuário.
+ * @param {String} username - Nome do usuário.
  */
 const onUserLeave = (id, username) => {}
 

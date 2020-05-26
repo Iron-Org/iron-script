@@ -12,104 +12,103 @@
 class ScriptFurni {
     /**
      * Retorna o ID do Furni.
-     * @returns {number}
+     * @returns {Number}
      */
-    getId() {}
+    getId () {}
     /**
      * Move o furni até a posição fornecida.
-     * @param {number} x - Posição X para onde o furni será movido.
-     * @param {number} y - Posição y para onde o furni será movido.
-     * @param {number} z - Posição Z para onde o furni será movido.
-     * @param {number} rot - Rotação definida ao furni ao ser movido.
+     * @param {Number} x - Posição X para onde o furni será movido.
+     * @param {Number} y - Posição y para onde o furni será movido.
+     * @param {Number} z - Posição Z para onde o furni será movido.
+     * @param {Number} rot - Rotação definida ao furni ao ser movido.
      */
-    move(x, y, z, rot) {}
+    move (x, y, z, rot) {}
     /**
      * Move o furni até a posição fornecida.
      * @param {IScriptReachable} object - Onde o furni será movido.
-     * @param {number} rot - Rotação
+     * @param {Number} rot - Rotação
      */
-    move(object, rot) {}
+    move (object, rot) {}
     /**
      * Retorna se a entidades a cima do furni.
-     * @returns {boolean}
+     * @returns {Boolean}
      */
-    hasEntities() {}
+    hasEntities () {}
     /**
      * Esconde o furni.
      */
-    hide() {}
+    hide () {}
     /**
      * Retorna a posição Y atual do Furni.
-     * @returns {number}
+     * @returns {Number}
      */
-    getY() {}
+    getY () {}
     /**
      * Ativa a interação do furni.
      */
-    toggleState() {}
+    toggleState () {}
     /**
      * Mostra o furni
      */
-    show() {}
+    show () {}
     /**
      * Retorna a posição Z (altura) atual do Furni.
-     * @returns {number}
+     * @returns {Number}
      */
-    getZ() {}
+    getZ () {}
     /**
      * Retorna a posição X atual do Furni.
-     * @returns {number}
+     * @returns {Number}
      */
-    getX() {}
+    getX () {}
     /**
      * Altera o estado do Furni.
      * @param {*} value - Valor do estado em que o furni será definido.
      */
-    setState(value) {}
+    setState (value) {}
     /**
      * Retorna todas as entidades que estão sobre o furni.
      * @returns {ScriptEntity[]}
      */
-    getEntities() {}
+    getEntities () {}
     /**
      * Retorna o ID do sprite do furni.
      * @returns {String}
      */
-    getSprite() {}
+    getSprite () {}
     /**
      * Retorna o nome do furni.
      * @returns {String}
      */
-    getName() {}
+    getName () {}
     /**
      * Retorna se o furni é sentável por uma entidade.
      * @returns {Boolean}
      */
-    canSit() {}
+    canSit () {}
     /**
      * Retorna se entidades podem andar sobre o furni.
      * * @returns {Boolean}
      */
-    canWalk() {}
+    canWalk () {}
     /**
      * Retorna o tipo da interação do furni.
      * @returns {String}
      */
-    getInteractionType() {}
+    getInteractionType () {}
     /**
      * Retorna quantidade de interações que o furni possui.
-     * @returns {number}
+     * @returns {Number}
      */
-    getInteractionModesCount() {}
+    getInteractionModesCount () {}
     /**
      * Retorna altura empilhável do furni.
-     * @returns {number}
+     * @returns {Number}
      */
-    getStackHeight() {}
+    getStackHeight () {}
     /**
      * Retorna atual estado do furni.
      * @returns {String}
      */
-    getState() {}
-    
+    getState () {}
 }

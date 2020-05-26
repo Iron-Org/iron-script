@@ -14,51 +14,51 @@
 class FakeFloorItem {
     /**
      * Retorna o ID do FakeFurni
-     * @returns {number}
+     * @returns {Number}
      */
-    getId() {}
+    getId () {}
     /**
      * Retorna o atual estado do FakeFurni
-     * @returns {string}
+     * @returns {String}
      */
-    getState() {}
+    getState () {}
     /**
      * Move o FakeFurni para posição fornecida.
-     * @param {number} x - Posição X para onde o FakeFurni será movido.
-     * @param {number} y - Posição Y para onde o FakeFurni será movido.
-     * @param {number} z - Posição Z para onde o FakeFurni será movido.
-     * @param {number=} r - Rotação definida ao FakeFurni ao ser movido.
+     * @param {Number} x - Posição X para onde o FakeFurni será movido.
+     * @param {Number} y - Posição Y para onde o FakeFurni será movido.
+     * @param {Number} z - Posição Z para onde o FakeFurni será movido.
+     * @param {Number=} r - Rotação definida ao FakeFurni ao ser movido.
      */
-    move(x, y, z, r) {}
+    move (x, y, z, r) {}
     /**
      * Altera o estado do FakeFurni.
      * @param {*} state - Valor do estado em que o furni será definido.
      */
-    setState(state) {}
+    setState (state) {}
     /**
      * Define altura empilhável do FakeFurni.
-     * @param {number} height - Altura empilhável que será definida no FakeFurni.
+     * @param {Number} height - Altura empilhável que será definida no FakeFurni.
      */
-    setStackHeight(height) {}
+    setStackHeight (height) {}
     /**
      * Retorna altura empilhável do FakeFurni.
-     * @returns {number}
+     * @returns {Number}
      */
-    getStackHeight() {}
+    getStackHeight () {}
     /**
      * Retorna a posição Z (altura) atual do Furni.
-     * @returns {number}
+     * @returns {Number}
      */
-    getZ() {}
+    getZ () {}
     /**
      * Retorna a posição X atual do FakeFurni.
-     * @returns {number}
+     * @returns {Number}
      */
-    getX() {}
+    getX () {}
     /**
      * Retorna a posição Y atual do FakeFurni.
-     * @returns {number}
+     * @returns {Number}
      */
-    getY() {}
+    getY () {}
 
 }

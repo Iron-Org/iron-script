@@ -27,7 +27,7 @@ const Commands = {
      * @param {Boolean} needStartText - Define se a mensagem deverá ser iniciada com o comando.
      * @param {Commands~CommandCallback} callback - Callback executado ao comando ser utilizado.
     */
-    register: (text, needStartText, callback) => {},
+    register (text, needStartText, callback) {},
 
     /**
      * Registra o comandos
@@ -39,5 +39,5 @@ const Commands = {
      * @param {String} text - Comando a ser utilizado.
      * @param {Commands~CommandCallback} callback - Callback executado ao comando ser utilizado.
     */
-    register: (text, callback) => {}
+    register (text, callback) {}
 }
