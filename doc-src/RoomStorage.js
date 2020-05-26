@@ -10,14 +10,14 @@ const RoomStorage = {
     * @param {String} key - Chave da propriedade a ser buscada.
     * @returns {String} 
     */
-    get: (key) => {},
+    get (key) {},
     /** 
     * @param {String} key - Chave da propriedade a definir.
     * @param {*} value - Novo valor a ser definido.
     */
-    set: (key, value) => {},
+    set (key, value) {},
     /** 
     * @param {String} key - Chave da propriedade a ser deletada.
     */
-    delete: (key) => {},
+    delete (key) {},
 }

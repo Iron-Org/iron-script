@@ -1,26 +1,26 @@
 /**
- * Interface para qualquer objeto que seja posicionavel
+ * Interface para qualquer objeto que seja posicionável
  * @interface
  * @author Arthur L
  * @author Gabriel T
  */
 class IScriptReachable {
     /**
-     * Retorna X
+     * Retorna posição X
      * @readonly
-     * @returns {number} x
+     * @returns {Number} x
      */
-    getX(){}
+    getX () {}
     /**
-     * Retorna Y
+     * Retorna posição Y
      * @readonly
-     * @returns {number} y
+     * @returns {Number} y
      */
-    getY(){}
+    getY () {}
     /**
-     * Retorna Z
+     * Retorna posição Z
      * @readonly
-     * @returns {number} z     
+     * @returns {Number} z
     */
-    getZ(){}
+    getZ () {}
 }

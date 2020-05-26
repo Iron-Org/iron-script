@@ -8,30 +8,30 @@ const Engine = {
     /**
      * Envia mensagem de debug para todos os usuários do quarto.
      * @example
-     * Engine.d("Text")
+     * Engine.d('Text')
      * @param {*} object Conteúdo
      */
-    d: (object) => {},
+    d (object) {},
 
     /** 
      * Envia mensagem de debug para todos os usuários do quarto.
      * @todo Esta função ainda não foi implementada.
      * @param {*} object Conteúdo
     */
-    debug: (object) =>{},
+    debug (object) {},
     
     /**
      * Registra uma mensagem no log do quarto. (*:script log*)
      * @todo Esta função ainda não foi implementada.
      * @param {*} object Conteúdo
     */
-    log: (object) =>{},
+    log (object) {},
 
     /**
      * Registra uma mensagem no log do quarto. (*:script log*)
      * @example
-     * Engine.e("Text")
+     * Engine.e('Text')
      * @param {*} object Conteúdo
      */
-    e: (object) => {},
+    e (object) {},
 }

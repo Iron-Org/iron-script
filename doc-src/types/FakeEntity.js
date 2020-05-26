@@ -12,39 +12,39 @@ class FakeEntity {
     /**
      * Retorna se esta entidade está sobre a mobilia fornecida.
      * @param {IScriptReachable} obj
-     * @returns {boolean}
+     * @returns {Boolean}
      */
-    in(obj) {}
+    in (obj) {}
     /**
      * Retorna ID da FakeEntity
-     * @returns {number}
+     * @returns {Number}
      */
-    getId() {}
+    getId () {}
     /**
      * Move a entidade até a posição fornecida.
      * Entidade só irá se mover caso o caminho esteja livre até o ponto fornecido*
-     * @param {number} x
-     * @param {number} y
+     * @param {Number} x
+     * @param {Number} y
      */
-    walk(x, y) {}
+    walk (x, y) {}
     /**
      * Teletransporta a entidade para posição fornecida.
-     * @param {number} x - Posição X em que entidade seŕa levada.
-     * @param {number} y - Posição Y em que entidade seŕa levada.
-     * @param {number} z - Posição Z em que entidade seŕa levada.
-     * @param {number=} r - Rotação definida para a entidade.
+     * @param {Number} x - Posição X em que entidade seŕa levada.
+     * @param {Number} y - Posição Y em que entidade seŕa levada.
+     * @param {Number} z - Posição Z em que entidade seŕa levada.
+     * @param {Number=} r - Rotação definida para a entidade.
      */
-    teleport(x, y, z, r) {}
+    teleport (x, y, z, r) {}
     /**
      * Teletransporta a entidade para posição fornecida no objeto.
      * @param {IScriptReachable} object
      */
-    teleport(object) {}
+    teleport (object) {}
     /**
      * Retorna o código do atual item de mão que a entidade está segurando.
-     * @returns {number}
+     * @returns {Number}
      */
-    getHandItem() {}
+    getHandItem () {}
     /**
      * Define uma dança para a entidade.
      * 0: Parado.
@@ -52,158 +52,158 @@ class FakeEntity {
      * 2: Pogo-Mogo
      * 3: Duck Funk
      * 4: Rollie
-     * @param {number} danceId - Código da dança
+     * @param {Number} danceId - Código da dança
      */
-    setDance(danceId) {}
+    setDance (danceId) {}
     /**
      * Remove o item de mão da entidade.
      */
-    removeHandItem() {}
+    removeHandItem () {}
     /**
      * @deprecated
      * @param {ScriptFurni} furni
      */
-    walkToFurni(furni) {}
+    walkToFurni (furni) {}
     /**
      * @todo Esta função ainda não foi implementada.
      * @param {IScriptReachable} object
      */
-    walk(object) {}
+    walk (object) {}
     /**
      * Define um efeito a entidade.
-     * @param {number} e - Código do efeito.
+     * @param {Number} e - Código do efeito.
      */
-    setEffect(e) {}
+    setEffect (e) {}
     /**
      * Define um item de mão para entidade segurar.
      * {@link https://habbo.fandom.com/wiki/Hand_Items}
-     * @param {number} h - Código do item de mão.
+     * @param {Number} h - Código do item de mão.
      */
-    setHandItem(h) {}
+    setHandItem (h) {}
     /**
      * Faz a entidade dizer uma mensagem.
      * @param {*} message - Mensagem que será dita pela entidade.
-     * @param {boolean=} shout - Se o personagem deve gritar a mensagem. (Mensagem em Bold)
-     * @param {number=} bubbleId - Balão da mensagem
+     * @param {Boolean=} shout - Se o personagem deve gritar a mensagem. (Mensagem em Bold)
+     * @param {Number=} bubbleId - Balão da mensagem
      */
-    say(message, shout, bubbleId) {}
+    say (message, shout, bubbleId) {}
     /**
      * Retorna se a entidade está se movendo.
-     * @returns {boolean}
+     * @returns {Boolean}
      */
-    isWalking() {}
+    isWalking () {}
     /**
      * Remove efeito (:enable 0)
      */
-    removeEffect() {}
+    removeEffect () {}
     /**
      * Retorna a atual dança da entidade.
-     * @returns {number}
+     * @returns {Number}
      */
-    getDance() {}
+    getDance () {}
     /**
     * Retorna o código do efeito atual da entidade.
-     * @returns {number}
+     * @returns {Number}
      */
-    getEffect() {}
+    getEffect () {}
     /**
      * Faz a entidade sentar
      */
-    sit() {}
+    sit () {}
     /**
      * Retorna a posição x atual da FakeEntity.
-     * @returns {number}
+     * @returns {Number}
      */
-    getX() {}
+    getX () {}
     /**
      * Retorna a posição Z atual da FakeEntity.
-     * @returns {number}
+     * @returns {Number}
      */
-    getZ() {}
+    getZ () {}
     /**
      * Retorna a posição Y atual da FakeEntity.
-     * @returns {number}
+     * @returns {Number}
      */
-    getY() {}
+    getY () {}
     /**
      * Retorna se entidade está próxima (tocando) a posição fornecida.
      * @param {IScriptReachable} e
-     * @returns {boolean}
+     * @returns {Boolean}
      */
-    touching(e) {}
+    touching (e) {}
     /**
      * Entidade olha para o ponto definido.
-     * @param {number} x - Posição X que entidade irá olhar.
-     * @param {number} y - Posição Y que entidade irá olhar.
-     * @param {boolean=} moveHead - Se a entidade pode mover somente sua cabeça.
+     * @param {Number} x - Posição X que entidade irá olhar.
+     * @param {Number} y - Posição Y que entidade irá olhar.
+     * @param {Boolean=} moveHead - Se a entidade pode mover somente sua cabeça.
      */
-    lookTo(x, y, moveHead) {}
+    lookTo (x, y, moveHead) {}
     /**
      * Entidade olha para o ponto definido.
      * @param {IScriptReachable} r
      */
-    lookTo(r) {}
+    lookTo (r) {}
     /**
      * Retorna a distancia atual entre esta entidade e a posição fornecida.
      * @param {IScriptReachable} e
-     * @returns {number}
+     * @returns {Number}
      */
-    distanceTo(e) {}
+    distanceTo (e) {}
     /**
      * Faz a entidade levantar
      */
-    std() {}
+    std () {}
     /**
      * Faz a entidade deitar
      */
-    lay() {}
+    lay () {}
     /**
      * Retorna a rotação atual do FakeEntity.
-     * @returns {number}
+     * @returns {Number}
      */
-    getR() {}
+    getR () {}
     /**
      * Retorna o código do atual visual da entidade.
-     * @returns {string}
+     * @returns {String}
      */
-    getFigure() {}
+    getFigure () {}
     /**
      * Define nova missão na entidade
      * @param {*} motto - Missão que será definida.
      */
-    setMotto(motto) {}
+    setMotto (motto) {}
     /**
      * Retorna se entidade é um FakeBot.
-     * @returns {boolean}
+     * @returns {Boolean}
      */
-    isBot() {}
+    isBot () {}
     /**
      * Define o visual da entidade
-     * @param {string} gender - Gênero do visual.
-     * @param {string} figure - Código do visual.
+     * @param {String} gender - Gênero do visual.
+     * @param {String} figure - Código do visual.
      */
-    setFigure(gender, figure) {}
+    setFigure (gender, figure) {}
     /**
      * Sussura uma mensagem para outra entendide.
      * @param {ScriptEntity} to - Entidade que receberá a mensagem.
      * @param {*} message - Mensagem que será enviada.
-     * @param {number} bubbleId - Balão da mensagem.
+     * @param {Number} bubbleId - Balão da mensagem.
      */
-    whisper(to, message, bubbleId) {}
+    whisper (to, message, bubbleId) {}
     /**
      * Retorna username atual da entidade
-     * @returns {string}
+     * @returns {String}
      */
-    getUsername() {}
+    getUsername () {}
     /**
      * Define nome para a entidade
      * @param {*} username - Nome que será definido.
      */
-    setUsername(username) {}
+    setUsername (username) {}
     /**
      * Retorna missão atual da entidade
-     * @returns {string}
+     * @returns {String}
      */
-    getMotto() {}
+    getMotto () {}
 }
 

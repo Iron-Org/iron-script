@@ -17,7 +17,7 @@ const Delay = {
      * @param {Number} ticks - Quantidade de ticks a aguardar até a execução da função.
      * @returns {DelayTask} 
     */
-    wait: (callback, ticks) => {}, 
+    wait (callback, ticks) {}, 
 
     /**
      * Executa uma função no intervalo de tempo.
@@ -29,7 +29,7 @@ const Delay = {
      * @param {Number} ticks - Quantidade de ticks a aguardar até a execução da função.
      * @returns {DelayTask}
     */
-    interval: (callback, ticks) => {},
+    interval (callback, ticks) {},
 
     /**
      * Cancela o delayScript que for passado.
@@ -42,7 +42,7 @@ const Delay = {
      * //Função não executará, pois o delay foi interrompido antes do tempo a ser aguardado.
      * @param {DelayTask} task - Wait/Delay a ser interrompido.
     */
-    cancel: (task) => {},
+    cancel (task) {},
 
     /**
      * Converte segundos em uma quantia de ticks correspondente.
@@ -54,6 +54,6 @@ const Delay = {
      * @param {Number} sec - Quantidade de segundos a serem convertidos em ticks.
      * @returns {Number}
     */
-    seconds: (sec) => {},
+    seconds (sec) {},
 
 }
