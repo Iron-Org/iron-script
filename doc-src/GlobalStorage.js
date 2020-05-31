@@ -6,21 +6,21 @@
  * @author Gabriel T
  */
 const GlobalStorage = {
-    /**
-     * Consulta um valor correspondente a chave buscada.
-    * @param {String} key - Chave da propriedade a ser buscada.
-    * @returns {String}
-    */
-    get (key) {},
-    /** 
-     * Defini/Atualiza valor correspondente a chave buscada.
-    * @param {String} key - Chave da propriedade a definir.
-    * @param {*} value - Novo valor a ser definido.
-    */
-    set (key, value) {},
-    /**
-     * Deleta valor correspondente a chave buscada.
-    * @param {String} key - Chave da propriedade a ser deletada.
-    */
-    delete (key) {}
+	/**
+	 * Consulta um valor correspondente a chave buscada.
+	* @param {String} key - Chave da propriedade a ser buscada.
+	* @returns {String}
+	*/
+	get (key) {},
+	/** 
+	 * Defini/Atualiza valor correspondente a chave buscada.
+	* @param {String} key - Chave da propriedade a definir.
+	* @param {*} value - Novo valor a ser definido.
+	*/
+	set (key, value) {},
+	/**
+	 * Deleta valor correspondente a chave buscada.
+	* @param {String} key - Chave da propriedade a ser deletada.
+	*/
+	delete (key) {}
 }
