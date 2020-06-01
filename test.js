@@ -1,1 +1,1 @@
-Commands.register("s", true, function(){})
+Faker.cre
