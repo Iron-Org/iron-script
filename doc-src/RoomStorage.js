@@ -6,18 +6,18 @@
  * @author Gabriel T
  */
 const RoomStorage = {
-    /**
-    * @param {String} key - Chave da propriedade a ser buscada.
-    * @returns {String} 
-    */
-    get (key) {},
-    /** 
-    * @param {String} key - Chave da propriedade a definir.
-    * @param {*} value - Novo valor a ser definido.
-    */
-    set (key, value) {},
-    /** 
-    * @param {String} key - Chave da propriedade a ser deletada.
-    */
-    delete (key) {},
+	/**
+	* @param {String} key - Chave da propriedade a ser buscada.
+	* @returns {String} 
+	*/
+	get (key) {},
+	/** 
+	* @param {String} key - Chave da propriedade a definir.
+	* @param {*} value - Novo valor a ser definido.
+	*/
+	set (key, value) {},
+	/** 
+	* @param {String} key - Chave da propriedade a ser deletada.
+	*/
+	delete (key) {},
 }

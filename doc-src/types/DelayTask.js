@@ -6,9 +6,9 @@
  * @author Gabriel T
  */
 class DelayTask {
-    /** 
-    * Returna quantidade de ticks que restam para o termino do temporizador.
-    * @returns {AtomicInteger} 
-    */
-    getTicksRemain () {}
+	/** 
+	* Returna quantidade de ticks que restam para o termino do temporizador.
+	* @returns {AtomicInteger} 
+	*/
+	getTicksRemain () {}
 }
