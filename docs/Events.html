@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Class: DelayTask</title>
+    <title>JSDoc: Namespace: Events</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Class: DelayTask</h1>
+    <h1 class="page-title">Namespace: Events</h1>
 
     
 
@@ -28,9 +28,7 @@
 
 <header>
     
-        <h2><span class="attribs"><span class="type-signature"></span></span>DelayTask</h2>
-        
-            <div class="class-description"><p>Classe que representa os temporizadores.</p></div>
+        <h2>Events</h2>
         
     
 </header>
@@ -39,19 +37,10 @@
     <div class="container-overview">
     
         
+            <div class="description"><p>Todos os eventos chamados no Script</p></div>
+        
 
-
-
-
-
-
-
-
-
-
-
-
-
+        
 
 
 <dl class="details">
@@ -99,24 +88,7 @@
 </dl>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        
     
     </div>
 
@@ -143,7 +115,7 @@
     
 
     
-    <h4 class="name" id="getTicksRemain"><span class="type-signature"></span>getTicksRemain<span class="signature">()</span><span class="type-signature"> &rarr; {AtomicInteger}</span></h4>
+    <h4 class="name" id=".on"><span class="type-signature">(static) </span>on<span class="signature">(text, callback)</span><span class="type-signature"></span></h4>
     
 
     
@@ -151,7 +123,19 @@
 
 
 <div class="description">
-    <p>Returna quantidade de ticks que restam para o termino do temporizador.</p>
+    <p>Registra o evento</p>
+<ul>
+<li>userJoin</li>
+<li>userLeave</li>
+<li>stepOn</li>
+<li>stepOff</li>
+<li>say</li>
+<li>interact</li>
+<li>tick</li>
+<li>load</li>
+<li>dispose</li>
+<li>playerSelected</li>
+</ul>
 </div>
 
 
@@ -160,6 +144,78 @@
 
 
 
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>text</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Evento a ser utilizado.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Commands.html#~CommandCallback">Commands~CommandCallback</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Callback executado ao comando ser utilizado.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
 
 
 
@@ -215,26 +271,13 @@
 
 
 
-<h5>Returns:</h5>
-
-        
 
 
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">AtomicInteger</span>
 
 
-    </dd>
-</dl>
-
+    <h5>Example</h5>
     
-
-
+    <pre class="prettyprint"><code>Events.on('load', () => {     //Ação é executada})</code></pre>
 
 
 
