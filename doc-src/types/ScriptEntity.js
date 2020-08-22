@@ -173,6 +173,16 @@ class ScriptEntity {
 	 */
 	getY () {}
 	/**
+	 * Retorna a atual posição Z da entidade.
+	 * @returns {Number}
+	 */
+	getZ () {}
+	/**
+	 * Retorna a atual rotação da entidade.
+	 * @returns {Number}
+	 */
+	getR () {}
+	/**
 	 * Retorna se entidade é um Bot.
 	 * @returns {Boolean}
 	 */
@@ -226,11 +236,6 @@ class ScriptEntity {
 	 */
 	removeEffect () {}
 	/**
-	 * Retorna a atual posição Z da entidade.
-	 * @returns {Number}
-	 */
-	getZ () {}
-	/**
 	 * Define a entidade pode ser mover.
 	 * @param {Boolean} can - Se a entidade pode ser mover.
 	 * @param {Boolean} effect - Se a entidade deve receber um efeito de congelado.
@@ -258,11 +263,6 @@ class ScriptEntity {
 	 */
 	sit () {}
 	/**
-	 * Retorna a atual rotação da entidade.
-	 * @returns {Number}
-	 */
-	getR () {}
-	/**
 	 * Remove um emblema de um usuário.
 	 * @param {String} badge - Código do emblema.
 	 */
@@ -289,14 +289,9 @@ class ScriptEntity {
 	setEffect (effect) {}
 	/**
 	 * Envia uma notificação para o usuário.
-	 * generic: Icone genérico.
-	 * EV - Icone de eventos/games.
-	 * ATT - Icone de atenção.
-	 > NEW - Icone de nova mobilia.
-		* RAD - Icone da Rádio.
-		* @param {String} icon - Código do icone para a notificação.
-		* @param {String} message - Mensagem pra notificação.
-		*/
+	 * @param {String} icon - Código do icone para a notificação.
+	 * @param {String} message - Mensagem pra notificação.
+	*/
 	notification (icon, message) {}
 	/**
 	 * Faz a entidade se levantar.
@@ -310,6 +305,7 @@ class ScriptEntity {
 	*/
 	hasBadge (badge) {}
 	/**
+	 * Exibe um video para este usuário
 	 * @param {String} url - Url do video no Youtube.
 	 * @param {Boolean=} force - Se o comando deve forçar a exibição do video, mesmo que o usuário tenha desabilitado.
 	 */
@@ -318,4 +314,12 @@ class ScriptEntity {
 	 * Faz com que a entidade pare de andar.
 	*/
 	cancelWalk()
+	/**
+	 * Entidade faz uma ação determinada
+	 * 1: Acenar
+	 * 2: Mandar Beijo
+	 * 3: Rir
+	 * @param {Number} action - Número da ação
+	*/
+	action()
 }

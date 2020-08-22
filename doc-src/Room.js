@@ -92,7 +92,7 @@ const Room = {
 	 */
 	getOwnerUsername () {},
 	/**
-	 * 
+	 * Retorna o usuário correspondente ao Nome.
 	 * @param {String} name - Nome do usuário buscado.
 	 * @returns {ScriptEntity}
 	 */

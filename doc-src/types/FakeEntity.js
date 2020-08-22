@@ -209,4 +209,12 @@ class FakeEntity {
 	 * Faz com que a entidade pare de andar.
 	*/
 	cancelWalk()
+	/**
+	 * Entidade faz uma ação determinada
+	 * 1: Acenar
+	 * 2: Mandar Beijo
+	 * 3: Rir
+	 * @param {Number} action - Número da ação
+	*/
+	action()
 }

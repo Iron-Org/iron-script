@@ -88,7 +88,7 @@ class ScriptFurni {
 	canSit () {}
 	/**
 	 * Retorna se entidades podem andar sobre o furni.
-	 * * @returns {Boolean}
+	 * @returns {Boolean}
 	 */
 	canWalk () {}
 	/**
