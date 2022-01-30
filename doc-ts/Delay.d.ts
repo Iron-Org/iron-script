@@ -15,8 +15,7 @@ interface Delay {
 	 * @param {Number} ticks - Quantidade de ticks a aguardar até a execução da função.
 	 * @returns {DelayTask} 
 	*/
-	public wait (callback:Function, ticks:Number) : DelayTask
-
+	public wait (callback:Function, ticks:Number): DelayTask
 	/**
 	 * Executa uma função no intervalo de tempo.
 	 * @example
@@ -27,8 +26,7 @@ interface Delay {
 	 * @param {Number} ticks - Quantidade de ticks a aguardar até a execução da função.
 	 * @returns {DelayTask}
 	*/
-	public interval (callback:Function, ticks:Number) : DelayTask
-
+	public interval (callback:Function, ticks:Number): DelayTask
 	/**
 	 * Cancela o delayScript que for passado.
 	 * @example 
@@ -40,8 +38,7 @@ interface Delay {
 	 * //Função não executará, pois o delay foi interrompido antes do tempo a ser aguardado.
 	 * @param {DelayTask} task - Wait/Delay a ser interrompido.
 	*/
-	public cancel (task:DelayTask) : void
-
+	public cancel (task:DelayTask): void
 	/**
 	 * Converte segundos em uma quantia de ticks correspondente.
 	 * @example
@@ -55,4 +52,4 @@ interface Delay {
 	public seconds (sec:Number): Number
 }
 
-declare const Delay : Delay;
+declare const Delay : Delay

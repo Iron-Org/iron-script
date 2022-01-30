@@ -18,18 +18,30 @@ class FakeFloorItem {
 	 */
 	getId () {}
 	/**
+	 * Retorna a posição X atual do FakeFurni.
+	 * @returns {Number}
+	 */
+	getX () {}
+	/**
+	 * Retorna a posição Y atual do FakeFurni.
+	 * @returns {Number}
+	 */
+	getY () {}
+	/**
+	 * Retorna a posição Z (altura) atual do Furni.
+	 * @returns {Number}
+	 */
+	getZ () {}
+	/**
 	 * Retorna o atual estado do FakeFurni
 	 * @returns {String}
 	 */
 	getState () {}
 	/**
-	 * Move o FakeFurni para posição fornecida.
-	 * @param {Number} x - Posição X para onde o FakeFurni será movido.
-	 * @param {Number} y - Posição Y para onde o FakeFurni será movido.
-	 * @param {Number} z - Posição Z para onde o FakeFurni será movido.
-	 * @param {Number=} r - Rotação definida ao FakeFurni ao ser movido.
+	 * Retorna altura empilhável do FakeFurni.
+	 * @returns {Number}
 	 */
-	move (x, y, z, r) {}
+	getStackHeight () {}
 	/**
 	 * Altera o estado do FakeFurni.
 	 * @param {*} state - Valor do estado em que o furni será definido.
@@ -41,23 +53,11 @@ class FakeFloorItem {
 	 */
 	setStackHeight (height) {}
 	/**
-	 * Retorna altura empilhável do FakeFurni.
-	 * @returns {Number}
+	 * Move o FakeFurni para posição fornecida.
+	 * @param {Number} x - Posição X para onde o FakeFurni será movido.
+	 * @param {Number} y - Posição Y para onde o FakeFurni será movido.
+	 * @param {Number} z - Posição Z para onde o FakeFurni será movido.
+	 * @param {Number=} r - Rotação definida ao FakeFurni ao ser movido.
 	 */
-	getStackHeight () {}
-	/**
-	 * Retorna a posição Z (altura) atual do Furni.
-	 * @returns {Number}
-	 */
-	getZ () {}
-	/**
-	 * Retorna a posição X atual do FakeFurni.
-	 * @returns {Number}
-	 */
-	getX () {}
-	/**
-	 * Retorna a posição Y atual do FakeFurni.
-	 * @returns {Number}
-	 */
-	getY () {}
+	move (x, y, z, r) {}
 }

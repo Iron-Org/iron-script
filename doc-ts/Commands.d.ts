@@ -16,7 +16,6 @@ interface Commands {
 	 * @param {CommandCallback} callback - Callback executado ao comando ser utilizado.
 	*/
 	public register (text:String, needStartText:Boolean, callback:CommandCallback) : void
-
 	/**
 	 * Registra o comandos
 	 * @example
@@ -29,4 +28,5 @@ interface Commands {
 	*/
 	public register (text:String, callback:CommandCallback) : void
 }
-declare const Commands : Commands;
+
+declare const Commands : Commands
