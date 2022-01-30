@@ -7,16 +7,16 @@
 const Events = {
 	/**
 	 * Registra o evento
-     * - userJoin
-     * - userLeave
-     * - stepOn
-     * - stepOff
-     * - say
-     * - interact
-     * - tick
-     * - load
-     * - dispose
-     * - playerSelected
+		* - userJoin
+		* - userLeave
+		* - stepOn
+		* - stepOff
+		* - say
+		* - interact
+		* - tick
+		* - load
+		* - dispose
+		* - playerSelected
 	 * @example
 	 * Events.on('load', () => {
 	 *      //Ação é executada
