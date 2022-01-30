@@ -11,35 +11,35 @@ interface Highscores {
 	 * @param {String | ScriptEntity} player - Nick ou Usuário que receberá os pontos.
 	 * @param {Number} points - Quantidade de pontos a serem adicionados.
 	*/
-	add (player: String | ScriptEntity, points: Number): void
+	public add (player: String | ScriptEntity, points: Number): void
 	/**
 	 * Remove pontos do Placar
 	 * @param {String | ScriptEntity} player - Nick ou Usuário que perderá os pontos.
 	 * @param {Number} points - Quantidade de pontos a serem removidos.
 	*/
-	remove (player: String | ScriptEntity, points: Number): void
+	public remove (player: String | ScriptEntity, points: Number): void
 	/**
 	 * Adiciona pontos a todo o Grupo no Placar
 	 * @param {String[] | ScriptEntity[]} player - Nicks ou Usuários que receberam os pontos.
 	 * @param {Number} points - Quantidade de pontos a serem adicionados.
 	*/
-	addGroup (player: String[] | ScriptEntity[], points: Number): void
+	public addGroup (player: String[] | ScriptEntity[], points: Number): void
 	/**
 	 * Remove pontos de todo o Grupo no Placar
 	 * @param {String | ScriptEntity} player - Nicks ou Usuários que perderam os pontos.
 	 * @param {Number} points - Quantidade de pontos a serem removidos.
 	*/
-	removeGroup (player: String | ScriptEntity, points: Number): void
+	public removeGroup (player: String | ScriptEntity, points: Number): void
 	/**
 	 * Limpa todos os usuários do Placar
 	 * @param {Number | ScriptFurni} scoreboard - ID ou Furni do Placar.
 	*/
-	clear (scoreboard: Number | ScriptFurni): void
+	public clear (scoreboard: Number | ScriptFurni): void
 	/**
 	 * Limpa todos os usuários do Placar
 	 * @param {Number | ScriptFurni} scoreboard - ID ou Furni do Placar.
 	*/
-	reset (scoreboard: Number | ScriptFurni): void
+	public reset (scoreboard: Number | ScriptFurni): void
 }
 
 declare const Highscores : Highscores
