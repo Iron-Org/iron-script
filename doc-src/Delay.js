@@ -1,4 +1,3 @@
-
 /**
  * Aguarda tempos determinados para executar funções.
  * > Cada tick corresponde 500ms.
@@ -18,7 +17,6 @@ const Delay = {
 	 * @returns {DelayTask} 
 	*/
 	wait (callback, ticks) {}, 
-
 	/**
 	 * Executa uma função no intervalo de tempo.
 	 * @example
@@ -30,7 +28,6 @@ const Delay = {
 	 * @returns {DelayTask}
 	*/
 	interval (callback, ticks) {},
-
 	/**
 	 * Cancela o delayScript que for passado.
 	 * @example 
@@ -43,7 +40,6 @@ const Delay = {
 	 * @param {DelayTask} task - Wait/Delay a ser interrompido.
 	*/
 	cancel (task) {},
-
 	/**
 	 * Converte segundos em uma quantia de ticks correspondente.
 	 * @example
