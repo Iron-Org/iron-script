@@ -1,5 +1,5 @@
-/// <reference path='types/FakeEntity.js'/>
-/// <reference path='types/FakeFloorItem.js'/>
+/// <reference path="types/FakeEntity.js"/>
+/// <reference path="types/FakeFloorItem.js"/>
 
 /**
  * Faker
@@ -11,12 +11,13 @@
  */
 const Faker = {
 	/**
-	 *  Cria um FakeItem, uma mobilia similar a original
-	 *  @param {Number} spriteId - ID da sprite da mobilia original
-	 *  @param {Number} x - Posição X que será gerado
-	 *  @param {Number} y - Posição Y que será gerado
-	 *  @param {Number} z - Posição Z que será gerado
-	 *  @param {Number} r - Rotação que será gerado
+	 * Cria um FakeItem, uma mobilia similar a original
+	 * @param {Number} spriteId - ID da sprite da mobilia original
+	 * @param {Number} x - Posição X que será gerado
+	 * @param {Number} y - Posição Y que será gerado
+	 * @param {Number} z - Posição Z que será gerado
+	 * @param {Number} r - Rotação que será gerado
+   * @returns {FakeFloorItem}
 	 */
 	createFakeItem (spriteId, x, y, z, r) {},
 	/**
@@ -46,7 +47,7 @@ const Faker = {
 	getLoadedFurnis () {},
 	/**
 	 * Remove item determinado
-	 * @param {FakeFloorItem} fakeItem - 
+	 * @param {FakeFloorItem} fakeItem -
 	 */
 	removeFakeFloorItem (fakeItem) {},
 	/**

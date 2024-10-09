@@ -1,10 +1,11 @@
 /**
  * Métodos para premiar usuários com Moedas
- * @namespace Currency
+ * @namespace Room
  * @author Luiz
  * @author Gabriel T
  */
 const Currency = {
+	// Valores Negativos irão remover os créditos do Usuário
 	/**
 	 * Adiciona a quantidade de Créditos a carteira do usuário.
 	 * @param {Number} id - Id do usuário que receberá os Créditos.
@@ -40,5 +41,17 @@ const Currency = {
 	 * @param {String} username - Nome do usuário que receberá os Diamantes.
 	 * @param {Number} amount - Quantidade de Diamantes a ser entregue.
 	 */
-	giveDiamondsByUsername (username, amount) {}
+	giveDiamondsByUsername (username, amount) {},
+  /**
+   * Adiciona a quantidade de Pontos Sazonais a carteira do usuário.
+   * @param {Number} id - Id do usuário que receberá os Pontos Sazonais.
+   * @param {Number} amount - Quantidade de Pontos Sazonais a ser entregue.
+   */
+	giveSeasonalPointsById(id, amount) {},
+  /**
+   * Adiciona a quantidade de Pontos Sazonais a carteira do usuário.
+   * @param {String} username - Nome do usuário que receberá os Pontos Sazonais.
+   * @param {Number} amount - Quantidade de Pontos Sazonais a ser entregue.
+   */
+	giveSeasonalPointsByUsername(username, amount) { },
 }

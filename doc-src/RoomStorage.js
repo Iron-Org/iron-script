@@ -5,18 +5,20 @@
  * @author Arthur L
  * @author Gabriel T
  */
+
+/* Em manutenção, use no lugar GlobalStorage */
 const RoomStorage = {
 	/**
 	* @param {String} key - Chave da propriedade a ser buscada.
-	* @returns {String} 
+	* @returns {String}
 	*/
 	get (key) {},
-	/** 
+	/**
 	* @param {String} key - Chave da propriedade a definir.
 	* @param {*} value - Novo valor a ser definido.
 	*/
 	set (key, value) {},
-	/** 
+	/**
 	* @param {String} key - Chave da propriedade a ser deletada.
 	*/
 	delete (key) {},

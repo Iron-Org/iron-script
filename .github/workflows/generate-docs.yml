@@ -3,14 +3,14 @@ name: GitHub pages
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Build
         uses: andstor/jsdoc-action@v1
@@ -18,9 +18,10 @@ jobs:
           source_dir: ./doc-src
           output_dir: ./out
           config_file: jsdoc.json
-          template: minami
+          template: better-docs
           front_page: README.md
       - name: Deploy
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public

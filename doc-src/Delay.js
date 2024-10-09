@@ -1,10 +1,11 @@
+/// <reference path="types/DelayTask.js"/>
 /**
  * Aguarda tempos determinados para executar funções.
  * > Cada tick corresponde 500ms.
  * @namespace Delay
  * @author Arthur L
  * @author Gabriel T
- * 
+ *
  */
 const Delay = {
 	/**
@@ -14,9 +15,10 @@ const Delay = {
 	 * }, 2)
 	 * @param {Function} callback - Função executada após o tempo determinado ter passado.
 	 * @param {Number} ticks - Quantidade de ticks a aguardar até a execução da função.
-	 * @returns {DelayTask} 
+	 * @returns {DelayTask}
 	*/
-	wait (callback, ticks) {}, 
+	wait (callback, ticks) {},
+
 	/**
 	 * Executa uma função no intervalo de tempo.
 	 * @example
@@ -28,9 +30,10 @@ const Delay = {
 	 * @returns {DelayTask}
 	*/
 	interval (callback, ticks) {},
+
 	/**
 	 * Cancela o delayScript que for passado.
-	 * @example 
+	 * @example
 	 * const delay = Delay.wait(() => {
 	 *      Engine.debug('Teste')
 	 * }, 10)
@@ -40,13 +43,14 @@ const Delay = {
 	 * @param {DelayTask} task - Wait/Delay a ser interrompido.
 	*/
 	cancel (task) {},
+
 	/**
 	 * Converte segundos em uma quantia de ticks correspondente.
 	 * @example
 	 * Delay.wait(() => {
 	 *      //Executado após 10 segundos.
 	 * }, Delay.seconds(10))
-	 * @static 
+	 * @static
 	 * @param {Number} sec - Quantidade de segundos a serem convertidos em ticks.
 	 * @returns {Number}
 	*/

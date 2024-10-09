@@ -1,6 +1,9 @@
 /// <reference path="types/ScriptEntity.js"/>
 /// <reference path="types/ScriptFurni.js"/>
 /// <reference path="types/ScriptTile.js"/>
+/// <reference path="types/ScriptGroup.js"/>
+/// <reference path="types/ScriptPrivateChat.js"/>
+/// <reference path="types/ScriptFurnisOpacity.js"/>
 
 /**
  * Propriedades e Métodos do quarto em que script está sendo executado
@@ -76,6 +79,15 @@ const Room = {
 	 * @returns {ScriptEntity[]}
 	 */
 	getEntitiesByFurnis (furnis) {},
+  /**
+   * Retorna todas as entidades que estão na area
+   * @param {number} x1 - Posição X inicial
+   * @param {number} y1 - Posição Y inicial
+   * @param {number} x2 - Posição X final
+   * @param {number} y2 - Posição Y final
+   * @returns {ScriptEntity[]}
+   */
+  getEntitiesByArea (x1, y1, x2, y2) {},
 	/**
 	 * Retorna o Piso da posição fornecida.
 	 * @param {Number} x - Posição X do piso.
@@ -102,7 +114,27 @@ const Room = {
 	 * @returns {ScriptFurni[]}
 	 */
 	getAllFurnisBySpriteId (sprite) {},
-	/** 
+  /**
+   * Retorna todas os mobis que estão na area
+   * @param {number} x1 - Posição X inicial
+   * @param {number} y1 - Posição Y inicial
+   * @param {number} x2 - Posição X final
+   * @param {number} y2 - Posição Y final
+   * @returns {ScriptFurni[]}
+   */
+  getFurnisByArea (x1, y1, x2, y2) {},
+  /**
+	 * Retorna o Grupo do quarto.
+	 * @returns {ScriptGroup}
+	 */
+	getGroup () {},
+  /**
+   * 0: Desabilitado
+   * 1: Apenas donos ou usuários com direitos negociam
+   * 2: Todos negociam
+   */
+  getTradeState() {},
+  /**
 	 * Retorna estado atual do atravessar.
 	 * @returns {Boolean}
 	 */
@@ -117,6 +149,37 @@ const Room = {
 	 * @returns {Boolean}
 	 */
 	getRoomMute () {},
+	/**
+	 * Retorna um novo conjunto de mobis
+	 * @returns {ScriptFurnisOpacity}
+	 */
+	createFurnisOpacityData() {},
+	/**
+	 * @param {Number} x - Posição X do piso.
+	 * @param {Number} y - Posição X do piso.
+	 */
+	tileExists (x, y) {},
+	/**
+	 * Retorna se o usuário tem direitos no quarto.
+	 * @param {Number} id - Id do usuário.
+	 * @returns {Boolean}
+	 */
+	hasRights (id) {},
+  /**
+	 * Retorna se o quarto está com mobis bloqueados.
+	 * @returns {Boolean}
+	 */
+  isFurnitureBlocked () {},
+  /**
+	 * Dá Direitos ao usuário *ID*.
+	 * @param {Number} id - Id do usuário que receberá Direitos.
+	 */
+	addRights(id) { },
+	/**
+	 * Retira os Direitos do usuário *ID*.
+	 * @param {Number} id - Id do usuário que perderá Direitos.
+	 */
+	removeRights(id) { },
 	/**
 	 * Define o nome do quarto
 	 * @param {*} name - Novo nome que será definido ao quarto.
@@ -145,6 +208,11 @@ const Room = {
 	 */
 	setBackgroundTonerColor (h, s, l) {},
 	/**
+	 * Define a velocidade dos Rollers no quarto.
+	 * @param {Number} speed - Velocidade dos rollers.
+	 */
+	setRollerSpeed () {},
+	/**
 	 * Define a diagonal
 	 * @param {Boolean} allow - Valor que irá definir se será habilitado ou desabilitado
 	 */
@@ -165,9 +233,43 @@ const Room = {
 	 */
 	setPassword (password) {},
 	/**
-	 * Define campanhia 
+	 * Define campanhia
 	 */
 	setDoorbell () {},
+  /**
+	 * Define se os mobis serão bloqueados de ser movidos/retirados no quarto.
+	 * @param {Boolean} blocked - Valor que irá definir se os mobis serão bloqueados ou desbloqueados.
+	 */
+  setFurnitureBlocked (blocked) {},
+  /**
+   * Define qual estado de trocas no quarto
+   * @param {number} tradeStateCode - Código do estado
+   */
+  setTradeState (tradeStateCode) {},
+	/**
+   * Altera a opacidade de um conjunto de mobis
+   * @param {ScriptFurnisOpacity} furnis - Conjunto de Mobis
+   */
+  setFurnisOpacity (furnis) {},
+  /**
+   * Cria um chat privado
+   * @returns {ScriptPrivateChat}
+   */
+  createPrivateChat () {},
+  /**
+   * Deleta um chat privado
+   * @param {ScriptPrivateChat} privateChat - Chat privado a ser deletado
+   */
+  deletePrivateChat (privateChat) {},
+  /**
+   * Deleta todos os chats privados
+   */
+  deleteAllPrivateChats() {},
+  /**
+	 * Define a orientação dos crônometros
+	 * @param {Boolean} up - Se a contagem dos crônometros deve ser crescente, caso contrário será decrescente.
+	 */
+  toggleTimerUpDirection (up) {},
 	/**
 	 * Envia notificação para todos do quarto
 	 * @param {String} icon - Código do icone que irá aparecer na notificação

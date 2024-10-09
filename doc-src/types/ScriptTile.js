@@ -13,60 +13,60 @@ class ScriptTile {
 	 * Retorna posição X do piso.
 	 * @returns {Number}
 	 */
-	getX() {}
+	getX () {}
 	/**
 	 * Retorna posição Y do piso.
 	 * @returns {Number}
 	 */
-	getY() {}
+	getY () {}
 	/**
 	 * Retorna posição Z do piso.
 	 * @returns {Number}
 	 */
-	getZ() {}
+	getZ () {}
 	/**
 	 * Retorna todos os furnis que estão no piso.
 	 * @returns {ScriptFurni[]}
 	 */
-	getFurnis() {}
+	getFurnis () {}
 	/**
 	 * Retorna todas entidades que estão no piso.
 	 * @returns {ScriptEntity[]}
 	 */
-	getEntities() {}
+	getEntities () {}
 	/**
 	 * Retorna o Furni que está mais alto no piso.
 	 * @returns {ScriptFurni}
 	 */
-	getTopFurni() {}
+	getTopFurni () {}
 	/**
 	 * Retorna a altura andável no piso.
 	 * @returns {Number}
 	 */
-	getWalkHeight() {}
+	getWalkHeight () {}
 	/**
 	 * Retorna se a um furni com interação de porta no piso.
 	 * @returns {Boolean}
 	 */
-	hasGate() {}
+	hasGate () {}
 	/**
 	 * Retorna se tem algum furni no piso.
 	 * @returns {Boolean}
 	 */
-	hasFurni() {}
+	hasFurni () {}
 	/**
 	 * Retorna se tem entidades no piso.
 	 * @returns {Boolean}
 	 */
-	hasEntities() {}
+	hasEntities () {}
 	/**
 	 * Retorna se o piso pode ser empilhável.
 	 * @returns {Boolean}
 	 */
-	canStack() {}
+	canStack () {}
 	/**
 	 * Retorna se pode criar/posicionar furnis no piso.
 	 * @returns {Boolean}
 	 */
-	canPlaceItem() {}
+	canPlaceItem () {}
 }

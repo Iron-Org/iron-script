@@ -6,11 +6,6 @@
  */
 const Engine = {
 	/**
-	 * Inclui um Script externo ao Script do quarto atual.
-	 * @param {String} scriptName - Nome do script externo.
-	 */
-	include(scriptName) {},
-	/**
 	 * Envia mensagem de debug para todos os usuários do quarto.
 	 * @example
 	 * Engine.d('Text')
@@ -36,4 +31,8 @@ const Engine = {
 	 * @param {*} object Conteúdo
 	 */
 	e (object) {},
+	/**
+	 * Limpa o registro de mensagens no log do quarto. (*:script log*)
+	 */
+	clearLog () {},
 }

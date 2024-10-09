@@ -4,9 +4,6 @@
  * Classe que representa as entidades Fakes.
  * @class
  * @hideconstructor
- * @implements {IScriptReachable}
- * @author Arthur L
- * @author Gabriel T
  */
 class FakeEntity {
 	/**
@@ -64,9 +61,19 @@ class FakeEntity {
 	 * @returns {Number}
 	 */
 	getDance () {}
+  /**
+	 * Retorna a ação que a entidade esta fazendo.
+	 * @returns {Number}
+	 */
+	getAction () {}
+  /**
+	 * Retorna a placa que a entidade esta segurando.
+	 * @returns {Number}
+	 */
+	getSign () {}
 	/**
 	 * Retorna a distancia entre a entidade e outra posição fornecida no objeto.
-	 * @param {IScriptReachable} e - 
+	 * @param {IScriptReachable} e -
 	 * @returns {Number}
 	 */
 	distanceTo (e) {}
@@ -78,6 +85,11 @@ class FakeEntity {
 	 * @returns {Number}
 	 */
 	distanceTo (x, y, z) {}
+   /**
+	 * Retorna se a entidade é fake.
+	 * @returns {Boolean}
+	 */
+	isFakeEntity () {}
 	/**
 	 * Retorna se entidade é um FakeBot.
 	 * @returns {Boolean}
@@ -108,6 +120,21 @@ class FakeEntity {
 	 * @returns {Boolean}
 	 */
 	isWalking () {}
+  /**
+   * Retorna se entidade esta sentada.
+   * @returns {Boolean}
+   */
+  hasSit () {}
+  /**
+   * Retorna se entidade esta deitada.
+   * @returns {Boolean}
+   */
+  hasLay () {}
+  /**
+	 * Define a rotação da entidade.
+	 * @param {Number} rotation - Valor da rotação.
+	 */
+	setRotation (rotation) {}
 	/**
 	 * Define nome para a entidade
 	 * @param {*} username - Nome que será definido.
@@ -154,22 +181,35 @@ class FakeEntity {
 	 * Remove o item de mão da entidade.
 	 */
 	removeHandItem () {}
+  /**
+	 * Faz uma entidade começar a seguir.
+	 * @param {ScriptEntity } entity - Entidade que irá começar a seguir.
+	 */
+  addFollowerEntity(entity) {}
+  /**
+	 * Faz uma entidade começar a seguir.
+	 * @param {FakeEntity} entity - Entidade que irá começar a seguir.
+	 */
+  addFollowerEntity(entity) {}
+  /**
+	 * Faz uma entidade começar a seguir.
+	 * @param {ScriptEntity } entity - Entidade que irá começar a seguir.
+	 */
+  removeFollowerEntity(entity) {}
+  /**
+	 * Faz uma entidade começar a seguir.
+	 * @param {FakeEntity} entity - Entidade que irá começar a seguir.
+	 */
+  removeFollowerEntity(entity) {}
 	/**
 	 * Faz com que a entidade pare de andar.
 	 */
 	cancelWalk() {}
 	/**
-	 * Faz a entidade levantar
-	 */
-	std () {}
-	/**
-	 * Faz a entidade sentar
-	 */
-	sit () {}
-	/**
-	 * Faz a entidade deitar
-	 */
-	lay () {}
+	 * Adiciona um emblema no perfil do Bot
+	 * @param {String} badge - Código do emblema a ser adicionado.
+	*/
+	addBadge (badge) {}
 	/**
 	 * Entidade faz uma ação determinada
 	 * 1: Acenar
@@ -190,6 +230,14 @@ class FakeEntity {
 	 * @param {IScriptReachable} object
 	 */
 	walk (object) {}
+  /**
+	 * Entidade anda até a posição fornecida.
+	 * @param {Number} x
+	 * @param {Number} y
+   * @param {boolean} overrideLastStep - Se o ultimo passo deve ignorar outras entidades que estiverem no piso (Apenas funcionará se estiver habilitado atravessar usuarios)
+   * @param {boolean} enableDiagonal - Se a entidade pode andar na diagonal
+	 */
+	walk (x, y, overrideLastStep, enableDiagonal) {}
 	/**
 	 * @deprecated
 	 * @param {ScriptFurni} furni
@@ -228,10 +276,29 @@ class FakeEntity {
 	 */
 	say (message, shout, bubbleId) {}
   /**
+	 * Faz a entidade dizer uma mensagem. Mensagem não é enviada para usuários que tiverem bots mutados.
+	 * @param {*} message - Mensagem que será dita pela entidade.
+	 * @param {Boolean=} shout - Se o personagem deve gritar a mensagem. (Mensagem em Bold)
+	 * @param {Number=} bubbleId - Balão da mensagem
+	 */
+	botSay (message, shout, bubbleId) {}
+  /**
 	 * Sussura uma mensagem para outra entendide.
 	 * @param {ScriptEntity} to - Entidade que receberá a mensagem.
 	 * @param {*} message - Mensagem que será enviada.
 	 * @param {Number} bubbleId - Balão da mensagem.
 	 */
 	whisper (to, message, bubbleId) {}
+	/**
+	 * Faz a entidade levantar
+	 */
+	std () {}
+	/**
+	 * Faz a entidade sentar
+	 */
+	sit () {}
+	/**
+	 * Faz a entidade deitar
+	 */
+	lay () {}
 }

@@ -35,12 +35,12 @@ const Highscores = {
 	removeGroup (player, points) {},
 	/**
 	 * Limpa todos os usuários do Placar
-	 * @param {Number | ScriptFurni} scoreboard - ID ou Furni do Placar.
+	 * @param {Number | ScriptFurni} player - ID ou Furni do Placar.
 	*/
-	clear (scoreboard) {},
+	clear () {},
 	/**
 	 * Limpa todos os usuários do Placar
-	 * @param {Number | ScriptFurni} scoreboard - ID ou Furni do Placar.
+	 * @param {Number | ScriptFurni} player - ID ou Furni do Placar.
 	*/
-	reset (scoreboard) {}
+	reset () {}
 }

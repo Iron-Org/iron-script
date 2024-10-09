@@ -8,18 +8,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ArthurLins/irinc-script.git"
+    "url": "git+https://github.com/Iron-Org/irinc-script.git"
   },
   "author": "",
   "license": "GPL",
   "bugs": {
-    "url": "https://github.com/ArthurLins/irinc-script/issues"
+    "url": "https://github.com/Iron-Org/irinc-script/issues"
   },
-  "homepage": "https://github.com/ArthurLins/irinc-script#readme",
+  "homepage": "https://github.com/Iron-Org/irinc-script#readme",
   "devDependencies": {
-    "jsdoc": "^3.6.10"
+    "jsdoc": "^4.0.3"
   },
   "dependencies": {
-    "docdash": "^1.2.0"
+    "docdash": "^2.0.2"
   }
 }
