@@ -1,0 +1,15 @@
+{
+  "name": "Iron Script",
+  "entryPoints": ["src/**/*.ts"],
+  "out": "docs",
+  "includeVersion": false,
+  "theme": "typedoc-github-theme",
+  "tsconfig": "tsconfig.json",
+  "exclude": ["**/node_modules/**"],
+  "plugin": [
+    "typedoc-github-theme",
+    "typedoc-plugin-merge-modules",
+    "typedoc-plugin-mdn-links",
+    "typedoc-plugin-extras"
+  ]
+}

@@ -1,10 +1,10 @@
 {
   "name": "irinc-script",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "generate-docs": "node_modules/.bin/jsdoc -c jsdoc.json"
+    "doc": "typedoc --favicon public/Favicon.png"
   },
   "repository": {
     "type": "git",
@@ -16,10 +16,11 @@
     "url": "https://github.com/Iron-Org/irinc-script/issues"
   },
   "homepage": "https://github.com/Iron-Org/irinc-script#readme",
-  "devDependencies": {
-    "jsdoc": "^4.0.3"
-  },
   "dependencies": {
-    "docdash": "^2.0.2"
+    "typedoc": "^0.26.8",
+    "typedoc-github-theme": "^0.1.2",
+    "typedoc-plugin-extras": "^3.1.0",
+    "typedoc-plugin-mdn-links": "^3.3.2",
+    "typedoc-plugin-merge-modules": "^6.0.1"
   }
 }
