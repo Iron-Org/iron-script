@@ -28,6 +28,9 @@ jobs:
       - name: Generate documentation
         run: npm run doc
 
+      - name: Disable Jekyll
+        run: echo > ./docs/.nojekyll
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
