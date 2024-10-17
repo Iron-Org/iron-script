@@ -138,9 +138,9 @@ declare namespace Events {
     * Evento chamado quando um wired Efeito: Envia Eventos é ativado.
     * @event
     * @param {string} eventName - Nome do evento que emitido.
-    * @param {ScriptEntity} [entity] - Entidade que ativou o wired.
+    * @param {ScriptEntity[]} entities - Entidade que ativou o wired.
     */
-  const wired = (eventName: string, entity: ScriptEntity) => {}
+  const wired = (eventName: string, entities: ScriptEntity[]) => {}
 
   /**
     * Evento chamado quando um usuário pressiona uma das teclas.

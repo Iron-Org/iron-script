@@ -170,14 +170,12 @@ declare class FakeEntity {
 
 	/**
 	 * Define um efeito a entidade.
-	 * {@link https://drive.google.com/file/d/1sO22JtEZk_v34d5GUEfXLBriqeGc3Xsf/edit}
 	 * @param {number} effectId - Código do efeito.
 	 */
 	setEffect (effectId: number): void
 
 	/**
 	 * Define um item de mão para entidade segurar.
-	 * {@link https://drive.google.com/file/d/1tcoc7EqhLCjjzC5z8ArYQ1n8fUsjUauN/edit}
 	 * @param {number} handitemId - Código do item de mão.
 	 */
 	setHandItem (handitemId: number): void
