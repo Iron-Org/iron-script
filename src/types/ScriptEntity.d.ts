@@ -126,8 +126,9 @@ declare class ScriptEntity implements IScriptReachable {
 
 	/**
 	 * Returna o valor de memória definido no usuário.
+     * @param {string} key - Chave para acessar o valor
 	 */
-	getMemoryValue (): number
+	getMemoryValue (key: string): number
 
   /**
 	 * Returna a entidade do mascote do usuário.
@@ -360,9 +361,10 @@ declare class ScriptEntity implements IScriptReachable {
 
 	/**
 	 * Define o valor de mémoria no usuário
+   * @param {string} key - Chave de acesso desse valor.
 	 * @param {number} value - Valor que será definido.
 	 */
-	setMemoryValue (value: number): void
+	setMemoryValue (key: string, value: number): void
 
 	/**
 	 * Define a opacidade do mobi apenas para o usuário
