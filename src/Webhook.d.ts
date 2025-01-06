@@ -12,5 +12,5 @@ declare namespace Webhook {
    * Cria um novo Webhook direcionado ao link.
    * @param {string} linkWebhook - Link do Webhook a receber informações.
   */
-  function sendTo (linkWebhook: string): WebhookMessage
+  function sendTo(linkWebhook: string): WebhookMessage
 }

@@ -7,15 +7,15 @@
  */
 
 declare class ScriptAchievementProgress {
-	/**
-	 * Retorna o progresso da conquista
-	 */
-	getProgress (): number
+  /**
+   * Retorna o progresso da conquista
+   */
+  getProgress(): number
 
-	/**
-	 * Retorna o level da conquista
-	 */
-	getLevel (): number
+  /**
+   * Retorna o level da conquista
+   */
+  getLevel(): number
 }
 
 export { ScriptAchievementProgress };

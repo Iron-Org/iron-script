@@ -8,19 +8,19 @@
 
 /* Em manutenção, use no lugar GlobalStorage */
 declare namespace RoomStorage {
-	/**
-	* @param {string} key - Chave da propriedade a ser buscada
-	*/
-	function get (key: string): string
+  /**
+  * @param {string} key - Chave da propriedade a ser buscada
+  */
+  function get(key: string): string
 
-	/**
-	* @param {string} key - Chave da propriedade a definir.
-	* @param {*} value - Novo valor a ser definido.
-	*/
-	function set (key: string, value: any): void
+  /**
+  * @param {string} key - Chave da propriedade a definir.
+  * @param {*} value - Novo valor a ser definido.
+  */
+  function set(key: string, value: any): void
 
-	/**
-	* @param {string} key - Chave da propriedade a ser deletada.
-	*/
-	function _delete (key: string): void
+  /**
+  * @param {string} key - Chave da propriedade a ser deletada.
+  */
+  function _delete(key: string): void
 }
