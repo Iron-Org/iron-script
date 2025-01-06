@@ -14,6 +14,20 @@ declare namespace Furnis {
   function getItem(playerId: number, itemId: number): ScriptInventoryItem
 
   /**
+   * Retorna os itens de dentro do inventário do usuário pelo id base.
+   * @param {number} playerId - Id do usuário que possui o item.
+   * @param {number} baseId - Id base do item a ser buscado.
+  */
+  function getItemsByBaseId(playerId: number, baseId: number): ScriptInventoryItem[]
+
+  /**
+   * Retorna a quantidade de itens dentro do inventário do usuário pelo id base.
+   * @param {number} playerId - Id do usuário que possui o item.
+   * @param {number} baseId - Id base do item a ser buscado.
+  */
+  function getInventoryItemsQuantityByBaseId(playerId: number, baseId: number): number
+
+  /**
    * Cria um item dentro do inventário do usuário
    * @param {number} playerId - Id do usuário que irá receber o item.
    * @param {number} baseId - Id base do item.
@@ -53,4 +67,12 @@ declare namespace Furnis {
    * @param {number} itemId - Id do item a ser deletado.
   */
   function deleteItem(playerId: number, itemId: number): boolean
+
+  /**
+   * Deleta a quantidade de itens de dentro do inventário do usuário pelo id base.
+   * @param {number} playerId - Id do usuário que possui o item.
+   * @param {number} baseId - Id base do item a ser deletado.
+   * @param {number} amount - Quantidade de itens a serem deletados.
+  */
+  function deleteItemsByBaseId(playerId: number, baseId: number, amount: number): boolean
 }

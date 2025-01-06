@@ -334,4 +334,16 @@ declare namespace Events {
     * @param {ScriptInventoryItem[]} inventoryItem - Item da troca removido.
     */
   const removeTradeItem = (trade: ScriptTrade, inventoryItem: ScriptInventoryItem[]) => { }
+
+  /**
+    * Evento chamado antes de um refresh do script.
+    * @event
+    */
+  const preRefresh = () => { }
+
+  /**
+    * Evento chamado após um refresh do script.
+    * @event
+    */
+  const refresh = () => { }
 }
