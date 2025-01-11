@@ -35,5 +35,5 @@ declare namespace GlobalStorage {
    * @param {number} offset - Valor do deslocamento, quantas entradas devem ser puladas.
    * @returns {StorageValue}
    */
-  function startsWith(key: string): StorageValue[]
+  function startsWith(key: string, offset: number): StorageValue[]
 }
