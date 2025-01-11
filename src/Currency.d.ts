@@ -1,7 +1,7 @@
 /**
  * Métodos para premiar usuários com Moedas. 
  * Valores Negativos irão remover os créditos do Usuário. 
- * _Necessário permissão extra._
+ * _Necessário escopo de Moedas._
  * @category Classes
  * @author Luiz
  * @author Gabriel T

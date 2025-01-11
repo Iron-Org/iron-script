@@ -30,9 +30,10 @@ declare namespace GlobalStorage {
 
   /**
    * Consulta todos os valores que se iniciam com a chave buscada.
-   * _Necessário permissão extra._
+   * _Necessário escopo de Utilidades do Banco de Dados._
    * @param {string} key - Chave da propriedade a ser buscada.
+   * @param {number} offset - Valor do deslocamento, quantas entradas devem ser puladas.
    * @returns {StorageValue}
    */
-  function startsWith(key: string): StorageValue
+  function startsWith(key: string): StorageValue[]
 }

@@ -2,6 +2,8 @@ import { ScriptInventoryItem, ScriptGiftData } from './types';
 
 /**
  * Constante responsável por gerenciar os mobis.
+ * _Necessário escopo de Furnis._
+ * _Necessário escopo de Raros para manipulação de furnis raros._
  * @category Classes
  * @author Gabriel T
  */

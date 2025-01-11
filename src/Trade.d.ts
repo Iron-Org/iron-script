@@ -2,6 +2,7 @@ import { ScriptTrade, FakeEntity, ScriptEntity } from './types';
 
 /**
  * Constante responsável por gerenciar trocas.
+ * _Necessário escopo de Trocas._
  * @category Classes
  * @author Gabriel T
  */

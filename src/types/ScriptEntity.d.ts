@@ -671,6 +671,7 @@ declare class ScriptEntity implements IScriptReachable {
 
   /**
    * Carrega uma interface na client do usuário.
+   * _Necessário escopo de Html._
    * @param {string} name - Nome da pasta da interface
    * @param {string} filename - Nome do arquivo da interface.
    */
@@ -678,6 +679,7 @@ declare class ScriptEntity implements IScriptReachable {
 
   /**
    * Fecha uma interface na client do usuário.
+   * _Necessário escopo de Html._
    * @param {string} name - Nome da pasta da interface
    * @param {string} filename - Nome do arquivo da interface.
    */
@@ -685,11 +687,13 @@ declare class ScriptEntity implements IScriptReachable {
 
   /**
   * Fecha todas as interfaces na client do usuário.
+  * _Necessário escopo de Html._
   */
   unloadAllUI(): void
 
   /**
    * Carrega uma interface na client do usuário
+   * _Necessário escopo de Html._
    * @param {string} eventName - Nome do evento a emitir a client
    * @param {Object} data - Dados a ser enviados.
    */
