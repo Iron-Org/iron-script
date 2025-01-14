@@ -32,10 +32,28 @@ declare namespace Room {
   function ownerId(): number
 
   /**
-   * Retorna a quantidade de usuários do quarto
+   * Retorna a quantidade de usuários no quarto
    * @returns {number}
    */
   function userCount(): number
+
+  /**
+   * Retorna a quantidade de bots no quarto
+   * @returns {number}
+   */
+  function botCount(): number
+
+  /**
+   * Retorna a quantidade de pets no quarto
+   * @returns {number}
+   */
+  function petCount(): number
+
+  /**
+   * Retorna a quantidade total de entidades no quarto
+   * @returns {number}
+   */
+  function entityCount(): number
 
   /**
    * Retorna o usuário correspondente ao ID.
@@ -135,6 +153,7 @@ declare namespace Room {
   function getGroup(): ScriptGroup
 
   /**
+   * Retorna o estado de trocas do Quarto.
    * 0: Desabilitado
    * 1: Apenas donos ou usuários com direitos negociam
    * 2: Todos negociam
@@ -146,7 +165,6 @@ declare namespace Room {
    * @returns {boolean}
    */
   function getWalkThrough(): boolean
-
 
   /**
    * Retorna estado atual da diagonal.

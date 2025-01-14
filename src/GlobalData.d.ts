@@ -1,4 +1,4 @@
-import { ScriptPlayerData, ScriptBadge, ScriptGroup } from './types';
+import { ScriptPlayerData, ScriptRoomData, ScriptBadge, ScriptGroup } from './types/index';
 
 /**
  * Gerenciador de Dados de usuários do hotel.
@@ -20,6 +20,13 @@ declare namespace GlobalData {
   * @returns {ScriptPlayerData}
   */
   function getPlayerDataByName(username: string): ScriptPlayerData
+
+  /**
+  * Retorna os dados do usuário
+  * @param {number} id - ID do usuário
+  * @returns {ScriptRoomData}
+  */
+  function getRoomDataById(id: number): ScriptRoomData
 
   /**
   * Retorna o valor de um raro no Hotel

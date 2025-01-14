@@ -19,3 +19,4 @@ export * from './ScriptTile';
 export * from './ScriptTrade';
 export * from './StorageValue';
 export * from './WebhookMessage';
+export * from './ScriptRoomData';
