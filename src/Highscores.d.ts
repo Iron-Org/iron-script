@@ -1,4 +1,4 @@
-import { ScriptEntity, ScriptFurni } from './types';
+import { ScriptEntity, ScriptFurni } from './types/index';;
 
 /**
  * Gerenciador de placares. 

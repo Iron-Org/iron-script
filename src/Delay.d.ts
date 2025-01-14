@@ -1,4 +1,4 @@
-import { DelayTask } from './types';
+import { DelayTask } from './types/index';;
 
 /**
  * Aguarda tempos determinados para executar funções. 

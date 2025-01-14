@@ -1,4 +1,4 @@
-import { ScriptEntity, ScriptFurni, ScriptTile, ScriptGroup, ScriptPrivateChat, ScriptFurnisOpacity } from './types';
+import { ScriptEntity, ScriptFurni, ScriptTile, ScriptGroup, ScriptPrivateChat, ScriptFurnisOpacity } from './types/index';;
 
 /**
  * Propriedades e Métodos do quarto em que script está sendo executado

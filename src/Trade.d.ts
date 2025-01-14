@@ -1,4 +1,4 @@
-import { ScriptTrade, FakeEntity, ScriptEntity } from './types';
+import { ScriptTrade, FakeEntity, ScriptEntity } from './types/index';;
 
 /**
  * Constante responsável por gerenciar trocas.

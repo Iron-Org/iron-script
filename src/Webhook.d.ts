@@ -1,4 +1,4 @@
-import { WebhookMessage } from './types'
+import { WebhookMessage } from './types/index';
 
 /**
  * Gerenciador de Webhooks

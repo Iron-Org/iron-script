@@ -1,4 +1,4 @@
-import { ScriptInventoryItem, ScriptGiftData } from './types';
+import { ScriptInventoryItem, ScriptGiftData } from './types/index';;
 
 /**
  * Constante responsável por gerenciar os mobis.

@@ -1,4 +1,4 @@
-import { FakeEntity, FakeFloorItem } from './types';
+import { FakeEntity, FakeFloorItem } from './types/index';;
 
 /**
  * Faker

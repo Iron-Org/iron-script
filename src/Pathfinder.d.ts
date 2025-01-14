@@ -1,4 +1,4 @@
-import { IScriptReachable, ScriptEntity, ScriptFurni } from './types';
+import { IScriptReachable, ScriptEntity, ScriptFurni } from './types/index';;
 
 /**
  * Funções para criação de pathfinders

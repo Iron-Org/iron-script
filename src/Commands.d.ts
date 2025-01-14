@@ -1,4 +1,4 @@
-import { ScriptEntity } from './types'
+import { ScriptEntity } from './types/index';
 
 /**
  * Callback de execução de comandos.

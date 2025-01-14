@@ -1,4 +1,4 @@
-import { ScriptEntity, FakeEntity, ScriptFurni, ScriptPosition, ScriptTrade, ScriptInventoryItem } from './types';
+import { ScriptEntity, FakeEntity, ScriptFurni, ScriptPosition, ScriptTrade, ScriptInventoryItem } from './types/index';;
 
 /**
   * Gerenciador de Eventos chamados no Script
