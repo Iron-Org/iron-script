@@ -296,6 +296,25 @@ declare namespace Room {
   function setFurnisOpacity(furnis: ScriptFurnisOpacity): void
 
   /**
+   * Altera o filtro do quarto
+   * @param {string} filterName - Nome do Filtro
+   * @param {number} intensity - Intensidade do Filtro
+   * @param {number} opacity - Opacidade do Filtro
+   * @param {string} color - Cor do filtro em Hexadecimal (Apenas funcional no filtro de Tinta)
+   * @returns {boolean}
+   */
+  function setRoomFilter(filterName: string, intensity: number, opacity: number, color: string): boolean
+
+  /**
+   * Altera o filtro do quarto
+   * @param {string} filterName - Nome do Filtro
+   * @param {number} intensity - Intensidade do Filtro
+   * @param {number} opacity - Opacidade do Filtro
+   * @returns {boolean}
+   */
+  function setRoomFilter(filterName: string, intensity: number, opacity: number): boolean
+
+  /**
    * Cria um chat privado
    * @returns {ScriptPrivateChat}
    */

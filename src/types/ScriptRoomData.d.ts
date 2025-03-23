@@ -4,7 +4,6 @@ import { ScriptGroup } from "./ScriptGroup";
  * Classe para consulta de dados de um Quarto do hotel.
  * @hideconstructor
  * @category Tipos
- * @author Arthur L
  * @author Gabriel T
  */
 declare class ScriptRoomData {

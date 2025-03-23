@@ -387,6 +387,27 @@ declare class ScriptEntity implements IScriptReachable {
   setFurnisOpacity(furnis: ScriptFurnisOpacity): boolean
 
   /**
+   * Altera o filtro no quarto para o usuário
+   * *Restrito a usuários.*
+   * @param {string} filterName - Nome do Filtro
+   * @param {number} intensity - Intensidade do Filtro
+   * @param {number} opacity - Opacidade do Filtro
+   * @param {string} color - Cor do filtro em Hexadecimal (Apenas funcional no filtro de Tinta)
+   * @returns {boolean}
+   */
+  setRoomFilter(filterName: string, intensity: number, opacity: number, color: string): boolean
+
+  /**
+   * Altera o filtro no quarto para o usuário
+   * *Restrito a usuários.*
+   * @param {string} filterName - Nome do Filtro
+   * @param {number} intensity - Intensidade do Filtro
+   * @param {number} opacity - Opacidade do Filtro
+   * @returns {boolean}
+   */
+  setRoomFilter(filterName: string, intensity: number, opacity: number): boolean
+
+  /**
    * Envia um emblema a entidade.
    * *Restrito a usuários.*
    * @param {string} badge - Código do emblema a ser entregue.

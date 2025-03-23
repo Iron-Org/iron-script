@@ -2,7 +2,7 @@
  * Classe para consulta de dados de usuário do hotel.
  * @hideconstructor
  * @category Tipos
- * @author Arthur L
+ * @author Batman
  * @author Gabriel T
  */
 declare class ScriptPlayerData {
