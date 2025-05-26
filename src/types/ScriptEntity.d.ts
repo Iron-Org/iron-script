@@ -831,21 +831,20 @@ declare class ScriptEntity implements IScriptReachable {
   showFakeFurnis(fakeFurniIds: number[]): void;
 
   /**
-   * Mostra uma tabela de valores para usuário
+   * Mostra uma tabela de valores para o usuário
    * @param {string} title - Titulo da tabela
    * @param {string[]} values - Lista de valores na tabela
    */
-  sendTableList(title, values): void;
+  sendTableList(title: string, values: string[]): void;
 
   /**
-   * Mostra uma tabela de chaves e valores para usuário
-   * A chave deve ser adicionado antes e junto ao valor
+   * Mostra uma tabela de chaves e valores para o usuário. Chave deve ser adicionado antes e junto ao valor
    * @example
    * sendTableAttributes("titulo", ["chave", "valor", "chave2", "valor2"]);
    * @param {string} title - Titulo da tabela
    * @param {string[]} values - Lista de chaves e valores na tabela
    */
-  sendTableAttributes(title, values): void;
+  sendTableAttributes(title: string, values: string[]): void;
 
   /**
    * Bani o usuário do Hotel.
