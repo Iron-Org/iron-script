@@ -1,4 +1,11 @@
-import { IScriptReachable, ScriptFurni, FakeEntity, FakeFloorItem, ScriptAchievementProgress, ScriptFurnisOpacity } from '.';
+import {
+  IScriptReachable,
+  ScriptFurni,
+  FakeEntity,
+  FakeFloorItem,
+  ScriptAchievementProgress,
+  ScriptFurnisOpacity,
+} from ".";
 
 /**
  * Classe que representa uma entidade no quarto.
@@ -11,136 +18,136 @@ declare class ScriptEntity implements IScriptReachable {
   /**
    * Retorna o ID da entidade.
    */
-  getId(): number
+  getId(): number;
 
   /**
    * Retorna o nome da Entidade atual.
    */
-  getUsername(): string
+  getUsername(): string;
 
   /**
    * Retorna a posição X atual da entidade.
    */
-  getX(): number
+  getX(): number;
 
   /**
    * Retorna a posição Y atual da entidade.
    */
-  getY(): number
+  getY(): number;
 
   /**
    * Retorna a atual posição Z da entidade.
    */
-  getZ(): number
+  getZ(): number;
 
   /**
    * Retorna a atual rotação do corpo da entidade.
    */
-  getR(): number
+  getR(): number;
 
   /**
    * Retorna a atual rotação da cabeça da entidade.
    */
-  getHeadR(): number
+  getHeadR(): number;
 
   /**
    * Retorna o tipo da entidade.
    */
-  getType(): string
+  getType(): string;
 
   /**
    * Retorna o rank da entidade.
    */
-  getRank(): number
+  getRank(): number;
 
   /**
    * Retorna a missão da entidade.
    */
-  getMotto(): string
+  getMotto(): string;
 
   /**
    * Retorna o genero da entidade
    */
-  getGender(): string
+  getGender(): string;
   /**
    * Retorna o código do atual visual da entidade.
    * *Não aplicável a Pets*
    */
-  getFigure(): string
+  getFigure(): string;
 
   /**
    * Retorna o código do efeito atual da entidade.
    */
-  getEffect(): number
+  getEffect(): number;
 
   /**
    * Retorna o código do atual item de mão que a entidade está segurando.
    */
-  getHandItem(): number
+  getHandItem(): number;
 
   /**
    * Retorna a atual dança da entidade.
    */
-  getDance(): number
+  getDance(): number;
 
   /**
    * Retorna a ação que a entidade esta fazendo.
    */
-  getAction(): number
+  getAction(): number;
 
   /**
    * Retorna a placa que a entidade esta segurando.
    */
-  getSign(): number
+  getSign(): number;
 
   /**
    * Retorna objeto com status atual da conquista
    * @param {string} achievement - Código da conquista
    */
-  getAchievementProgress(achievement: string): ScriptAchievementProgress
+  getAchievementProgress(achievement: string): ScriptAchievementProgress;
 
   /**
    * Retorna o total de Ponto de Conquista da entidade.
    */
-  getAchievementPoints(): number
+  getAchievementPoints(): number;
 
   /**
    * Retorna quantidade de Créditos que o usuário possui
    */
-  getCredits(): number
+  getCredits(): number;
 
   /**
    * Retorna quantidade de Duckets que o usuário possui
    */
-  getDuckets(): number
+  getDuckets(): number;
 
   /**
    * Retorna quantidade de Diamantes que o usuário possui
    */
-  getDiamonds(): number
+  getDiamonds(): number;
 
   /**
    * Retorna quantidade de Pontos Sazonais que o usuário possui
    */
-  getSeasonalPoints(): number
+  getSeasonalPoints(): number;
 
   /**
    * Returna o valor de memória definido no usuário.
-     * @param {string} key - Chave para acessar o valor
+   * @param {string} key - Chave para acessar o valor
    */
-  getMemoryValue(key: string): number
+  getMemoryValue(key: string): number;
 
   /**
    * Returna a entidade do mascote do usuário.
    * @returns {ScriptEntity}
    */
-  getMascotEntity(): ScriptEntity
+  getMascotEntity(): ScriptEntity;
 
   /**
    * Retorna a distancia entre a entidade e outra posição fornecida no objeto.
    * @param {IScriptReachable} object - Objeto posicionável
    */
-  distanceTo(object: IScriptReachable): number
+  distanceTo(object: IScriptReachable): number;
 
   /**
    * Retorna a distancia atual entre esta entidade e a posição fornecida.
@@ -148,98 +155,98 @@ declare class ScriptEntity implements IScriptReachable {
    * @param {number} y - Posição Y a ser comparada.
    * @param {number} z - Posição Z a ser comparada.
    */
-  distanceTo(x: number, y: number, z: number): number
+  distanceTo(x: number, y: number, z: number): number;
 
   /**
    * Retorna se a entidade é fake.
    */
-  isFakeEntity(): boolean
+  isFakeEntity(): boolean;
 
   /**
    * Retorna se a entidade é um usuário.
    */
-  isPlayer(): boolean
+  isPlayer(): boolean;
 
   /**
    * Retorna se entidade é um Bot.
    */
-  isBot(): boolean
+  isBot(): boolean;
 
   /**
    * Retorna se a entidade é um Pet.
    */
-  isPet(): boolean
+  isPet(): boolean;
 
   /**
    * Retorna se o usuário esta ausente.
    */
-  isIdle(): boolean
+  isIdle(): boolean;
 
   /**
    * Retorna se o usuário esta com interações desabilitadas.
    */
-  isInteractionDisabled(): boolean
+  isInteractionDisabled(): boolean;
 
   /**
    * Retorna se esta entidade é igual a entidade fornecida.
    * @param {ScriptEntity} entity - Entidade que será comparada.
    */
-  equals(entity: ScriptEntity): boolean
+  equals(entity: ScriptEntity): boolean;
 
   /**
    * Retorna se esta entidade está sobre a posição fornecida.
    * @param {IScriptReachable} object - Objeto posicionável
    */
-  in(object: IScriptReachable): boolean
+  in(object: IScriptReachable): boolean;
 
   /**
    * Retorna se a entidade está em alguma das posições fornecidas.
    * @param {IScriptReachable[]} objects - Lista de Objetos posicionáveis
    */
-  inAny(objects: IScriptReachable[]): boolean
+  inAny(objects: IScriptReachable[]): boolean;
 
   /**
    * Retorna se a entidade pode se mover.
    */
-  canWalk(): boolean
+  canWalk(): boolean;
 
   /**
    * Retorna se a entidade está se movendo.
    */
-  isWalking(): boolean
+  isWalking(): boolean;
 
   /**
    * Retorna se a entidade é um mascote.
    */
-  isMascotEntity(): boolean
+  isMascotEntity(): boolean;
 
   /**
    * Retorna se a entidade possui o emblema no inventário do usuário.
    * *Emblema não precisa estar equipado como favorito.*
    * @param {string} badge - Código do emblema a ser verificado.
-  */
-  hasBadge(badge: string): boolean
+   */
+  hasBadge(badge: string): boolean;
 
   /**
    * Retorna se entidade possui o rank fornecido ou maior.
    * @param {number} rank - Valor do rank a ser comparado.
    */
-  hasRank(rank: number): boolean
+  hasRank(rank: number): boolean;
 
   /**
    * Retorna se entidade esta sentada.
    */
-  hasSit(): boolean
+  hasSit(): boolean;
 
   /**
    * Retorna se entidade esta deitada.
    */
-  hasLay(): boolean
+  hasLay(): boolean;
 
   /**
    * Retorn se o usuário possui um mascote no quarto
    */
-  hasMascotEntity(): boolean
+  hasMascotEntity(): boolean;
 
   /**
    * Retorna se entidade está próxima (tocando) a posição fornecida.
@@ -247,23 +254,23 @@ declare class ScriptEntity implements IScriptReachable {
    * @param {number} y - Posição Y a ser comparada.
    * @param {number} z - Posição Z a ser comparada.
    */
-  touching(x: number, y: number, z: number): boolean
+  touching(x: number, y: number, z: number): boolean;
 
   /**
    * Retorna se entidade está próxima (tocando) a posição fornecida pelo objeto.
    * @param {IScriptReachable} object - Objeto posicionável
    */
-  touching(object: IScriptReachable): boolean
+  touching(object: IScriptReachable): boolean;
 
   /**
    * Retorna se o usuário esta com soft mute.
    */
-  isSoftMuted(): boolean
+  isSoftMuted(): boolean;
 
   /**
    * Retorna se o usuário esta ouvindo Música
    */
-  isListeningMusic(): boolean
+  isListeningMusic(): boolean;
 
   /**
    * Retorna se o usuário esta banido da economia
@@ -275,33 +282,33 @@ declare class ScriptEntity implements IScriptReachable {
    *  - todos: all
    * @param {string} type - Tipo do banimento
    */
-  isEconomicBanned(type: string): boolean
+  isEconomicBanned(type: string): boolean;
 
   /**
    * Adiciona pontos a uma conquista do usuário.
    * @param {string} code - Código da conquista.
    * @param {number} levels - Quantidade de pontos
    */
-  progressAchievement(code: string, levels: number): void
+  progressAchievement(code: string, levels: number): void;
 
   /**
    * Define a rotação da entidade.
    * @param {number} rotation - Valor da rotação.
    */
-  setRotation(rotation: number): void
+  setRotation(rotation: number): void;
 
   /**
    * Define um novo nome ao Bot.
    * *Restrito a BOTs*
    * @param {string} username - Nome que será definido ao Bot.
    */
-  setUsername(username: string): void
+  setUsername(username: string): void;
 
   /**
    * Define uma missão a entidade.
    * @param {*} motto - Missão que será definida na entidade.
    */
-  setMotto(motto: any): void
+  setMotto(motto: any): void;
 
   /**
    * Define o visual para entidade.
@@ -309,38 +316,38 @@ declare class ScriptEntity implements IScriptReachable {
    * @param {string} gender - Gênero do visual.
    * @param {string} figure - Código do visual.
    */
-  setFigure(gender: string, figure: string): void
+  setFigure(gender: string, figure: string): void;
 
   /**
    * Define um item de mão para entidade segurar.
    * @param {number} h - Código do item de mão.
    */
-  setHandItem(h: number): void
+  setHandItem(h: number): void;
 
   /**
    * Define um efeito a entidade.
    * @param {number} effect - Código do efeito.
    */
-  setEffect(effect: number): void
+  setEffect(effect: number): void;
 
   /**
    * Define a entidade pode ser mover.
    * @param {boolean} can - Se a entidade pode ser mover.
    * @param {boolean} effect - Se a entidade deve receber um efeito de congelado.
    */
-  setCanWalk(can: boolean, effect: boolean): void
+  setCanWalk(can: boolean, effect: boolean): void;
 
   /**
    * Define a usuário pode ser falar no quarto.
    * @param {boolean} muted - Se o usuário pode ou não falar.
    */
-  setMuted(muted: boolean): void
+  setMuted(muted: boolean): void;
 
   /**
    * Define se as interações do usuário devem ser desabilitadas.
    * @param {boolean} disable - Se irá desabilitar as interações.
    */
-  setInteractionDisabled(disable: boolean): void
+  setInteractionDisabled(disable: boolean): void;
 
   /**
    * Define uma dança para a entidade.
@@ -351,40 +358,40 @@ declare class ScriptEntity implements IScriptReachable {
    * 4: Rollie
    * @param {number} danceId - Código da dança
    */
-  setDance(danceId: number): void
+  setDance(danceId: number): void;
 
   /**
    * Define se a visiblidade do usuário.
    * @param {boolean} isVisible - Se deve estar visivel ou não
    */
-  setVisibility(isVisible: boolean): void
+  setVisibility(isVisible: boolean): void;
 
   /**
    * Define o valor de mémoria no usuário
    * @param {string} key - Chave de acesso desse valor.
    * @param {number} value - Valor que será definido.
    */
-  setMemoryValue(key: string, value: number): void
+  setMemoryValue(key: string, value: number): void;
 
   /**
    * Define a opacidade do mobi apenas para o usuário
    * @param {number} furniId - ID do mobi a ser defindo a opacidade.
    * @param {number} alpha - Valor da opacidade (1 a 255).
    */
-  setFurniOpacity(furniId: number, alpha: number): boolean
+  setFurniOpacity(furniId: number, alpha: number): boolean;
 
   /**
    * Define a opacidade do mobi apenas para o usuário
    * @param {ScriptFurni} furni - mobi a ser defindo a opacidade.
    * @param {number} alpha - Valor da opacidade (1 a 255).
    */
-  setFurniOpacity(furni: ScriptFurni, alpha: number): boolean
+  setFurniOpacity(furni: ScriptFurni, alpha: number): boolean;
 
   /**
    * Define a opacidade dos mobis apenas para o usuário
    * @param {ScriptFurnisOpacity} furnis - conjunto de mobis a ser defindo a opacidade.
    */
-  setFurnisOpacity(furnis: ScriptFurnisOpacity): boolean
+  setFurnisOpacity(furnis: ScriptFurnisOpacity): boolean;
 
   /**
    * Altera o filtro no quarto para o usuário
@@ -395,7 +402,12 @@ declare class ScriptEntity implements IScriptReachable {
    * @param {string} color - Cor do filtro em Hexadecimal (Apenas funcional no filtro de Tinta)
    * @returns {boolean}
    */
-  setRoomFilter(filterName: string, intensity: number, opacity: number, color: string): boolean
+  setRoomFilter(
+    filterName: string,
+    intensity: number,
+    opacity: number,
+    color: string
+  ): boolean;
 
   /**
    * Altera o filtro no quarto para o usuário
@@ -405,14 +417,18 @@ declare class ScriptEntity implements IScriptReachable {
    * @param {number} opacity - Opacidade do Filtro
    * @returns {boolean}
    */
-  setRoomFilter(filterName: string, intensity: number, opacity: number): boolean
+  setRoomFilter(
+    filterName: string,
+    intensity: number,
+    opacity: number
+  ): boolean;
 
   /**
    * Envia um emblema a entidade.
    * *Restrito a usuários.*
    * @param {string} badge - Código do emblema a ser entregue.
    */
-  giveBadge(badge: string): void
+  giveBadge(badge: string): void;
 
   /**
    * De pontos ao usúarios em um placar da HK.
@@ -420,83 +436,87 @@ declare class ScriptEntity implements IScriptReachable {
    * @param {ScriptEntity} user - usuário a ganhar os pontos
    * @param {number} points - Quantidade de pontos
    */
-  giveLeaderboardPoints(leaderboard: string, user: ScriptEntity, points: number): void
+  giveLeaderboardPoints(
+    leaderboard: string,
+    user: ScriptEntity,
+    points: number
+  ): void;
 
   /**
    * Remove o item de mão da entidade.
    */
-  removeHandItem(): void
+  removeHandItem(): void;
 
   /**
    * Remove o efeito da entidade.
    */
-  removeEffect(): void
+  removeEffect(): void;
 
   /**
    * Remove um emblema de um usuário.
    * @param {string} badge - Código do emblema.
    */
-  removeBadge(badge: string): void
+  removeBadge(badge: string): void;
 
   /**
    * Faz uma entidade começar a seguir.
    * @param {ScriptEntity } entity - Entidade que irá começar a seguir.
    */
-  addFollowerEntity(entity: ScriptEntity): void
+  addFollowerEntity(entity: ScriptEntity): void;
 
   /**
    * Faz uma entidade começar a seguir.
    * @param {FakeEntity} entity - Entidade que irá começar a seguir.
    */
-  addFollowerEntity(entity: FakeEntity): void
+  addFollowerEntity(entity: FakeEntity): void;
 
   /**
    * Faz uma entidade começar a seguir.
    * @param {ScriptEntity } entity - Entidade que irá começar a seguir.
    */
-  removeFollowerEntity(entity: ScriptEntity): void
+  removeFollowerEntity(entity: ScriptEntity): void;
 
   /**
    * Faz uma entidade começar a seguir.
    * @param {FakeEntity} entity - Entidade que irá começar a seguir.
    */
-  removeFollowerEntity(entity: FakeEntity): void
+  removeFollowerEntity(entity: FakeEntity): void;
 
   /**
    * Esconde outro usuário para o usuário atual.
    * @param {number} playerId - ID do usuário a ser escondido.
    */
-  hidePlayer(playerId: number): void
+  hidePlayer(playerId: number): void;
 
   /**
    * Mostra outro usuário para o usuário atual.
    * @param {number} playerId - ID do usuário a ser mostrado.
    */
-  showPlayer(playerId: number): void
+  showPlayer(playerId: number): void;
 
   /**
    * Esconde um Bot para o usuário atual.
    * @param {number} botId - ID do Bot a ser escondido.
    */
-  hideBot(botId: number): void
+  hideBot(botId: number): void;
 
   /**
    * Mostra um Bot para o usuário atual.
    * @param {number} botId - ID do Bot a ser mostrado.
    */
-  showBot(botId: number): void
+  showBot(botId: number): void;
 
   /**
    * Esconde um Pet para o usuário atual.
    * @param {number} petId - ID do Pet a ser escondido.
    */
-  hidePet(petId: number): void
+  hidePet(petId: number): void;
 
   /**
    * Mostra um Pet para o usuário atual.
    * @param {number} petId - ID do Pet a ser mostrado.
    */
-  showPet(petId: number): void
+  showPet(petId: number): void;
 
   /**
    * Toca um áudio no jogo do usuário.
@@ -504,7 +524,7 @@ declare class ScriptEntity implements IScriptReachable {
    * @param {string} soundName - Nome do áudio
    * @param {number} volume - Volume do áudio de 1 a 100
    */
-  playAudio(soundName: string, volume: number): void
+  playAudio(soundName: string, volume: number): void;
 
   /**
    * Toca uma música no jogo do usuário.
@@ -513,12 +533,12 @@ declare class ScriptEntity implements IScriptReachable {
    * @param {number} volume - Volume do áudio de 1 a 100
    * @param {number} loop - Se a música deve permanecer na playlist e repetindo
    */
-  playMusic(soundName: string, volume: number, loop: number): void
+  playMusic(soundName: string, volume: number, loop: number): void;
 
   /**
    * Para todas as músicas que o usuário estiver ouvindo
    */
-  stopMusics(): void
+  stopMusics(): void;
 
   /**
    * Faz a entidade dizer uma mensagem.
@@ -526,14 +546,14 @@ declare class ScriptEntity implements IScriptReachable {
    * @param {boolean=} shout - Se o personagem deve gritar a mensagem. (Mensagem em Bold)
    * @param {number=} bubbleId - Balão da mensagem
    */
-  say(message: any, shout?: boolean, bubbleId?: number): void
+  say(message: any, shout?: boolean, bubbleId?: number): void;
 
   /**
    * Envia uma mensagem que aparecerá somente para está entidade.
    * @param {string} message - Mensagem a ser enviada.
    * @param {number=} bubble - Balão da mensagem.
    */
-  message(message: string, bubble?: number): void
+  message(message: string, bubble?: number): void;
 
   /**
    * Sussura uma mensagem para outra entendide.
@@ -541,32 +561,32 @@ declare class ScriptEntity implements IScriptReachable {
    * @param {*} message - Mensagem que será enviada.
    * @param {number} bubbleId - Balão da mensagem.
    */
-  whisper(to: ScriptEntity, message: any, bubbleId: number): void
+  whisper(to: ScriptEntity, message: any, bubbleId: number): void;
 
   /**
    * Envia um alerta ao usuário.
    * @param {string} text - Texto do alerta.
    */
-  alert(text: string): void
+  alert(text: string): void;
 
   /**
    * Envia um alerta longo ao usuário.
    * @param {string} text - Texto do alerta.
    */
-  alertLong(text: string): void
+  alertLong(text: string): void;
 
   /**
    * Entidade olha para o ponto definido.
    * @param {IScriptReachable} object - Objeto posicionável
    * @param {boolean} moveHead = Se a entidade deve mover somente sua cabeça.
    */
-  lookTo(object: IScriptReachable, moveHead: boolean): void
+  lookTo(object: IScriptReachable, moveHead: boolean): void;
 
   /**
    * Esta entidade olha para outra entidade.
    * @param {ScriptEntity} entity - Entidade que será o alvo.
    */
-  lookTo(entity: ScriptEntity): void
+  lookTo(entity: ScriptEntity): void;
 
   /**
    * Entidade olha para o ponto definido.
@@ -574,7 +594,7 @@ declare class ScriptEntity implements IScriptReachable {
    * @param {number} y - Posição Y que entidade irá olhar.
    * @param {boolean=} moveHead - Se a entidade pode mover somente sua cabeça.
    */
-  lookTo(x: number, y: number, moveHead?: boolean): void
+  lookTo(x: number, y: number, moveHead?: boolean): void;
 
   /**
    * Teletransporta a entidade para posição fornecida.
@@ -583,7 +603,7 @@ declare class ScriptEntity implements IScriptReachable {
    * @param {number} z - Posição Z em que entidade seŕa levada.
    * @param {number=} r - Rotação definida para a entidade.
    */
-  teleport(x: number, y: number, z: number, r?: number): void
+  teleport(x: number, y: number, z: number, r?: number): void;
 
   /**
    * Teletransporta a entidade para posição fornecida.
@@ -591,13 +611,13 @@ declare class ScriptEntity implements IScriptReachable {
    * @param {number} y - Posição Y em que entidade seŕa levada.
    * @param {number} z - Posição Z em que entidade seŕa levada.
    */
-  teleport(x: number, y: number, z: number): void
+  teleport(x: number, y: number, z: number): void;
 
   /**
    * Teletransporta a entidade para posição fornecida no objeto.
    * @param {IScriptReachable} object - Objeto posicionável
    */
-  teleport(object: IScriptReachable): void
+  teleport(object: IScriptReachable): void;
 
   /**
    * Desliza a entidade para posição fornecida.
@@ -605,20 +625,20 @@ declare class ScriptEntity implements IScriptReachable {
    * @param {number} y - Posição Y em que entidade seŕa levada.
    * @param {number} z - Posição Z em que entidade seŕa levada.
    */
-  move(x: number, y: number, z: number): void
+  move(x: number, y: number, z: number): void;
 
   /**
    * Entidade anda até a posição fornecida.
    * @param {number} x - Posição X
    * @param {number} y - Posição Y
    */
-  walk(x: number, y: number): void
+  walk(x: number, y: number): void;
 
   /**
    * Entidade anda até a posição fornecida no objeto.
    * @param {IScriptReachable} object - Objeto posicionável
    */
-  walk(object: IScriptReachable): void
+  walk(object: IScriptReachable): void;
 
   /**
    * Entidade anda até a posição fornecida.
@@ -628,12 +648,18 @@ declare class ScriptEntity implements IScriptReachable {
    * @param {boolean} enableDiagonal - Se a entidade pode andar na diagonal
    * @param {boolean} forced - Se a entidade deve andar mesmo congelada
    */
-  walk(x: number, y: number, overrideLastStep: boolean, enableDiagonal: boolean, forced: boolean): void
+  walk(
+    x: number,
+    y: number,
+    overrideLastStep: boolean,
+    enableDiagonal: boolean,
+    forced: boolean
+  ): void;
 
   /**
    * Faz com que a entidade pare de andar.
-  */
-  cancelWalk(): void
+   */
+  cancelWalk(): void;
 
   /**
    * Entidade faz uma ação determinada
@@ -641,54 +667,54 @@ declare class ScriptEntity implements IScriptReachable {
    * 2: Mandar Beijo
    * 3: Rir
    * @param {number} action - Número da ação
-  */
-  action(action: number): void
+   */
+  action(action: number): void;
 
   /**
    * Acorda o usuário se estiver ausente.
    */
-  unIdle(): void
+  unIdle(): void;
 
   /**
    * Faz a entidade se levantar.
    */
-  std(): void
+  std(): void;
 
   /**
    * Faz a entidade deitar.
    */
-  lay(): void
+  lay(): void;
 
   /**
    * Faz a entidade sentar.
    */
-  sit(): void
+  sit(): void;
 
   /**
    * Expulsa a entidade do quarto.
    */
-  kick(): void
+  kick(): void;
 
   /**
    * Leva a entidade para outro quarto.
    * *Entidade será levada mesmo que haja campanhia/senha*
    * @param {number} roomId - ID do quarto alvo.
    */
-  gotoRoom(roomId: number): void
+  gotoRoom(roomId: number): void;
 
   /**
    * Envia uma notificação para o usuário.
    * @param {string} icon - Código do icone para a notificação.
    * @param {string} message - Mensagem pra notificação.
-  */
-  notification(icon: string, message: string): void
+   */
+  notification(icon: string, message: string): void;
 
   /**
    * Exibe um video para este usuário
    * @param {string} url - Url do video no Youtube.
    * @param {string} force - Se o comando deve forçar a exibição do video, mesmo que o usuário tenha desabilitado.
    */
-  youtube(url: string, force: string): void
+  youtube(url: string, force: string): void;
 
   /**
    * Carrega uma interface na client do usuário.
@@ -696,7 +722,7 @@ declare class ScriptEntity implements IScriptReachable {
    * @param {string} name - Nome da pasta da interface
    * @param {string} filename - Nome do arquivo da interface.
    */
-  loadUI(name: string, filename: string): void
+  loadUI(name: string, filename: string): void;
 
   /**
    * Fecha uma interface na client do usuário.
@@ -704,13 +730,13 @@ declare class ScriptEntity implements IScriptReachable {
    * @param {string} name - Nome da pasta da interface
    * @param {string} filename - Nome do arquivo da interface.
    */
-  unloadUI(name: string, filename: string): void
+  unloadUI(name: string, filename: string): void;
 
   /**
-  * Fecha todas as interfaces na client do usuário.
-  * _Necessário escopo de Html._
-  */
-  unloadAllUI(): void
+   * Fecha todas as interfaces na client do usuário.
+   * _Necessário escopo de Html._
+   */
+  unloadAllUI(): void;
 
   /**
    * Carrega uma interface na client do usuário
@@ -718,91 +744,108 @@ declare class ScriptEntity implements IScriptReachable {
    * @param {string} eventName - Nome do evento a emitir a client
    * @param {Object} data - Dados a ser enviados.
    */
-  sendUIMessage(eventName: string, data: object): void
+  sendUIMessage(eventName: string, data: object): void;
 
   /**
    * Executa um link no usuário
    * @param {string} link - Link a ser executado
    */
-  executeLink(link: string): void
+  executeLink(link: string): void;
 
   /**
    * Executa um link no usuário
    * @param {string} link - Link a ser executado
    */
-  executeLink(link: string): void
+  executeLink(link: string): void;
 
   /**
    * Esconde o mobi para o usuário.
    * @param {number} furniId - ID do Furni que será escondido.
    */
-  hideFurni(furniId: number): void
+  hideFurni(furniId: number): void;
 
   /**
    * Esconde o mobi para o usuário.
    * @param {ScriptFurni} furni - Furni que será escondido.
    */
-  hideFurni(furni: ScriptFurni): void
+  hideFurni(furni: ScriptFurni): void;
 
   /**
    * Esconde os mobis para o usuário.
    * @param {number[]} furniIds - IDs dos Furnis que serão escondidos.
    */
-  hideFurnis(furniIds: number[]): void
+  hideFurnis(furniIds: number[]): void;
 
   /**
- * Mostra o mobi para o usuário.
- * @param {number} furniId - ID do Furni que será mostrado.
- */
-  showFurni(furniId: number): void
+   * Mostra o mobi para o usuário.
+   * @param {number} furniId - ID do Furni que será mostrado.
+   */
+  showFurni(furniId: number): void;
 
   /**
    * Mostra o mobi para o usuário.
    * @param {ScriptFurni} furni - Furni que será mostrado.
    */
-  showFurni(furni: ScriptFurni): void
+  showFurni(furni: ScriptFurni): void;
 
   /**
    * Mostra os mobis para o usuário.
    * @param {number[]} furniIds - IDs dos Furnis que serão mostrados.
    */
-  showFurnis(furniIds: number[]): void
+  showFurnis(furniIds: number[]): void;
 
   /**
    * Esconde o mobi para o usuário.
    * @param {number} fakeFurniId - ID do Fake Furni que será escondido.
    */
-  hideFakeFurni(fakeFurniId: number): void
+  hideFakeFurni(fakeFurniId: number): void;
 
   /**
    * Esconde o mobi para o usuário.
    * @param {FakeFloorItem} fakeFurni - Fake Furni que será escondido.
    */
-  hideFakeFurni(fakeFurni: FakeFloorItem): void
+  hideFakeFurni(fakeFurni: FakeFloorItem): void;
 
   /**
    * Esconde os mobis para o usuário.
    * @param {number[]} fakeFurniIds - IDs dos Fake Furnis que serão escondidos.
    */
-  hideFakeFurnis(fakeFurniIds: number[]): void
+  hideFakeFurnis(fakeFurniIds: number[]): void;
 
   /**
- * Mostra o mobi para o usuário.
- * @param {number} fakeFurniId - ID do Fake Furni que será mostrado.
- */
-  showFakeFurni(fakeFurniId: number): void
+   * Mostra o mobi para o usuário.
+   * @param {number} fakeFurniId - ID do Fake Furni que será mostrado.
+   */
+  showFakeFurni(fakeFurniId: number): void;
 
   /**
    * Mostra o mobi para o usuário.
    * @param {FakeFloorItem} fakeFurni - Fake Furni que será mostrado.
    */
-  showFakeFurni(fakeFurni: FakeFloorItem): void
+  showFakeFurni(fakeFurni: FakeFloorItem): void;
 
   /**
    * Mostra os mobis para o usuário.
    * @param {number[]} fakeFurniIds - IDs dos Fake Furnis que serão mostrados.
    */
-  showFakeFurnis(fakeFurniIds: number[]): void
+  showFakeFurnis(fakeFurniIds: number[]): void;
+
+  /**
+   * Mostra uma tabela de valores para usuário
+   * @param {string} title - Titulo da tabela
+   * @param {string[]} values - Lista de valores na tabela
+   */
+  sendTableList(title, values): void;
+
+  /**
+   * Mostra uma tabela de chaves e valores para usuário
+   * A chave deve ser adicionado antes e junto ao valor
+   * @example
+   * sendTableAttributes("titulo", ["chave", "valor", "chave2", "valor2"]);
+   * @param {string} title - Titulo da tabela
+   * @param {string[]} values - Lista de chaves e valores na tabela
+   */
+  sendTableAttributes(fakeFurniIds: number[]): void;
 
   /**
    * Bani o usuário do Hotel.
@@ -810,20 +853,20 @@ declare class ScriptEntity implements IScriptReachable {
    * @param {number} duration - Duração do Ban.
    * @param {string} reason - Razão do Ban.
    */
-  ban(duration: number, reason: string): boolean
+  ban(duration: number, reason: string): boolean;
 
   /**
    * Aplica soft mute no usuário.
    * (Nescessário Permissão Extra)
    * @param {boolean} muted - Se deve mutar ou desmutar.
    */
-  softMute(muted: boolean): boolean
+  softMute(muted: boolean): boolean;
 
   /**
    * Desconecta o usuário do hotel.
    * (Nescessário Permissão Extra)
    */
-  disconnect(): boolean
+  disconnect(): boolean;
 }
 
 export { ScriptEntity };
