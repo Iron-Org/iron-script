@@ -845,7 +845,7 @@ declare class ScriptEntity implements IScriptReachable {
    * @param {string} title - Titulo da tabela
    * @param {string[]} values - Lista de chaves e valores na tabela
    */
-  sendTableAttributes(fakeFurniIds: number[]): void;
+  sendTableAttributes(title, values): void;
 
   /**
    * Bani o usuário do Hotel.
