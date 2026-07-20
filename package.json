@@ -17,10 +17,10 @@
   },
   "homepage": "https://github.com/Iron-Org/irinc-script#readme",
   "dependencies": {
-    "typedoc": "^0.26.8",
-    "typedoc-github-theme": "^0.1.2",
-    "typedoc-plugin-extras": "^3.1.0",
+    "typedoc": "^0.28.20",
+    "typedoc-github-theme": "^0.4.0",
+    "typedoc-plugin-extras": "^4.0.1",
     "typedoc-plugin-mdn-links": "^3.3.2",
-    "typedoc-plugin-merge-modules": "^6.0.1"
+    "typedoc-plugin-merge-modules": "^7.0.0"
   }
 }
